@@ -1,0 +1,1700 @@
+================================================================
+  Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC
+  Version 2016.2
+  Build 1577090 on Thu Jun 02 16:59:10 MDT 2016
+  Copyright (C) 1986-2016 Xilinx, Inc. All Rights Reserved.
+================================================================
+INFO: [HLS 200-10] Running '/opt/xilinx/xilinx_2016.2/Vivado_HLS/2016.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'rjc422' on host 'en-ec-ecelinux-02.coecis.cornell.edu' (Linux_x86_64 version 3.10.0-1160.11.1.el7.x86_64) on Fri Jun 18 23:25:17 EDT 2021
+INFO: [HLS 200-10] On os "CentOS Linux release 7.9.2009 (Core)"
+INFO: [HLS 200-10] In directory '/home/rjc422/ece5775_digitrec'
+INFO: [HLS 200-10] Opening and resetting project '/home/rjc422/ece5775_digitrec/1-nn.prj'.
+INFO: [HLS 200-10] Adding design file 'digitrec.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'digitrec_test.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'data' to the project
+INFO: [HLS 200-10] Opening and resetting solution '/home/rjc422/ece5775_digitrec/1-nn.prj/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+   Compiling ../../../../digitrec_test.cpp in debug mode
+   Compiling ../../../../digitrec.cpp in debug mode
+   Generating csim.exe
+#1: 	TestInstance=0x3041060800 	Interpreted=0x1 	Expected=1
+#2: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#3: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#4: 	TestInstance=0x2041020400 	Interpreted=0x1 	Expected=1
+#5: 	TestInstance=0x4081020600 	Interpreted=0x1 	Expected=1
+#6: 	TestInstance=0x6081020c00 	Interpreted=0x1 	Expected=1
+#7: 	TestInstance=0x20c1020800 	Interpreted=0x1 	Expected=1
+#8: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#9: 	TestInstance=0x6081020400 	Interpreted=0x1 	Expected=1
+#10: 	TestInstance=0x2081020400 	Interpreted=0x1 	Expected=1
+#11: 	TestInstance=0x0c081830600 	Interpreted=0x1 	Expected=1
+#12: 	TestInstance=0x1061861800 	Interpreted=0x1 	Expected=1
+#13: 	TestInstance=0x20c1060c00 	Interpreted=0x1 	Expected=1
+#14: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#15: 	TestInstance=0x20c1020400 	Interpreted=0x1 	Expected=1
+#16: 	TestInstance=0x20c1020400 	Interpreted=0x1 	Expected=1
+#17: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#18: 	TestInstance=0x3041860800 	Interpreted=0x1 	Expected=1
+#19: 	TestInstance=0x20c1860800 	Interpreted=0x1 	Expected=1
+#20: 	TestInstance=0x40c1020400 	Interpreted=0x1 	Expected=1
+#21: 	TestInstance=0x20c1060800 	Interpreted=0x1 	Expected=1
+#22: 	TestInstance=0x2041020c00 	Interpreted=0x1 	Expected=1
+#23: 	TestInstance=0x2041860c00 	Interpreted=0x1 	Expected=1
+#24: 	TestInstance=0x4183070300 	Interpreted=0x1 	Expected=1
+#25: 	TestInstance=0x0e1c1860f00 	Interpreted=0x2 	Expected=2
+#26: 	TestInstance=0x0e041060f00 	Interpreted=0x2 	Expected=2
+#27: 	TestInstance=0x0c3c1060e00 	Interpreted=0x2 	Expected=2
+#28: 	TestInstance=0x08181e70c00 	Interpreted=0x2 	Expected=2
+#29: 	TestInstance=0x08181078000 	Interpreted=0x2 	Expected=2
+#30: 	TestInstance=0x181078000 	Interpreted=0x2 	Expected=2
+#31: 	TestInstance=0x0c041078000 	Interpreted=0x2 	Expected=2
+#32: 	TestInstance=0x0e060c7be00 	Interpreted=0x2 	Expected=2
+#33: 	TestInstance=0x0e040820c00 	Interpreted=0x2 	Expected=2
+#34: 	TestInstance=0x3c7cb8000 	Interpreted=0x2 	Expected=2
+#35: 	TestInstance=0x0e260870f00 	Interpreted=0x2 	Expected=2
+#36: 	TestInstance=0x20e041060f00 	Interpreted=0x2 	Expected=2
+#37: 	TestInstance=0x30e78f0a00 	Interpreted=0x2 	Expected=2
+#38: 	TestInstance=0x0c040870c00 	Interpreted=0x2 	Expected=2
+#39: 	TestInstance=0x0f1618f9800 	Interpreted=0x2 	Expected=2
+#40: 	TestInstance=0x0e040831e00 	Interpreted=0x1 	Expected=2 	[Mismatch!]
+#41: 	TestInstance=0x20c1060200 	Interpreted=0x1 	Expected=2 	[Mismatch!]
+#42: 	TestInstance=0x6043870a00 	Interpreted=0x2 	Expected=2
+#43: 	TestInstance=0x61e0878c00 	Interpreted=0x2 	Expected=2
+#44: 	TestInstance=0x6141870200 	Interpreted=0x2 	Expected=2
+#45: 	TestInstance=0x0c08207c000 	Interpreted=0x2 	Expected=2
+#46: 	TestInstance=0x0e041040e00 	Interpreted=0x2 	Expected=2
+#47: 	TestInstance=0x0e0c10f9f00 	Interpreted=0x2 	Expected=2
+#48: 	TestInstance=0x70608f1a00 	Interpreted=0x2 	Expected=2
+#49: 	TestInstance=0x20a041079e00 	Interpreted=0x2 	Expected=2
+#50: 	TestInstance=0x0e061879e00 	Interpreted=0x2 	Expected=2
+#51: 	TestInstance=0x1e0c3060f80 	Interpreted=0x2 	Expected=2
+#52: 	TestInstance=0x0e041020e00 	Interpreted=0x2 	Expected=2
+#53: 	TestInstance=0x10f0208f1800 	Interpreted=0x2 	Expected=2
+#54: 	TestInstance=0x0e0c307c000 	Interpreted=0x2 	Expected=2
+#55: 	TestInstance=0x20e041040e00 	Interpreted=0x2 	Expected=2
+#56: 	TestInstance=0x0c0c1860300 	Interpreted=0x2 	Expected=2
+#57: 	TestInstance=0x60434b0e00 	Interpreted=0x2 	Expected=2
+#58: 	TestInstance=0x70e18f9c00 	Interpreted=0x2 	Expected=2
+#59: 	TestInstance=0x41c18f8900 	Interpreted=0x2 	Expected=2
+#60: 	TestInstance=0x105126cb1e00 	Interpreted=0x9 	Expected=2 	[Mismatch!]
+#61: 	TestInstance=0x2070618e1f00 	Interpreted=0x2 	Expected=2
+#62: 	TestInstance=0x0e06381111c 	Interpreted=0x3 	Expected=3
+#63: 	TestInstance=0x0e0c1c31c00 	Interpreted=0x3 	Expected=3
+#64: 	TestInstance=0x1c3c1858f00 	Interpreted=0x2 	Expected=3 	[Mismatch!]
+#65: 	TestInstance=0x0e143c19e00 	Interpreted=0x3 	Expected=3
+#66: 	TestInstance=0x0e0c1c19e00 	Interpreted=0x3 	Expected=3
+#67: 	TestInstance=0x40c3810a00 	Interpreted=0x3 	Expected=3
+#68: 	TestInstance=0x60c3030a08 	Interpreted=0x3 	Expected=3
+#69: 	TestInstance=0x0e041811e10 	Interpreted=0x3 	Expected=3
+#70: 	TestInstance=0x0e0c3010e00 	Interpreted=0x3 	Expected=3
+#71: 	TestInstance=0x6043811c00 	Interpreted=0x3 	Expected=3
+#72: 	TestInstance=0x1c083808e00 	Interpreted=0x3 	Expected=3
+#73: 	TestInstance=0x0e081811e00 	Interpreted=0x3 	Expected=3
+#74: 	TestInstance=0x0e041811e00 	Interpreted=0x3 	Expected=3
+#75: 	TestInstance=0x0c081010400 	Interpreted=0x3 	Expected=3
+#76: 	TestInstance=0x0f0c0cf9f00 	Interpreted=0x2 	Expected=3 	[Mismatch!]
+#77: 	TestInstance=0x0e1c3c19e00 	Interpreted=0x3 	Expected=3
+#78: 	TestInstance=0x6080810c00 	Interpreted=0x3 	Expected=3
+#79: 	TestInstance=0x1f063809e00 	Interpreted=0x3 	Expected=3
+#80: 	TestInstance=0x10142878100 	Interpreted=0x4 	Expected=4
+#81: 	TestInstance=0x091a3c90400 	Interpreted=0x4 	Expected=4
+#82: 	TestInstance=0x11438a0400 	Interpreted=0x4 	Expected=4
+#83: 	TestInstance=0x08147878200 	Interpreted=0x4 	Expected=4
+#84: 	TestInstance=0x21e48f0600 	Interpreted=0x4 	Expected=4
+#85: 	TestInstance=0x09143c70408 	Interpreted=0x4 	Expected=4
+#86: 	TestInstance=0x08363830600 	Interpreted=0x4 	Expected=4
+#87: 	TestInstance=0x11238a0000 	Interpreted=0x4 	Expected=4
+#88: 	TestInstance=0x08163830608 	Interpreted=0x4 	Expected=4
+#89: 	TestInstance=0x3147c70400 	Interpreted=0x4 	Expected=4
+#90: 	TestInstance=0x08142830400 	Interpreted=0x4 	Expected=4
+#91: 	TestInstance=0x2347830304 	Interpreted=0x4 	Expected=4
+#92: 	TestInstance=0x1162870400 	Interpreted=0x4 	Expected=4
+#93: 	TestInstance=0x1326cf0200 	Interpreted=0x4 	Expected=4
+#94: 	TestInstance=0x09648e0800 	Interpreted=0x4 	Expected=4
+#95: 	TestInstance=0x10a38b0400 	Interpreted=0x4 	Expected=4
+#96: 	TestInstance=0x1167860800 	Interpreted=0x4 	Expected=4
+#97: 	TestInstance=0x41c3830408 	Interpreted=0x7 	Expected=4 	[Mismatch!]
+#98: 	TestInstance=0x10364cf8300 	Interpreted=0x4 	Expected=4
+#99: 	TestInstance=0x41a7860800 	Interpreted=0x4 	Expected=4
+#100: 	TestInstance=0x1167820c10 	Interpreted=0x4 	Expected=4
+#101: 	TestInstance=0x0a1448f8200 	Interpreted=0x4 	Expected=4
+#102: 	TestInstance=0x0c2878200 	Interpreted=0x4 	Expected=4
+#103: 	TestInstance=0x1a7c70408 	Interpreted=0x4 	Expected=4
+#104: 	TestInstance=0x51c68f8600 	Interpreted=0x4 	Expected=4
+#105: 	TestInstance=0x11e7cd0200 	Interpreted=0x4 	Expected=4
+#106: 	TestInstance=0x7103810600 	Interpreted=0x5 	Expected=5
+#107: 	TestInstance=0x0f303c68700 	Interpreted=0x5 	Expected=5
+#108: 	TestInstance=0x0e303c48f00 	Interpreted=0x5 	Expected=5
+#109: 	TestInstance=0x23e6070608 	Interpreted=0x5 	Expected=5
+#110: 	TestInstance=0x0f3020800 	Interpreted=0x5 	Expected=5
+#111: 	TestInstance=0x0f183899e00 	Interpreted=0x5 	Expected=5
+#112: 	TestInstance=0x1e3020c00 	Interpreted=0x5 	Expected=5
+#113: 	TestInstance=0x31e30b1c00 	Interpreted=0x5 	Expected=5
+#114: 	TestInstance=0x1e30f0c00 	Interpreted=0x5 	Expected=5
+#115: 	TestInstance=0x6183030e00 	Interpreted=0x5 	Expected=5
+#116: 	TestInstance=0x30c1021800 	Interpreted=0x5 	Expected=5
+#117: 	TestInstance=0x6081810c00 	Interpreted=0x3 	Expected=5 	[Mismatch!]
+#118: 	TestInstance=0x0c2020c00 	Interpreted=0x5 	Expected=5
+#119: 	TestInstance=0x3183811e00 	Interpreted=0x5 	Expected=5
+#120: 	TestInstance=0x0c103808e00 	Interpreted=0x5 	Expected=5
+#121: 	TestInstance=0x71e3851e00 	Interpreted=0x2 	Expected=5 	[Mismatch!]
+#122: 	TestInstance=0x7181830c00 	Interpreted=0x5 	Expected=5
+#123: 	TestInstance=0x1071038d0e00 	Interpreted=0x5 	Expected=5
+#124: 	TestInstance=0x6083c78c00 	Interpreted=0x6 	Expected=6
+#125: 	TestInstance=0x408103870000 	Interpreted=0x6 	Expected=6
+#126: 	TestInstance=0x106103078700 	Interpreted=0x5 	Expected=6 	[Mismatch!]
+#127: 	TestInstance=0x41c3870e00 	Interpreted=0x4 	Expected=6 	[Mismatch!]
+#128: 	TestInstance=0x0c107cf8e00 	Interpreted=0x6 	Expected=6
+#129: 	TestInstance=0x6083870400 	Interpreted=0x6 	Expected=6
+#130: 	TestInstance=0x2081060400 	Interpreted=0x6 	Expected=6
+#131: 	TestInstance=0x18387c6c700 	Interpreted=0x5 	Expected=6 	[Mismatch!]
+#132: 	TestInstance=0x20c107c78400 	Interpreted=0x6 	Expected=6
+#133: 	TestInstance=0x3c0820408 	Interpreted=0x7 	Expected=7
+#134: 	TestInstance=0x41c0820410 	Interpreted=0x7 	Expected=7
+#135: 	TestInstance=0x23e081060c 	Interpreted=0x7 	Expected=7
+#136: 	TestInstance=0x083c0830608 	Interpreted=0x7 	Expected=7
+#137: 	TestInstance=0x0e0820c10 	Interpreted=0x7 	Expected=7
+#138: 	TestInstance=0x1c0810200 	Interpreted=0x7 	Expected=7
+#139: 	TestInstance=0x0c1c3830408 	Interpreted=0x7 	Expected=7
+#140: 	TestInstance=0x1e6830c10 	Interpreted=0x7 	Expected=7
+#141: 	TestInstance=0x41c0830408 	Interpreted=0x7 	Expected=7
+#142: 	TestInstance=0x3e4c30c10 	Interpreted=0x7 	Expected=7
+#143: 	TestInstance=0x71c1820820 	Interpreted=0x3 	Expected=7 	[Mismatch!]
+#144: 	TestInstance=0x3e4c10204 	Interpreted=0x7 	Expected=7
+#145: 	TestInstance=0x0e1c1e71810 	Interpreted=0x7 	Expected=7
+#146: 	TestInstance=0x3c1830608 	Interpreted=0x7 	Expected=7
+#147: 	TestInstance=0x3c4810608 	Interpreted=0x7 	Expected=7
+#148: 	TestInstance=0x41e0830c10 	Interpreted=0x7 	Expected=7
+#149: 	TestInstance=0x0e160820820 	Interpreted=0x7 	Expected=7
+#150: 	TestInstance=0x0e043860408 	Interpreted=0x3 	Expected=7 	[Mismatch!]
+#151: 	TestInstance=0x23c0830408 	Interpreted=0x7 	Expected=7
+#152: 	TestInstance=0x21e0820810 	Interpreted=0x7 	Expected=7
+#153: 	TestInstance=0x1c3c0820408 	Interpreted=0x7 	Expected=7
+#154: 	TestInstance=0x3c0810608 	Interpreted=0x7 	Expected=7
+#155: 	TestInstance=0x3e7c10608 	Interpreted=0x7 	Expected=7
+#156: 	TestInstance=0x3160820c10 	Interpreted=0x7 	Expected=7
+#157: 	TestInstance=0x081c1830600 	Interpreted=0x7 	Expected=7
+#158: 	TestInstance=0x43c0830408 	Interpreted=0x7 	Expected=7
+#159: 	TestInstance=0x0c3c0830408 	Interpreted=0x7 	Expected=7
+#160: 	TestInstance=0x6123850e00 	Interpreted=0x6 	Expected=8 	[Mismatch!]
+#161: 	TestInstance=0x41c1060c00 	Interpreted=0x1 	Expected=8 	[Mismatch!]
+#162: 	TestInstance=0x3c7810204 	Interpreted=0x7 	Expected=9 	[Mismatch!]
+#163: 	TestInstance=0x41c3810204 	Interpreted=0x9 	Expected=9
+#164: 	TestInstance=0x6166c70600 	Interpreted=0x9 	Expected=9
+#165: 	TestInstance=0x0c103810204 	Interpreted=0x4 	Expected=9 	[Mismatch!]
+#166: 	TestInstance=0x0e3664d8e00 	Interpreted=0x0 	Expected=0
+#167: 	TestInstance=0x0e3e64d8e00 	Interpreted=0x0 	Expected=0
+#168: 	TestInstance=0x6142850c00 	Interpreted=0x0 	Expected=0
+#169: 	TestInstance=0x30a2c91c00 	Interpreted=0x0 	Expected=0
+#170: 	TestInstance=0x0e3e7488f00 	Interpreted=0x0 	Expected=0
+#171: 	TestInstance=0x61a24c8e00 	Interpreted=0x0 	Expected=0
+#172: 	TestInstance=0x31e64f0c00 	Interpreted=0x0 	Expected=0
+#173: 	TestInstance=0x60c2850e00 	Interpreted=0x0 	Expected=0
+#174: 	TestInstance=0x30f24d1c00 	Interpreted=0x0 	Expected=0
+#175: 	TestInstance=0x61e2c58e00 	Interpreted=0x0 	Expected=0
+#176: 	TestInstance=0x0e3e6cf9e00 	Interpreted=0x0 	Expected=0
+#177: 	TestInstance=0x60c2850c00 	Interpreted=0x0 	Expected=0
+#178: 	TestInstance=0x71a2499c00 	Interpreted=0x0 	Expected=0
+#179: 	TestInstance=0x71a24c9a00 	Interpreted=0x0 	Expected=0
+#180: 	TestInstance=0x31e6cf8c00 	Interpreted=0x0 	Expected=0
+Overall Error Rate = 9.44%
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [HLS 200-10] Analyzing design file 'digitrec.cpp' ... 
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-501] Unrolling loop 'INIT2' (digitrec.cpp:30) in function 'digitrec(ap_uint<49>)' completely.
+INFO: [XFORM 203-501] Unrolling loop 'UPDATEKNN' (digitrec.cpp:93) in function 'update_knn(ap_uint<49>, ap_uint<49>, ap_uint<6>*)' completely.
+INFO: [XFORM 203-501] Unrolling loop 'KNNVOTE2' (digitrec.cpp:133) in function 'knn_vote(ap_uint<6> (*) [1])' completely.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'bitcount' into 'update_knn' (digitrec.cpp:86) automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'MODIFY1' (digitrec.cpp:33) in function 'digitrec' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'bitcount' (digitrec.cpp:54:31).
+INFO: [XFORM 203-501] Unrolling loop 'INIT' (digitrec.cpp:26) in function 'digitrec' completely.
+INFO: [XFORM 203-501] Unrolling loop 'MODIFY2' (digitrec.cpp:36) in function 'digitrec' completely.
+INFO: [XFORM 203-501] Unrolling loop 'BITCOUNT' (digitrec.cpp:54) in function 'bitcount' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (digitrec.cpp:129) in function 'knn_vote' completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.0' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.1' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.2' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.3' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.4' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.5' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.6' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.7' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.8' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.9' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'bitcount' (digitrec.cpp:61:2)...48 expression(s) balanced.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'min_distances.V' (digitrec.cpp:79).
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation 'min_distances.V.load'(digitrec.cpp:95:5) to function '_ssdm_op_Read.ap_auto.i6P' and 'call' operation to function '_ssdm_op_Write.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation to function '_ssdm_op_Write.ap_auto.i6P' and 'call' operation 'min_distances.V.load'(digitrec.cpp:95:5) to function '_ssdm_op_Read.ap_auto.i6P', this may lead to incorrect RTL generation.
+INFO: [HLS 200-111] Elapsed time: 18.51 seconds; current memory usage: 148 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'digitrec' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Scheduling module 'digitrec_bitcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'digitrec_bitcount'.
+INFO: [SCHED 204-61] Pipelining result: Target II: 1, Final II: 1, Depth: 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Elapsed time: 0.06 seconds; current memory usage: 148 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Exploring micro-architecture for module 'digitrec_bitcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Elapsed time: 0.34 seconds; current memory usage: 149 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Scheduling module 'digitrec_update_knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'digitrec_update_knn'.
+INFO: [SCHED 204-61] Pipelining result: Target II: 1, Final II: 1, Depth: 1.
+WARNING: [SCHED 204-21] Estimated clock period (10.7ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	wire read on port 'train_inst_V' (1.48 ns)
+	'xor' operation ('r.V', digitrec.cpp:86) (1.37 ns)
+	'call' operation ('distance.V', digitrec.cpp:86) to 'digitrec_bitcount' (5.87 ns)
+	'icmp' operation ('tmp_1', digitrec.cpp:98) (1.94 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Elapsed time: 0.32 seconds; current memory usage: 149 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Exploring micro-architecture for module 'digitrec_update_knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Elapsed time: 0.04 seconds; current memory usage: 149 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Scheduling module 'digitrec_knn_vote' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Elapsed time: 0.05 seconds; current memory usage: 149 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Exploring micro-architecture for module 'digitrec_knn_vote' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Elapsed time: 0.08 seconds; current memory usage: 149 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Scheduling module 'digitrec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-21] Estimated delay (10.7ns) of 'call' operation (digitrec.cpp:42) to 'digitrec_update_knn' exceeds the target cycle time (target cycle time: 10ns, clock uncertainty: 1.25ns, effective cycle time: 8.75ns).
+INFO: [SCHED 204-61] Pipelining loop 'MODIFY1'.
+INFO: [SCHED 204-61] Pipelining result: Target II: 1, Final II: 1, Depth: 3.
+WARNING: [SCHED 204-21] Estimated clock period (10.7ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	'call' operation (digitrec.cpp:42) to 'digitrec_update_knn' (10.7 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Elapsed time: 0.16 seconds; current memory usage: 150 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Exploring micro-architecture for module 'digitrec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Elapsed time: 0.26 seconds; current memory usage: 150 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'digitrec_bitcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'digitrec_bitcount'.
+INFO: [HLS 200-111] Elapsed time: 0.37 seconds; current memory usage: 151 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'digitrec_update_knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'digitrec_update_knn'.
+INFO: [HLS 200-111] Elapsed time: 0.39 seconds; current memory usage: 154 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'digitrec_knn_vote' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'digitrec_knn_vote'.
+INFO: [HLS 200-111] Elapsed time: 0.07 seconds; current memory usage: 154 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'digitrec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'digitrec/input_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'digitrec' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'digitrec'.
+INFO: [HLS 200-111] Elapsed time: 0.21 seconds; current memory usage: 156 MB.
+INFO: [RTMG 210-279] Implementing memory 'digitrec_training_data_V_rom' using block ROMs.
+INFO: [HLS 200-10] Finished generating all RTL models.
+INFO: [SYSC 207-301] Generating SystemC RTL for digitrec.
+INFO: [VHDL 208-304] Generating VHDL RTL for digitrec.
+INFO: [VLOG 209-307] Generating Verilog RTL for digitrec.
+INFO: [HLS 200-10] Opening and resetting project '/home/rjc422/ece5775_digitrec/2-nn.prj'.
+INFO: [HLS 200-10] Adding design file 'digitrec.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'digitrec_test.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'data' to the project
+INFO: [HLS 200-10] Opening and resetting solution '/home/rjc422/ece5775_digitrec/2-nn.prj/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+   Compiling ../../../../digitrec_test.cpp in debug mode
+   Compiling ../../../../digitrec.cpp in debug mode
+   Generating csim.exe
+#1: 	TestInstance=0x3041060800 	Interpreted=0x1 	Expected=1
+#2: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#3: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#4: 	TestInstance=0x2041020400 	Interpreted=0x1 	Expected=1
+#5: 	TestInstance=0x4081020600 	Interpreted=0x1 	Expected=1
+#6: 	TestInstance=0x6081020c00 	Interpreted=0x1 	Expected=1
+#7: 	TestInstance=0x20c1020800 	Interpreted=0x1 	Expected=1
+#8: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#9: 	TestInstance=0x6081020400 	Interpreted=0x1 	Expected=1
+#10: 	TestInstance=0x2081020400 	Interpreted=0x1 	Expected=1
+#11: 	TestInstance=0x0c081830600 	Interpreted=0x1 	Expected=1
+#12: 	TestInstance=0x1061861800 	Interpreted=0x1 	Expected=1
+#13: 	TestInstance=0x20c1060c00 	Interpreted=0x1 	Expected=1
+#14: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#15: 	TestInstance=0x20c1020400 	Interpreted=0x1 	Expected=1
+#16: 	TestInstance=0x20c1020400 	Interpreted=0x1 	Expected=1
+#17: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#18: 	TestInstance=0x3041860800 	Interpreted=0x1 	Expected=1
+#19: 	TestInstance=0x20c1860800 	Interpreted=0x1 	Expected=1
+#20: 	TestInstance=0x40c1020400 	Interpreted=0x1 	Expected=1
+#21: 	TestInstance=0x20c1060800 	Interpreted=0x1 	Expected=1
+#22: 	TestInstance=0x2041020c00 	Interpreted=0x1 	Expected=1
+#23: 	TestInstance=0x2041860c00 	Interpreted=0x1 	Expected=1
+#24: 	TestInstance=0x4183070300 	Interpreted=0x9 	Expected=1 	[Mismatch!]
+#25: 	TestInstance=0x0e1c1860f00 	Interpreted=0x2 	Expected=2
+#26: 	TestInstance=0x0e041060f00 	Interpreted=0x2 	Expected=2
+#27: 	TestInstance=0x0c3c1060e00 	Interpreted=0x2 	Expected=2
+#28: 	TestInstance=0x08181e70c00 	Interpreted=0x2 	Expected=2
+#29: 	TestInstance=0x08181078000 	Interpreted=0x2 	Expected=2
+#30: 	TestInstance=0x181078000 	Interpreted=0x2 	Expected=2
+#31: 	TestInstance=0x0c041078000 	Interpreted=0x2 	Expected=2
+#32: 	TestInstance=0x0e060c7be00 	Interpreted=0x2 	Expected=2
+#33: 	TestInstance=0x0e040820c00 	Interpreted=0x2 	Expected=2
+#34: 	TestInstance=0x3c7cb8000 	Interpreted=0x2 	Expected=2
+#35: 	TestInstance=0x0e260870f00 	Interpreted=0x2 	Expected=2
+#36: 	TestInstance=0x20e041060f00 	Interpreted=0x2 	Expected=2
+#37: 	TestInstance=0x30e78f0a00 	Interpreted=0x2 	Expected=2
+#38: 	TestInstance=0x0c040870c00 	Interpreted=0x2 	Expected=2
+#39: 	TestInstance=0x0f1618f9800 	Interpreted=0x2 	Expected=2
+#40: 	TestInstance=0x0e040831e00 	Interpreted=0x2 	Expected=2
+#41: 	TestInstance=0x20c1060200 	Interpreted=0x1 	Expected=2 	[Mismatch!]
+#42: 	TestInstance=0x6043870a00 	Interpreted=0x2 	Expected=2
+#43: 	TestInstance=0x61e0878c00 	Interpreted=0x2 	Expected=2
+#44: 	TestInstance=0x6141870200 	Interpreted=0x2 	Expected=2
+#45: 	TestInstance=0x0c08207c000 	Interpreted=0x2 	Expected=2
+#46: 	TestInstance=0x0e041040e00 	Interpreted=0x2 	Expected=2
+#47: 	TestInstance=0x0e0c10f9f00 	Interpreted=0x2 	Expected=2
+#48: 	TestInstance=0x70608f1a00 	Interpreted=0x2 	Expected=2
+#49: 	TestInstance=0x20a041079e00 	Interpreted=0x2 	Expected=2
+#50: 	TestInstance=0x0e061879e00 	Interpreted=0x2 	Expected=2
+#51: 	TestInstance=0x1e0c3060f80 	Interpreted=0x2 	Expected=2
+#52: 	TestInstance=0x0e041020e00 	Interpreted=0x2 	Expected=2
+#53: 	TestInstance=0x10f0208f1800 	Interpreted=0x2 	Expected=2
+#54: 	TestInstance=0x0e0c307c000 	Interpreted=0x2 	Expected=2
+#55: 	TestInstance=0x20e041040e00 	Interpreted=0x2 	Expected=2
+#56: 	TestInstance=0x0c0c1860300 	Interpreted=0x2 	Expected=2
+#57: 	TestInstance=0x60434b0e00 	Interpreted=0x2 	Expected=2
+#58: 	TestInstance=0x70e18f9c00 	Interpreted=0x2 	Expected=2
+#59: 	TestInstance=0x41c18f8900 	Interpreted=0x2 	Expected=2
+#60: 	TestInstance=0x105126cb1e00 	Interpreted=0x0 	Expected=2 	[Mismatch!]
+#61: 	TestInstance=0x2070618e1f00 	Interpreted=0x2 	Expected=2
+#62: 	TestInstance=0x0e06381111c 	Interpreted=0x3 	Expected=3
+#63: 	TestInstance=0x0e0c1c31c00 	Interpreted=0x3 	Expected=3
+#64: 	TestInstance=0x1c3c1858f00 	Interpreted=0x3 	Expected=3
+#65: 	TestInstance=0x0e143c19e00 	Interpreted=0x3 	Expected=3
+#66: 	TestInstance=0x0e0c1c19e00 	Interpreted=0x3 	Expected=3
+#67: 	TestInstance=0x40c3810a00 	Interpreted=0x3 	Expected=3
+#68: 	TestInstance=0x60c3030a08 	Interpreted=0x3 	Expected=3
+#69: 	TestInstance=0x0e041811e10 	Interpreted=0x3 	Expected=3
+#70: 	TestInstance=0x0e0c3010e00 	Interpreted=0x3 	Expected=3
+#71: 	TestInstance=0x6043811c00 	Interpreted=0x3 	Expected=3
+#72: 	TestInstance=0x1c083808e00 	Interpreted=0x3 	Expected=3
+#73: 	TestInstance=0x0e081811e00 	Interpreted=0x3 	Expected=3
+#74: 	TestInstance=0x0e041811e00 	Interpreted=0x3 	Expected=3
+#75: 	TestInstance=0x0c081010400 	Interpreted=0x3 	Expected=3
+#76: 	TestInstance=0x0f0c0cf9f00 	Interpreted=0x2 	Expected=3 	[Mismatch!]
+#77: 	TestInstance=0x0e1c3c19e00 	Interpreted=0x3 	Expected=3
+#78: 	TestInstance=0x6080810c00 	Interpreted=0x3 	Expected=3
+#79: 	TestInstance=0x1f063809e00 	Interpreted=0x3 	Expected=3
+#80: 	TestInstance=0x10142878100 	Interpreted=0x4 	Expected=4
+#81: 	TestInstance=0x091a3c90400 	Interpreted=0x4 	Expected=4
+#82: 	TestInstance=0x11438a0400 	Interpreted=0x4 	Expected=4
+#83: 	TestInstance=0x08147878200 	Interpreted=0x4 	Expected=4
+#84: 	TestInstance=0x21e48f0600 	Interpreted=0x9 	Expected=4 	[Mismatch!]
+#85: 	TestInstance=0x09143c70408 	Interpreted=0x4 	Expected=4
+#86: 	TestInstance=0x08363830600 	Interpreted=0x4 	Expected=4
+#87: 	TestInstance=0x11238a0000 	Interpreted=0x4 	Expected=4
+#88: 	TestInstance=0x08163830608 	Interpreted=0x4 	Expected=4
+#89: 	TestInstance=0x3147c70400 	Interpreted=0x4 	Expected=4
+#90: 	TestInstance=0x08142830400 	Interpreted=0x4 	Expected=4
+#91: 	TestInstance=0x2347830304 	Interpreted=0x4 	Expected=4
+#92: 	TestInstance=0x1162870400 	Interpreted=0x4 	Expected=4
+#93: 	TestInstance=0x1326cf0200 	Interpreted=0x4 	Expected=4
+#94: 	TestInstance=0x09648e0800 	Interpreted=0x4 	Expected=4
+#95: 	TestInstance=0x10a38b0400 	Interpreted=0x4 	Expected=4
+#96: 	TestInstance=0x1167860800 	Interpreted=0x4 	Expected=4
+#97: 	TestInstance=0x41c3830408 	Interpreted=0x9 	Expected=4 	[Mismatch!]
+#98: 	TestInstance=0x10364cf8300 	Interpreted=0x4 	Expected=4
+#99: 	TestInstance=0x41a7860800 	Interpreted=0x4 	Expected=4
+#100: 	TestInstance=0x1167820c10 	Interpreted=0x4 	Expected=4
+#101: 	TestInstance=0x0a1448f8200 	Interpreted=0x4 	Expected=4
+#102: 	TestInstance=0x0c2878200 	Interpreted=0x4 	Expected=4
+#103: 	TestInstance=0x1a7c70408 	Interpreted=0x4 	Expected=4
+#104: 	TestInstance=0x51c68f8600 	Interpreted=0x4 	Expected=4
+#105: 	TestInstance=0x11e7cd0200 	Interpreted=0x4 	Expected=4
+#106: 	TestInstance=0x7103810600 	Interpreted=0x5 	Expected=5
+#107: 	TestInstance=0x0f303c68700 	Interpreted=0x5 	Expected=5
+#108: 	TestInstance=0x0e303c48f00 	Interpreted=0x5 	Expected=5
+#109: 	TestInstance=0x23e6070608 	Interpreted=0x5 	Expected=5
+#110: 	TestInstance=0x0f3020800 	Interpreted=0x5 	Expected=5
+#111: 	TestInstance=0x0f183899e00 	Interpreted=0x5 	Expected=5
+#112: 	TestInstance=0x1e3020c00 	Interpreted=0x5 	Expected=5
+#113: 	TestInstance=0x31e30b1c00 	Interpreted=0x5 	Expected=5
+#114: 	TestInstance=0x1e30f0c00 	Interpreted=0x5 	Expected=5
+#115: 	TestInstance=0x6183030e00 	Interpreted=0x5 	Expected=5
+#116: 	TestInstance=0x30c1021800 	Interpreted=0x5 	Expected=5
+#117: 	TestInstance=0x6081810c00 	Interpreted=0x5 	Expected=5
+#118: 	TestInstance=0x0c2020c00 	Interpreted=0x5 	Expected=5
+#119: 	TestInstance=0x3183811e00 	Interpreted=0x5 	Expected=5
+#120: 	TestInstance=0x0c103808e00 	Interpreted=0x5 	Expected=5
+#121: 	TestInstance=0x71e3851e00 	Interpreted=0x5 	Expected=5
+#122: 	TestInstance=0x7181830c00 	Interpreted=0x5 	Expected=5
+#123: 	TestInstance=0x1071038d0e00 	Interpreted=0x5 	Expected=5
+#124: 	TestInstance=0x6083c78c00 	Interpreted=0x6 	Expected=6
+#125: 	TestInstance=0x408103870000 	Interpreted=0x6 	Expected=6
+#126: 	TestInstance=0x106103078700 	Interpreted=0x5 	Expected=6 	[Mismatch!]
+#127: 	TestInstance=0x41c3870e00 	Interpreted=0x6 	Expected=6
+#128: 	TestInstance=0x0c107cf8e00 	Interpreted=0x6 	Expected=6
+#129: 	TestInstance=0x6083870400 	Interpreted=0x6 	Expected=6
+#130: 	TestInstance=0x2081060400 	Interpreted=0x6 	Expected=6
+#131: 	TestInstance=0x18387c6c700 	Interpreted=0x5 	Expected=6 	[Mismatch!]
+#132: 	TestInstance=0x20c107c78400 	Interpreted=0x6 	Expected=6
+#133: 	TestInstance=0x3c0820408 	Interpreted=0x7 	Expected=7
+#134: 	TestInstance=0x41c0820410 	Interpreted=0x7 	Expected=7
+#135: 	TestInstance=0x23e081060c 	Interpreted=0x7 	Expected=7
+#136: 	TestInstance=0x083c0830608 	Interpreted=0x7 	Expected=7
+#137: 	TestInstance=0x0e0820c10 	Interpreted=0x7 	Expected=7
+#138: 	TestInstance=0x1c0810200 	Interpreted=0x7 	Expected=7
+#139: 	TestInstance=0x0c1c3830408 	Interpreted=0x7 	Expected=7
+#140: 	TestInstance=0x1e6830c10 	Interpreted=0x7 	Expected=7
+#141: 	TestInstance=0x41c0830408 	Interpreted=0x7 	Expected=7
+#142: 	TestInstance=0x3e4c30c10 	Interpreted=0x7 	Expected=7
+#143: 	TestInstance=0x71c1820820 	Interpreted=0x7 	Expected=7
+#144: 	TestInstance=0x3e4c10204 	Interpreted=0x7 	Expected=7
+#145: 	TestInstance=0x0e1c1e71810 	Interpreted=0x7 	Expected=7
+#146: 	TestInstance=0x3c1830608 	Interpreted=0x7 	Expected=7
+#147: 	TestInstance=0x3c4810608 	Interpreted=0x7 	Expected=7
+#148: 	TestInstance=0x41e0830c10 	Interpreted=0x7 	Expected=7
+#149: 	TestInstance=0x0e160820820 	Interpreted=0x7 	Expected=7
+#150: 	TestInstance=0x0e043860408 	Interpreted=0x7 	Expected=7
+#151: 	TestInstance=0x23c0830408 	Interpreted=0x7 	Expected=7
+#152: 	TestInstance=0x21e0820810 	Interpreted=0x7 	Expected=7
+#153: 	TestInstance=0x1c3c0820408 	Interpreted=0x7 	Expected=7
+#154: 	TestInstance=0x3c0810608 	Interpreted=0x7 	Expected=7
+#155: 	TestInstance=0x3e7c10608 	Interpreted=0x7 	Expected=7
+#156: 	TestInstance=0x3160820c10 	Interpreted=0x7 	Expected=7
+#157: 	TestInstance=0x081c1830600 	Interpreted=0x7 	Expected=7
+#158: 	TestInstance=0x43c0830408 	Interpreted=0x7 	Expected=7
+#159: 	TestInstance=0x0c3c0830408 	Interpreted=0x7 	Expected=7
+#160: 	TestInstance=0x6123850e00 	Interpreted=0x8 	Expected=8
+#161: 	TestInstance=0x41c1060c00 	Interpreted=0x1 	Expected=8 	[Mismatch!]
+#162: 	TestInstance=0x3c7810204 	Interpreted=0x9 	Expected=9
+#163: 	TestInstance=0x41c3810204 	Interpreted=0x9 	Expected=9
+#164: 	TestInstance=0x6166c70600 	Interpreted=0x9 	Expected=9
+#165: 	TestInstance=0x0c103810204 	Interpreted=0x9 	Expected=9
+#166: 	TestInstance=0x0e3664d8e00 	Interpreted=0x0 	Expected=0
+#167: 	TestInstance=0x0e3e64d8e00 	Interpreted=0x0 	Expected=0
+#168: 	TestInstance=0x6142850c00 	Interpreted=0x0 	Expected=0
+#169: 	TestInstance=0x30a2c91c00 	Interpreted=0x0 	Expected=0
+#170: 	TestInstance=0x0e3e7488f00 	Interpreted=0x0 	Expected=0
+#171: 	TestInstance=0x61a24c8e00 	Interpreted=0x0 	Expected=0
+#172: 	TestInstance=0x31e64f0c00 	Interpreted=0x0 	Expected=0
+#173: 	TestInstance=0x60c2850e00 	Interpreted=0x0 	Expected=0
+#174: 	TestInstance=0x30f24d1c00 	Interpreted=0x0 	Expected=0
+#175: 	TestInstance=0x61e2c58e00 	Interpreted=0x0 	Expected=0
+#176: 	TestInstance=0x0e3e6cf9e00 	Interpreted=0x0 	Expected=0
+#177: 	TestInstance=0x60c2850c00 	Interpreted=0x0 	Expected=0
+#178: 	TestInstance=0x71a2499c00 	Interpreted=0x0 	Expected=0
+#179: 	TestInstance=0x71a24c9a00 	Interpreted=0x0 	Expected=0
+#180: 	TestInstance=0x31e6cf8c00 	Interpreted=0x0 	Expected=0
+Overall Error Rate = 5%
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [HLS 200-10] Analyzing design file 'digitrec.cpp' ... 
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'bitcount' into 'update_knn' (digitrec.cpp:86) automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'MODIFY1' (digitrec.cpp:33) in function 'digitrec' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'bitcount' (digitrec.cpp:54:31).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'update_knn' (digitrec.cpp:79).
+INFO: [XFORM 203-501] Unrolling loop 'INIT' (digitrec.cpp:26) in function 'digitrec' completely.
+INFO: [XFORM 203-501] Unrolling loop 'INIT2' (digitrec.cpp:30) in function 'digitrec' completely.
+INFO: [XFORM 203-501] Unrolling loop 'MODIFY2' (digitrec.cpp:36) in function 'digitrec' completely.
+INFO: [XFORM 203-501] Unrolling loop 'BITCOUNT' (digitrec.cpp:54) in function 'bitcount' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (digitrec.cpp:129) in function 'knn_vote' completely.
+INFO: [XFORM 203-501] Unrolling loop 'KNNVOTE2' (digitrec.cpp:133) in function 'knn_vote' completely.
+INFO: [XFORM 203-501] Unrolling loop 'UPDATEKNN' (digitrec.cpp:93) in function 'update_knn' completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.0' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.1' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.2' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.3' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.4' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.5' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.6' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.7' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.8' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.9' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'bitcount' (digitrec.cpp:61:2)...48 expression(s) balanced.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'min_distances[1].V' (digitrec.cpp:79).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'min_distances[0].V' (digitrec.cpp:79).
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation 'min_distances[1].V.load'(digitrec.cpp:95:5) to function '_ssdm_op_Read.ap_auto.i6P' and 'call' operation to function '_ssdm_op_Write.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation to function '_ssdm_op_Write.ap_auto.i6P' and 'call' operation 'min_distances[1].V.load'(digitrec.cpp:95:5) to function '_ssdm_op_Read.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation 'min_distances[0].V.load'(digitrec.cpp:95:5) to function '_ssdm_op_Read.ap_auto.i6P' and 'call' operation to function '_ssdm_op_Write.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation to function '_ssdm_op_Write.ap_auto.i6P' and 'call' operation 'min_distances[0].V.load'(digitrec.cpp:95:5) to function '_ssdm_op_Read.ap_auto.i6P', this may lead to incorrect RTL generation.
+INFO: [HLS 200-111] Elapsed time: 23.71 seconds; current memory usage: 208 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'digitrec' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Scheduling module 'digitrec_bitcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'digitrec_bitcount'.
+INFO: [SCHED 204-61] Pipelining result: Target II: 1, Final II: 1, Depth: 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Elapsed time: 0.09 seconds; current memory usage: 209 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Exploring micro-architecture for module 'digitrec_bitcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Elapsed time: 0.38 seconds; current memory usage: 209 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Scheduling module 'digitrec_update_knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'digitrec_update_knn'.
+INFO: [SCHED 204-61] Pipelining result: Target II: 1, Final II: 1, Depth: 1.
+WARNING: [SCHED 204-21] Estimated clock period (10.7ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	wire read on port 'train_inst_V' (1.48 ns)
+	'xor' operation ('r.V', digitrec.cpp:86) (1.37 ns)
+	'call' operation ('distance.V', digitrec.cpp:86) to 'digitrec_bitcount' (5.87 ns)
+	'icmp' operation ('tmp_1', digitrec.cpp:98) (1.94 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Elapsed time: 0.35 seconds; current memory usage: 209 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Exploring micro-architecture for module 'digitrec_update_knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Elapsed time: 0.05 seconds; current memory usage: 209 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Scheduling module 'digitrec_knn_vote' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Elapsed time: 0.08 seconds; current memory usage: 209 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Exploring micro-architecture for module 'digitrec_knn_vote' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Elapsed time: 0.17 seconds; current memory usage: 210 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Scheduling module 'digitrec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-21] Estimated delay (10.7ns) of 'call' operation (digitrec.cpp:42) to 'digitrec_update_knn' exceeds the target cycle time (target cycle time: 10ns, clock uncertainty: 1.25ns, effective cycle time: 8.75ns).
+INFO: [SCHED 204-61] Pipelining loop 'MODIFY1'.
+INFO: [SCHED 204-61] Pipelining result: Target II: 1, Final II: 1, Depth: 3.
+WARNING: [SCHED 204-21] Estimated clock period (10.7ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	'call' operation (digitrec.cpp:42) to 'digitrec_update_knn' (10.7 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Elapsed time: 0.2 seconds; current memory usage: 210 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Exploring micro-architecture for module 'digitrec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Elapsed time: 0.34 seconds; current memory usage: 211 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'digitrec_bitcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'digitrec_bitcount'.
+INFO: [HLS 200-111] Elapsed time: 0.47 seconds; current memory usage: 211 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'digitrec_update_knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'digitrec_update_knn'.
+INFO: [HLS 200-111] Elapsed time: 0.4 seconds; current memory usage: 213 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'digitrec_knn_vote' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'digitrec_knn_vote'.
+INFO: [HLS 200-111] Elapsed time: 0.09 seconds; current memory usage: 214 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'digitrec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'digitrec/input_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'digitrec' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'digitrec'.
+INFO: [HLS 200-111] Elapsed time: 0.3 seconds; current memory usage: 216 MB.
+INFO: [RTMG 210-279] Implementing memory 'digitrec_training_data_V_rom' using block ROMs.
+INFO: [HLS 200-10] Finished generating all RTL models.
+INFO: [SYSC 207-301] Generating SystemC RTL for digitrec.
+INFO: [VHDL 208-304] Generating VHDL RTL for digitrec.
+INFO: [VLOG 209-307] Generating Verilog RTL for digitrec.
+INFO: [HLS 200-10] Opening and resetting project '/home/rjc422/ece5775_digitrec/3-nn.prj'.
+INFO: [HLS 200-10] Adding design file 'digitrec.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'digitrec_test.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'data' to the project
+INFO: [HLS 200-10] Opening and resetting solution '/home/rjc422/ece5775_digitrec/3-nn.prj/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+   Compiling ../../../../digitrec_test.cpp in debug mode
+   Compiling ../../../../digitrec.cpp in debug mode
+   Generating csim.exe
+#1: 	TestInstance=0x3041060800 	Interpreted=0x1 	Expected=1
+#2: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#3: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#4: 	TestInstance=0x2041020400 	Interpreted=0x1 	Expected=1
+#5: 	TestInstance=0x4081020600 	Interpreted=0x1 	Expected=1
+#6: 	TestInstance=0x6081020c00 	Interpreted=0x1 	Expected=1
+#7: 	TestInstance=0x20c1020800 	Interpreted=0x1 	Expected=1
+#8: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#9: 	TestInstance=0x6081020400 	Interpreted=0x1 	Expected=1
+#10: 	TestInstance=0x2081020400 	Interpreted=0x1 	Expected=1
+#11: 	TestInstance=0x0c081830600 	Interpreted=0x1 	Expected=1
+#12: 	TestInstance=0x1061861800 	Interpreted=0x1 	Expected=1
+#13: 	TestInstance=0x20c1060c00 	Interpreted=0x1 	Expected=1
+#14: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#15: 	TestInstance=0x20c1020400 	Interpreted=0x1 	Expected=1
+#16: 	TestInstance=0x20c1020400 	Interpreted=0x1 	Expected=1
+#17: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#18: 	TestInstance=0x3041860800 	Interpreted=0x1 	Expected=1
+#19: 	TestInstance=0x20c1860800 	Interpreted=0x1 	Expected=1
+#20: 	TestInstance=0x40c1020400 	Interpreted=0x1 	Expected=1
+#21: 	TestInstance=0x20c1060800 	Interpreted=0x1 	Expected=1
+#22: 	TestInstance=0x2041020c00 	Interpreted=0x1 	Expected=1
+#23: 	TestInstance=0x2041860c00 	Interpreted=0x1 	Expected=1
+#24: 	TestInstance=0x4183070300 	Interpreted=0x9 	Expected=1 	[Mismatch!]
+#25: 	TestInstance=0x0e1c1860f00 	Interpreted=0x2 	Expected=2
+#26: 	TestInstance=0x0e041060f00 	Interpreted=0x2 	Expected=2
+#27: 	TestInstance=0x0c3c1060e00 	Interpreted=0x2 	Expected=2
+#28: 	TestInstance=0x08181e70c00 	Interpreted=0x2 	Expected=2
+#29: 	TestInstance=0x08181078000 	Interpreted=0x2 	Expected=2
+#30: 	TestInstance=0x181078000 	Interpreted=0x2 	Expected=2
+#31: 	TestInstance=0x0c041078000 	Interpreted=0x2 	Expected=2
+#32: 	TestInstance=0x0e060c7be00 	Interpreted=0x2 	Expected=2
+#33: 	TestInstance=0x0e040820c00 	Interpreted=0x2 	Expected=2
+#34: 	TestInstance=0x3c7cb8000 	Interpreted=0x2 	Expected=2
+#35: 	TestInstance=0x0e260870f00 	Interpreted=0x2 	Expected=2
+#36: 	TestInstance=0x20e041060f00 	Interpreted=0x2 	Expected=2
+#37: 	TestInstance=0x30e78f0a00 	Interpreted=0x4 	Expected=2 	[Mismatch!]
+#38: 	TestInstance=0x0c040870c00 	Interpreted=0x2 	Expected=2
+#39: 	TestInstance=0x0f1618f9800 	Interpreted=0x2 	Expected=2
+#40: 	TestInstance=0x0e040831e00 	Interpreted=0x2 	Expected=2
+#41: 	TestInstance=0x20c1060200 	Interpreted=0x1 	Expected=2 	[Mismatch!]
+#42: 	TestInstance=0x6043870a00 	Interpreted=0x2 	Expected=2
+#43: 	TestInstance=0x61e0878c00 	Interpreted=0x2 	Expected=2
+#44: 	TestInstance=0x6141870200 	Interpreted=0x2 	Expected=2
+#45: 	TestInstance=0x0c08207c000 	Interpreted=0x2 	Expected=2
+#46: 	TestInstance=0x0e041040e00 	Interpreted=0x2 	Expected=2
+#47: 	TestInstance=0x0e0c10f9f00 	Interpreted=0x2 	Expected=2
+#48: 	TestInstance=0x70608f1a00 	Interpreted=0x2 	Expected=2
+#49: 	TestInstance=0x20a041079e00 	Interpreted=0x2 	Expected=2
+#50: 	TestInstance=0x0e061879e00 	Interpreted=0x2 	Expected=2
+#51: 	TestInstance=0x1e0c3060f80 	Interpreted=0x2 	Expected=2
+#52: 	TestInstance=0x0e041020e00 	Interpreted=0x2 	Expected=2
+#53: 	TestInstance=0x10f0208f1800 	Interpreted=0x2 	Expected=2
+#54: 	TestInstance=0x0e0c307c000 	Interpreted=0x2 	Expected=2
+#55: 	TestInstance=0x20e041040e00 	Interpreted=0x2 	Expected=2
+#56: 	TestInstance=0x0c0c1860300 	Interpreted=0x2 	Expected=2
+#57: 	TestInstance=0x60434b0e00 	Interpreted=0x2 	Expected=2
+#58: 	TestInstance=0x70e18f9c00 	Interpreted=0x2 	Expected=2
+#59: 	TestInstance=0x41c18f8900 	Interpreted=0x2 	Expected=2
+#60: 	TestInstance=0x105126cb1e00 	Interpreted=0x0 	Expected=2 	[Mismatch!]
+#61: 	TestInstance=0x2070618e1f00 	Interpreted=0x2 	Expected=2
+#62: 	TestInstance=0x0e06381111c 	Interpreted=0x3 	Expected=3
+#63: 	TestInstance=0x0e0c1c31c00 	Interpreted=0x3 	Expected=3
+#64: 	TestInstance=0x1c3c1858f00 	Interpreted=0x3 	Expected=3
+#65: 	TestInstance=0x0e143c19e00 	Interpreted=0x3 	Expected=3
+#66: 	TestInstance=0x0e0c1c19e00 	Interpreted=0x3 	Expected=3
+#67: 	TestInstance=0x40c3810a00 	Interpreted=0x3 	Expected=3
+#68: 	TestInstance=0x60c3030a08 	Interpreted=0x3 	Expected=3
+#69: 	TestInstance=0x0e041811e10 	Interpreted=0x3 	Expected=3
+#70: 	TestInstance=0x0e0c3010e00 	Interpreted=0x3 	Expected=3
+#71: 	TestInstance=0x6043811c00 	Interpreted=0x3 	Expected=3
+#72: 	TestInstance=0x1c083808e00 	Interpreted=0x3 	Expected=3
+#73: 	TestInstance=0x0e081811e00 	Interpreted=0x3 	Expected=3
+#74: 	TestInstance=0x0e041811e00 	Interpreted=0x3 	Expected=3
+#75: 	TestInstance=0x0c081010400 	Interpreted=0x3 	Expected=3
+#76: 	TestInstance=0x0f0c0cf9f00 	Interpreted=0x2 	Expected=3 	[Mismatch!]
+#77: 	TestInstance=0x0e1c3c19e00 	Interpreted=0x3 	Expected=3
+#78: 	TestInstance=0x6080810c00 	Interpreted=0x3 	Expected=3
+#79: 	TestInstance=0x1f063809e00 	Interpreted=0x3 	Expected=3
+#80: 	TestInstance=0x10142878100 	Interpreted=0x4 	Expected=4
+#81: 	TestInstance=0x091a3c90400 	Interpreted=0x4 	Expected=4
+#82: 	TestInstance=0x11438a0400 	Interpreted=0x4 	Expected=4
+#83: 	TestInstance=0x08147878200 	Interpreted=0x4 	Expected=4
+#84: 	TestInstance=0x21e48f0600 	Interpreted=0x9 	Expected=4 	[Mismatch!]
+#85: 	TestInstance=0x09143c70408 	Interpreted=0x4 	Expected=4
+#86: 	TestInstance=0x08363830600 	Interpreted=0x4 	Expected=4
+#87: 	TestInstance=0x11238a0000 	Interpreted=0x4 	Expected=4
+#88: 	TestInstance=0x08163830608 	Interpreted=0x4 	Expected=4
+#89: 	TestInstance=0x3147c70400 	Interpreted=0x4 	Expected=4
+#90: 	TestInstance=0x08142830400 	Interpreted=0x4 	Expected=4
+#91: 	TestInstance=0x2347830304 	Interpreted=0x4 	Expected=4
+#92: 	TestInstance=0x1162870400 	Interpreted=0x4 	Expected=4
+#93: 	TestInstance=0x1326cf0200 	Interpreted=0x4 	Expected=4
+#94: 	TestInstance=0x09648e0800 	Interpreted=0x4 	Expected=4
+#95: 	TestInstance=0x10a38b0400 	Interpreted=0x4 	Expected=4
+#96: 	TestInstance=0x1167860800 	Interpreted=0x4 	Expected=4
+#97: 	TestInstance=0x41c3830408 	Interpreted=0x9 	Expected=4 	[Mismatch!]
+#98: 	TestInstance=0x10364cf8300 	Interpreted=0x4 	Expected=4
+#99: 	TestInstance=0x41a7860800 	Interpreted=0x4 	Expected=4
+#100: 	TestInstance=0x1167820c10 	Interpreted=0x4 	Expected=4
+#101: 	TestInstance=0x0a1448f8200 	Interpreted=0x4 	Expected=4
+#102: 	TestInstance=0x0c2878200 	Interpreted=0x4 	Expected=4
+#103: 	TestInstance=0x1a7c70408 	Interpreted=0x4 	Expected=4
+#104: 	TestInstance=0x51c68f8600 	Interpreted=0x4 	Expected=4
+#105: 	TestInstance=0x11e7cd0200 	Interpreted=0x4 	Expected=4
+#106: 	TestInstance=0x7103810600 	Interpreted=0x5 	Expected=5
+#107: 	TestInstance=0x0f303c68700 	Interpreted=0x5 	Expected=5
+#108: 	TestInstance=0x0e303c48f00 	Interpreted=0x5 	Expected=5
+#109: 	TestInstance=0x23e6070608 	Interpreted=0x5 	Expected=5
+#110: 	TestInstance=0x0f3020800 	Interpreted=0x5 	Expected=5
+#111: 	TestInstance=0x0f183899e00 	Interpreted=0x5 	Expected=5
+#112: 	TestInstance=0x1e3020c00 	Interpreted=0x5 	Expected=5
+#113: 	TestInstance=0x31e30b1c00 	Interpreted=0x5 	Expected=5
+#114: 	TestInstance=0x1e30f0c00 	Interpreted=0x5 	Expected=5
+#115: 	TestInstance=0x6183030e00 	Interpreted=0x5 	Expected=5
+#116: 	TestInstance=0x30c1021800 	Interpreted=0x5 	Expected=5
+#117: 	TestInstance=0x6081810c00 	Interpreted=0x5 	Expected=5
+#118: 	TestInstance=0x0c2020c00 	Interpreted=0x5 	Expected=5
+#119: 	TestInstance=0x3183811e00 	Interpreted=0x5 	Expected=5
+#120: 	TestInstance=0x0c103808e00 	Interpreted=0x5 	Expected=5
+#121: 	TestInstance=0x71e3851e00 	Interpreted=0x5 	Expected=5
+#122: 	TestInstance=0x7181830c00 	Interpreted=0x5 	Expected=5
+#123: 	TestInstance=0x1071038d0e00 	Interpreted=0x5 	Expected=5
+#124: 	TestInstance=0x6083c78c00 	Interpreted=0x6 	Expected=6
+#125: 	TestInstance=0x408103870000 	Interpreted=0x6 	Expected=6
+#126: 	TestInstance=0x106103078700 	Interpreted=0x6 	Expected=6
+#127: 	TestInstance=0x41c3870e00 	Interpreted=0x6 	Expected=6
+#128: 	TestInstance=0x0c107cf8e00 	Interpreted=0x6 	Expected=6
+#129: 	TestInstance=0x6083870400 	Interpreted=0x6 	Expected=6
+#130: 	TestInstance=0x2081060400 	Interpreted=0x6 	Expected=6
+#131: 	TestInstance=0x18387c6c700 	Interpreted=0x6 	Expected=6
+#132: 	TestInstance=0x20c107c78400 	Interpreted=0x6 	Expected=6
+#133: 	TestInstance=0x3c0820408 	Interpreted=0x7 	Expected=7
+#134: 	TestInstance=0x41c0820410 	Interpreted=0x7 	Expected=7
+#135: 	TestInstance=0x23e081060c 	Interpreted=0x7 	Expected=7
+#136: 	TestInstance=0x083c0830608 	Interpreted=0x7 	Expected=7
+#137: 	TestInstance=0x0e0820c10 	Interpreted=0x7 	Expected=7
+#138: 	TestInstance=0x1c0810200 	Interpreted=0x7 	Expected=7
+#139: 	TestInstance=0x0c1c3830408 	Interpreted=0x7 	Expected=7
+#140: 	TestInstance=0x1e6830c10 	Interpreted=0x7 	Expected=7
+#141: 	TestInstance=0x41c0830408 	Interpreted=0x7 	Expected=7
+#142: 	TestInstance=0x3e4c30c10 	Interpreted=0x7 	Expected=7
+#143: 	TestInstance=0x71c1820820 	Interpreted=0x7 	Expected=7
+#144: 	TestInstance=0x3e4c10204 	Interpreted=0x7 	Expected=7
+#145: 	TestInstance=0x0e1c1e71810 	Interpreted=0x7 	Expected=7
+#146: 	TestInstance=0x3c1830608 	Interpreted=0x7 	Expected=7
+#147: 	TestInstance=0x3c4810608 	Interpreted=0x7 	Expected=7
+#148: 	TestInstance=0x41e0830c10 	Interpreted=0x7 	Expected=7
+#149: 	TestInstance=0x0e160820820 	Interpreted=0x7 	Expected=7
+#150: 	TestInstance=0x0e043860408 	Interpreted=0x7 	Expected=7
+#151: 	TestInstance=0x23c0830408 	Interpreted=0x7 	Expected=7
+#152: 	TestInstance=0x21e0820810 	Interpreted=0x7 	Expected=7
+#153: 	TestInstance=0x1c3c0820408 	Interpreted=0x7 	Expected=7
+#154: 	TestInstance=0x3c0810608 	Interpreted=0x7 	Expected=7
+#155: 	TestInstance=0x3e7c10608 	Interpreted=0x7 	Expected=7
+#156: 	TestInstance=0x3160820c10 	Interpreted=0x7 	Expected=7
+#157: 	TestInstance=0x081c1830600 	Interpreted=0x7 	Expected=7
+#158: 	TestInstance=0x43c0830408 	Interpreted=0x7 	Expected=7
+#159: 	TestInstance=0x0c3c0830408 	Interpreted=0x7 	Expected=7
+#160: 	TestInstance=0x6123850e00 	Interpreted=0x8 	Expected=8
+#161: 	TestInstance=0x41c1060c00 	Interpreted=0x1 	Expected=8 	[Mismatch!]
+#162: 	TestInstance=0x3c7810204 	Interpreted=0x9 	Expected=9
+#163: 	TestInstance=0x41c3810204 	Interpreted=0x9 	Expected=9
+#164: 	TestInstance=0x6166c70600 	Interpreted=0x9 	Expected=9
+#165: 	TestInstance=0x0c103810204 	Interpreted=0x9 	Expected=9
+#166: 	TestInstance=0x0e3664d8e00 	Interpreted=0x0 	Expected=0
+#167: 	TestInstance=0x0e3e64d8e00 	Interpreted=0x0 	Expected=0
+#168: 	TestInstance=0x6142850c00 	Interpreted=0x0 	Expected=0
+#169: 	TestInstance=0x30a2c91c00 	Interpreted=0x0 	Expected=0
+#170: 	TestInstance=0x0e3e7488f00 	Interpreted=0x0 	Expected=0
+#171: 	TestInstance=0x61a24c8e00 	Interpreted=0x0 	Expected=0
+#172: 	TestInstance=0x31e64f0c00 	Interpreted=0x0 	Expected=0
+#173: 	TestInstance=0x60c2850e00 	Interpreted=0x0 	Expected=0
+#174: 	TestInstance=0x30f24d1c00 	Interpreted=0x0 	Expected=0
+#175: 	TestInstance=0x61e2c58e00 	Interpreted=0x0 	Expected=0
+#176: 	TestInstance=0x0e3e6cf9e00 	Interpreted=0x0 	Expected=0
+#177: 	TestInstance=0x60c2850c00 	Interpreted=0x0 	Expected=0
+#178: 	TestInstance=0x71a2499c00 	Interpreted=0x0 	Expected=0
+#179: 	TestInstance=0x71a24c9a00 	Interpreted=0x0 	Expected=0
+#180: 	TestInstance=0x31e6cf8c00 	Interpreted=0x0 	Expected=0
+Overall Error Rate = 4.44%
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [HLS 200-10] Analyzing design file 'digitrec.cpp' ... 
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'bitcount' into 'update_knn' (digitrec.cpp:86) automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'MODIFY1' (digitrec.cpp:33) in function 'digitrec' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'bitcount' (digitrec.cpp:54:31).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'update_knn' (digitrec.cpp:79).
+INFO: [XFORM 203-501] Unrolling loop 'INIT' (digitrec.cpp:26) in function 'digitrec' completely.
+INFO: [XFORM 203-501] Unrolling loop 'INIT2' (digitrec.cpp:30) in function 'digitrec' completely.
+INFO: [XFORM 203-501] Unrolling loop 'MODIFY2' (digitrec.cpp:36) in function 'digitrec' completely.
+INFO: [XFORM 203-501] Unrolling loop 'BITCOUNT' (digitrec.cpp:54) in function 'bitcount' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (digitrec.cpp:129) in function 'knn_vote' completely.
+INFO: [XFORM 203-501] Unrolling loop 'KNNVOTE2' (digitrec.cpp:133) in function 'knn_vote' completely.
+INFO: [XFORM 203-501] Unrolling loop 'UPDATEKNN' (digitrec.cpp:93) in function 'update_knn' completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.0' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.1' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.2' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.3' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.4' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.5' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.6' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.7' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.8' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.9' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'bitcount' (digitrec.cpp:61:2)...48 expression(s) balanced.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'min_distances[2].V' (digitrec.cpp:79).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'min_distances[1].V' (digitrec.cpp:79).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'min_distances[0].V' (digitrec.cpp:79).
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation 'min_distances[2].V.load' to function '_ssdm_op_Read.ap_auto.i6P' and 'call' operation to function '_ssdm_op_Write.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation to function '_ssdm_op_Write.ap_auto.i6P' and 'call' operation 'min_distances[2].V.load' to function '_ssdm_op_Read.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation 'min_distances[1].V.load' to function '_ssdm_op_Read.ap_auto.i6P' and 'call' operation to function '_ssdm_op_Write.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation to function '_ssdm_op_Write.ap_auto.i6P' and 'call' operation 'min_distances[1].V.load' to function '_ssdm_op_Read.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation 'min_distances[0].V.load' to function '_ssdm_op_Read.ap_auto.i6P' and 'call' operation to function '_ssdm_op_Write.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation to function '_ssdm_op_Write.ap_auto.i6P' and 'call' operation 'min_distances[0].V.load' to function '_ssdm_op_Read.ap_auto.i6P', this may lead to incorrect RTL generation.
+INFO: [HLS 200-111] Elapsed time: 24.84 seconds; current memory usage: 261 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'digitrec' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Scheduling module 'digitrec_bitcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'digitrec_bitcount'.
+INFO: [SCHED 204-61] Pipelining result: Target II: 1, Final II: 1, Depth: 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Elapsed time: 0.12 seconds; current memory usage: 261 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Exploring micro-architecture for module 'digitrec_bitcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Elapsed time: 0.33 seconds; current memory usage: 262 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Scheduling module 'digitrec_update_knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'digitrec_update_knn'.
+INFO: [SCHED 204-61] Pipelining result: Target II: 1, Final II: 1, Depth: 1.
+WARNING: [SCHED 204-21] Estimated clock period (10.7ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	wire read on port 'train_inst_V' (1.48 ns)
+	'xor' operation ('r.V', digitrec.cpp:86) (1.37 ns)
+	'call' operation ('distance.V', digitrec.cpp:86) to 'digitrec_bitcount' (5.87 ns)
+	'icmp' operation ('tmp_1', digitrec.cpp:98) (1.94 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Elapsed time: 0.36 seconds; current memory usage: 262 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Exploring micro-architecture for module 'digitrec_update_knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Elapsed time: 0.09 seconds; current memory usage: 262 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Scheduling module 'digitrec_knn_vote' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Elapsed time: 0.13 seconds; current memory usage: 262 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Exploring micro-architecture for module 'digitrec_knn_vote' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Elapsed time: 0.24 seconds; current memory usage: 263 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Scheduling module 'digitrec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-21] Estimated delay (10.7ns) of 'call' operation (digitrec.cpp:42) to 'digitrec_update_knn' exceeds the target cycle time (target cycle time: 10ns, clock uncertainty: 1.25ns, effective cycle time: 8.75ns).
+INFO: [SCHED 204-61] Pipelining loop 'MODIFY1'.
+INFO: [SCHED 204-61] Pipelining result: Target II: 1, Final II: 1, Depth: 3.
+WARNING: [SCHED 204-21] Estimated clock period (10.7ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	'call' operation (digitrec.cpp:42) to 'digitrec_update_knn' (10.7 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Elapsed time: 0.3 seconds; current memory usage: 263 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Exploring micro-architecture for module 'digitrec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Elapsed time: 0.46 seconds; current memory usage: 264 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'digitrec_bitcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'digitrec_bitcount'.
+INFO: [HLS 200-111] Elapsed time: 0.57 seconds; current memory usage: 265 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'digitrec_update_knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'digitrec_mux_3to1_sel2_6_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'digitrec_update_knn'.
+INFO: [HLS 200-111] Elapsed time: 0.47 seconds; current memory usage: 267 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'digitrec_knn_vote' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'digitrec_knn_vote'.
+INFO: [HLS 200-111] Elapsed time: 0.16 seconds; current memory usage: 268 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'digitrec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'digitrec/input_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'digitrec' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'digitrec'.
+INFO: [HLS 200-111] Elapsed time: 0.43 seconds; current memory usage: 270 MB.
+INFO: [RTMG 210-279] Implementing memory 'digitrec_training_data_V_rom' using block ROMs.
+INFO: [HLS 200-10] Finished generating all RTL models.
+INFO: [SYSC 207-301] Generating SystemC RTL for digitrec.
+INFO: [VHDL 208-304] Generating VHDL RTL for digitrec.
+INFO: [VLOG 209-307] Generating Verilog RTL for digitrec.
+INFO: [HLS 200-10] Opening and resetting project '/home/rjc422/ece5775_digitrec/4-nn.prj'.
+INFO: [HLS 200-10] Adding design file 'digitrec.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'digitrec_test.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'data' to the project
+INFO: [HLS 200-10] Opening and resetting solution '/home/rjc422/ece5775_digitrec/4-nn.prj/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+   Compiling ../../../../digitrec_test.cpp in debug mode
+   Compiling ../../../../digitrec.cpp in debug mode
+   Generating csim.exe
+#1: 	TestInstance=0x3041060800 	Interpreted=0x1 	Expected=1
+#2: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#3: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#4: 	TestInstance=0x2041020400 	Interpreted=0x1 	Expected=1
+#5: 	TestInstance=0x4081020600 	Interpreted=0x1 	Expected=1
+#6: 	TestInstance=0x6081020c00 	Interpreted=0x1 	Expected=1
+#7: 	TestInstance=0x20c1020800 	Interpreted=0x1 	Expected=1
+#8: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#9: 	TestInstance=0x6081020400 	Interpreted=0x1 	Expected=1
+#10: 	TestInstance=0x2081020400 	Interpreted=0x1 	Expected=1
+#11: 	TestInstance=0x0c081830600 	Interpreted=0x1 	Expected=1
+#12: 	TestInstance=0x1061861800 	Interpreted=0x1 	Expected=1
+#13: 	TestInstance=0x20c1060c00 	Interpreted=0x1 	Expected=1
+#14: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#15: 	TestInstance=0x20c1020400 	Interpreted=0x1 	Expected=1
+#16: 	TestInstance=0x20c1020400 	Interpreted=0x1 	Expected=1
+#17: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#18: 	TestInstance=0x3041860800 	Interpreted=0x1 	Expected=1
+#19: 	TestInstance=0x20c1860800 	Interpreted=0x1 	Expected=1
+#20: 	TestInstance=0x40c1020400 	Interpreted=0x1 	Expected=1
+#21: 	TestInstance=0x20c1060800 	Interpreted=0x1 	Expected=1
+#22: 	TestInstance=0x2041020c00 	Interpreted=0x1 	Expected=1
+#23: 	TestInstance=0x2041860c00 	Interpreted=0x1 	Expected=1
+#24: 	TestInstance=0x4183070300 	Interpreted=0x9 	Expected=1 	[Mismatch!]
+#25: 	TestInstance=0x0e1c1860f00 	Interpreted=0x2 	Expected=2
+#26: 	TestInstance=0x0e041060f00 	Interpreted=0x2 	Expected=2
+#27: 	TestInstance=0x0c3c1060e00 	Interpreted=0x2 	Expected=2
+#28: 	TestInstance=0x08181e70c00 	Interpreted=0x2 	Expected=2
+#29: 	TestInstance=0x08181078000 	Interpreted=0x2 	Expected=2
+#30: 	TestInstance=0x181078000 	Interpreted=0x2 	Expected=2
+#31: 	TestInstance=0x0c041078000 	Interpreted=0x2 	Expected=2
+#32: 	TestInstance=0x0e060c7be00 	Interpreted=0x2 	Expected=2
+#33: 	TestInstance=0x0e040820c00 	Interpreted=0x2 	Expected=2
+#34: 	TestInstance=0x3c7cb8000 	Interpreted=0x2 	Expected=2
+#35: 	TestInstance=0x0e260870f00 	Interpreted=0x2 	Expected=2
+#36: 	TestInstance=0x20e041060f00 	Interpreted=0x2 	Expected=2
+#37: 	TestInstance=0x30e78f0a00 	Interpreted=0x4 	Expected=2 	[Mismatch!]
+#38: 	TestInstance=0x0c040870c00 	Interpreted=0x2 	Expected=2
+#39: 	TestInstance=0x0f1618f9800 	Interpreted=0x2 	Expected=2
+#40: 	TestInstance=0x0e040831e00 	Interpreted=0x2 	Expected=2
+#41: 	TestInstance=0x20c1060200 	Interpreted=0x1 	Expected=2 	[Mismatch!]
+#42: 	TestInstance=0x6043870a00 	Interpreted=0x2 	Expected=2
+#43: 	TestInstance=0x61e0878c00 	Interpreted=0x2 	Expected=2
+#44: 	TestInstance=0x6141870200 	Interpreted=0x2 	Expected=2
+#45: 	TestInstance=0x0c08207c000 	Interpreted=0x2 	Expected=2
+#46: 	TestInstance=0x0e041040e00 	Interpreted=0x2 	Expected=2
+#47: 	TestInstance=0x0e0c10f9f00 	Interpreted=0x2 	Expected=2
+#48: 	TestInstance=0x70608f1a00 	Interpreted=0x2 	Expected=2
+#49: 	TestInstance=0x20a041079e00 	Interpreted=0x2 	Expected=2
+#50: 	TestInstance=0x0e061879e00 	Interpreted=0x2 	Expected=2
+#51: 	TestInstance=0x1e0c3060f80 	Interpreted=0x2 	Expected=2
+#52: 	TestInstance=0x0e041020e00 	Interpreted=0x2 	Expected=2
+#53: 	TestInstance=0x10f0208f1800 	Interpreted=0x2 	Expected=2
+#54: 	TestInstance=0x0e0c307c000 	Interpreted=0x2 	Expected=2
+#55: 	TestInstance=0x20e041040e00 	Interpreted=0x2 	Expected=2
+#56: 	TestInstance=0x0c0c1860300 	Interpreted=0x2 	Expected=2
+#57: 	TestInstance=0x60434b0e00 	Interpreted=0x2 	Expected=2
+#58: 	TestInstance=0x70e18f9c00 	Interpreted=0x2 	Expected=2
+#59: 	TestInstance=0x41c18f8900 	Interpreted=0x2 	Expected=2
+#60: 	TestInstance=0x105126cb1e00 	Interpreted=0x0 	Expected=2 	[Mismatch!]
+#61: 	TestInstance=0x2070618e1f00 	Interpreted=0x2 	Expected=2
+#62: 	TestInstance=0x0e06381111c 	Interpreted=0x3 	Expected=3
+#63: 	TestInstance=0x0e0c1c31c00 	Interpreted=0x3 	Expected=3
+#64: 	TestInstance=0x1c3c1858f00 	Interpreted=0x3 	Expected=3
+#65: 	TestInstance=0x0e143c19e00 	Interpreted=0x3 	Expected=3
+#66: 	TestInstance=0x0e0c1c19e00 	Interpreted=0x3 	Expected=3
+#67: 	TestInstance=0x40c3810a00 	Interpreted=0x3 	Expected=3
+#68: 	TestInstance=0x60c3030a08 	Interpreted=0x3 	Expected=3
+#69: 	TestInstance=0x0e041811e10 	Interpreted=0x3 	Expected=3
+#70: 	TestInstance=0x0e0c3010e00 	Interpreted=0x3 	Expected=3
+#71: 	TestInstance=0x6043811c00 	Interpreted=0x3 	Expected=3
+#72: 	TestInstance=0x1c083808e00 	Interpreted=0x3 	Expected=3
+#73: 	TestInstance=0x0e081811e00 	Interpreted=0x3 	Expected=3
+#74: 	TestInstance=0x0e041811e00 	Interpreted=0x3 	Expected=3
+#75: 	TestInstance=0x0c081010400 	Interpreted=0x3 	Expected=3
+#76: 	TestInstance=0x0f0c0cf9f00 	Interpreted=0x2 	Expected=3 	[Mismatch!]
+#77: 	TestInstance=0x0e1c3c19e00 	Interpreted=0x3 	Expected=3
+#78: 	TestInstance=0x6080810c00 	Interpreted=0x3 	Expected=3
+#79: 	TestInstance=0x1f063809e00 	Interpreted=0x3 	Expected=3
+#80: 	TestInstance=0x10142878100 	Interpreted=0x4 	Expected=4
+#81: 	TestInstance=0x091a3c90400 	Interpreted=0x4 	Expected=4
+#82: 	TestInstance=0x11438a0400 	Interpreted=0x4 	Expected=4
+#83: 	TestInstance=0x08147878200 	Interpreted=0x4 	Expected=4
+#84: 	TestInstance=0x21e48f0600 	Interpreted=0x9 	Expected=4 	[Mismatch!]
+#85: 	TestInstance=0x09143c70408 	Interpreted=0x4 	Expected=4
+#86: 	TestInstance=0x08363830600 	Interpreted=0x4 	Expected=4
+#87: 	TestInstance=0x11238a0000 	Interpreted=0x4 	Expected=4
+#88: 	TestInstance=0x08163830608 	Interpreted=0x4 	Expected=4
+#89: 	TestInstance=0x3147c70400 	Interpreted=0x4 	Expected=4
+#90: 	TestInstance=0x08142830400 	Interpreted=0x4 	Expected=4
+#91: 	TestInstance=0x2347830304 	Interpreted=0x4 	Expected=4
+#92: 	TestInstance=0x1162870400 	Interpreted=0x4 	Expected=4
+#93: 	TestInstance=0x1326cf0200 	Interpreted=0x4 	Expected=4
+#94: 	TestInstance=0x09648e0800 	Interpreted=0x4 	Expected=4
+#95: 	TestInstance=0x10a38b0400 	Interpreted=0x4 	Expected=4
+#96: 	TestInstance=0x1167860800 	Interpreted=0x4 	Expected=4
+#97: 	TestInstance=0x41c3830408 	Interpreted=0x9 	Expected=4 	[Mismatch!]
+#98: 	TestInstance=0x10364cf8300 	Interpreted=0x4 	Expected=4
+#99: 	TestInstance=0x41a7860800 	Interpreted=0x4 	Expected=4
+#100: 	TestInstance=0x1167820c10 	Interpreted=0x4 	Expected=4
+#101: 	TestInstance=0x0a1448f8200 	Interpreted=0x4 	Expected=4
+#102: 	TestInstance=0x0c2878200 	Interpreted=0x4 	Expected=4
+#103: 	TestInstance=0x1a7c70408 	Interpreted=0x4 	Expected=4
+#104: 	TestInstance=0x51c68f8600 	Interpreted=0x4 	Expected=4
+#105: 	TestInstance=0x11e7cd0200 	Interpreted=0x4 	Expected=4
+#106: 	TestInstance=0x7103810600 	Interpreted=0x5 	Expected=5
+#107: 	TestInstance=0x0f303c68700 	Interpreted=0x5 	Expected=5
+#108: 	TestInstance=0x0e303c48f00 	Interpreted=0x5 	Expected=5
+#109: 	TestInstance=0x23e6070608 	Interpreted=0x5 	Expected=5
+#110: 	TestInstance=0x0f3020800 	Interpreted=0x5 	Expected=5
+#111: 	TestInstance=0x0f183899e00 	Interpreted=0x5 	Expected=5
+#112: 	TestInstance=0x1e3020c00 	Interpreted=0x5 	Expected=5
+#113: 	TestInstance=0x31e30b1c00 	Interpreted=0x5 	Expected=5
+#114: 	TestInstance=0x1e30f0c00 	Interpreted=0x5 	Expected=5
+#115: 	TestInstance=0x6183030e00 	Interpreted=0x5 	Expected=5
+#116: 	TestInstance=0x30c1021800 	Interpreted=0x5 	Expected=5
+#117: 	TestInstance=0x6081810c00 	Interpreted=0x5 	Expected=5
+#118: 	TestInstance=0x0c2020c00 	Interpreted=0x5 	Expected=5
+#119: 	TestInstance=0x3183811e00 	Interpreted=0x5 	Expected=5
+#120: 	TestInstance=0x0c103808e00 	Interpreted=0x5 	Expected=5
+#121: 	TestInstance=0x71e3851e00 	Interpreted=0x5 	Expected=5
+#122: 	TestInstance=0x7181830c00 	Interpreted=0x5 	Expected=5
+#123: 	TestInstance=0x1071038d0e00 	Interpreted=0x5 	Expected=5
+#124: 	TestInstance=0x6083c78c00 	Interpreted=0x6 	Expected=6
+#125: 	TestInstance=0x408103870000 	Interpreted=0x6 	Expected=6
+#126: 	TestInstance=0x106103078700 	Interpreted=0x6 	Expected=6
+#127: 	TestInstance=0x41c3870e00 	Interpreted=0x6 	Expected=6
+#128: 	TestInstance=0x0c107cf8e00 	Interpreted=0x6 	Expected=6
+#129: 	TestInstance=0x6083870400 	Interpreted=0x6 	Expected=6
+#130: 	TestInstance=0x2081060400 	Interpreted=0x6 	Expected=6
+#131: 	TestInstance=0x18387c6c700 	Interpreted=0x6 	Expected=6
+#132: 	TestInstance=0x20c107c78400 	Interpreted=0x6 	Expected=6
+#133: 	TestInstance=0x3c0820408 	Interpreted=0x7 	Expected=7
+#134: 	TestInstance=0x41c0820410 	Interpreted=0x7 	Expected=7
+#135: 	TestInstance=0x23e081060c 	Interpreted=0x7 	Expected=7
+#136: 	TestInstance=0x083c0830608 	Interpreted=0x7 	Expected=7
+#137: 	TestInstance=0x0e0820c10 	Interpreted=0x7 	Expected=7
+#138: 	TestInstance=0x1c0810200 	Interpreted=0x7 	Expected=7
+#139: 	TestInstance=0x0c1c3830408 	Interpreted=0x7 	Expected=7
+#140: 	TestInstance=0x1e6830c10 	Interpreted=0x7 	Expected=7
+#141: 	TestInstance=0x41c0830408 	Interpreted=0x7 	Expected=7
+#142: 	TestInstance=0x3e4c30c10 	Interpreted=0x7 	Expected=7
+#143: 	TestInstance=0x71c1820820 	Interpreted=0x7 	Expected=7
+#144: 	TestInstance=0x3e4c10204 	Interpreted=0x7 	Expected=7
+#145: 	TestInstance=0x0e1c1e71810 	Interpreted=0x7 	Expected=7
+#146: 	TestInstance=0x3c1830608 	Interpreted=0x7 	Expected=7
+#147: 	TestInstance=0x3c4810608 	Interpreted=0x7 	Expected=7
+#148: 	TestInstance=0x41e0830c10 	Interpreted=0x7 	Expected=7
+#149: 	TestInstance=0x0e160820820 	Interpreted=0x7 	Expected=7
+#150: 	TestInstance=0x0e043860408 	Interpreted=0x7 	Expected=7
+#151: 	TestInstance=0x23c0830408 	Interpreted=0x7 	Expected=7
+#152: 	TestInstance=0x21e0820810 	Interpreted=0x7 	Expected=7
+#153: 	TestInstance=0x1c3c0820408 	Interpreted=0x7 	Expected=7
+#154: 	TestInstance=0x3c0810608 	Interpreted=0x7 	Expected=7
+#155: 	TestInstance=0x3e7c10608 	Interpreted=0x7 	Expected=7
+#156: 	TestInstance=0x3160820c10 	Interpreted=0x7 	Expected=7
+#157: 	TestInstance=0x081c1830600 	Interpreted=0x7 	Expected=7
+#158: 	TestInstance=0x43c0830408 	Interpreted=0x7 	Expected=7
+#159: 	TestInstance=0x0c3c0830408 	Interpreted=0x7 	Expected=7
+#160: 	TestInstance=0x6123850e00 	Interpreted=0x8 	Expected=8
+#161: 	TestInstance=0x41c1060c00 	Interpreted=0x1 	Expected=8 	[Mismatch!]
+#162: 	TestInstance=0x3c7810204 	Interpreted=0x9 	Expected=9
+#163: 	TestInstance=0x41c3810204 	Interpreted=0x9 	Expected=9
+#164: 	TestInstance=0x6166c70600 	Interpreted=0x9 	Expected=9
+#165: 	TestInstance=0x0c103810204 	Interpreted=0x9 	Expected=9
+#166: 	TestInstance=0x0e3664d8e00 	Interpreted=0x0 	Expected=0
+#167: 	TestInstance=0x0e3e64d8e00 	Interpreted=0x0 	Expected=0
+#168: 	TestInstance=0x6142850c00 	Interpreted=0x0 	Expected=0
+#169: 	TestInstance=0x30a2c91c00 	Interpreted=0x0 	Expected=0
+#170: 	TestInstance=0x0e3e7488f00 	Interpreted=0x0 	Expected=0
+#171: 	TestInstance=0x61a24c8e00 	Interpreted=0x0 	Expected=0
+#172: 	TestInstance=0x31e64f0c00 	Interpreted=0x0 	Expected=0
+#173: 	TestInstance=0x60c2850e00 	Interpreted=0x0 	Expected=0
+#174: 	TestInstance=0x30f24d1c00 	Interpreted=0x0 	Expected=0
+#175: 	TestInstance=0x61e2c58e00 	Interpreted=0x0 	Expected=0
+#176: 	TestInstance=0x0e3e6cf9e00 	Interpreted=0x0 	Expected=0
+#177: 	TestInstance=0x60c2850c00 	Interpreted=0x0 	Expected=0
+#178: 	TestInstance=0x71a2499c00 	Interpreted=0x0 	Expected=0
+#179: 	TestInstance=0x71a24c9a00 	Interpreted=0x0 	Expected=0
+#180: 	TestInstance=0x31e6cf8c00 	Interpreted=0x0 	Expected=0
+Overall Error Rate = 4.44%
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [HLS 200-10] Analyzing design file 'digitrec.cpp' ... 
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'bitcount' into 'update_knn' (digitrec.cpp:86) automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'MODIFY1' (digitrec.cpp:33) in function 'digitrec' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'bitcount' (digitrec.cpp:54:31).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'update_knn' (digitrec.cpp:79).
+INFO: [XFORM 203-501] Unrolling loop 'INIT' (digitrec.cpp:26) in function 'digitrec' completely.
+INFO: [XFORM 203-501] Unrolling loop 'INIT2' (digitrec.cpp:30) in function 'digitrec' completely.
+INFO: [XFORM 203-501] Unrolling loop 'MODIFY2' (digitrec.cpp:36) in function 'digitrec' completely.
+INFO: [XFORM 203-501] Unrolling loop 'BITCOUNT' (digitrec.cpp:54) in function 'bitcount' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (digitrec.cpp:129) in function 'knn_vote' completely.
+INFO: [XFORM 203-501] Unrolling loop 'KNNVOTE2' (digitrec.cpp:133) in function 'knn_vote' completely.
+INFO: [XFORM 203-501] Unrolling loop 'UPDATEKNN' (digitrec.cpp:93) in function 'update_knn' completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.0' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.1' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.2' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.3' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.4' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.5' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.6' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.7' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.8' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.9' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'knn_vote' (digitrec.cpp:114)...30 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'bitcount' (digitrec.cpp:61:2)...48 expression(s) balanced.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'min_distances[0].V' (digitrec.cpp:79).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'min_distances[3].V' (digitrec.cpp:79).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'min_distances[2].V' (digitrec.cpp:79).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'min_distances[1].V' (digitrec.cpp:79).
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation 'min_distances[0].V.load' to function '_ssdm_op_Read.ap_auto.i6P' and 'call' operation to function '_ssdm_op_Write.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation to function '_ssdm_op_Write.ap_auto.i6P' and 'call' operation 'min_distances[0].V.load' to function '_ssdm_op_Read.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation 'min_distances[3].V.load' to function '_ssdm_op_Read.ap_auto.i6P' and 'call' operation to function '_ssdm_op_Write.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation to function '_ssdm_op_Write.ap_auto.i6P' and 'call' operation 'min_distances[3].V.load' to function '_ssdm_op_Read.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation 'min_distances[2].V.load' to function '_ssdm_op_Read.ap_auto.i6P' and 'call' operation to function '_ssdm_op_Write.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation to function '_ssdm_op_Write.ap_auto.i6P' and 'call' operation 'min_distances[2].V.load' to function '_ssdm_op_Read.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation 'min_distances[1].V.load' to function '_ssdm_op_Read.ap_auto.i6P' and 'call' operation to function '_ssdm_op_Write.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation to function '_ssdm_op_Write.ap_auto.i6P' and 'call' operation 'min_distances[1].V.load' to function '_ssdm_op_Read.ap_auto.i6P', this may lead to incorrect RTL generation.
+INFO: [HLS 200-111] Elapsed time: 25.91 seconds; current memory usage: 323 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'digitrec' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Scheduling module 'digitrec_bitcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'digitrec_bitcount'.
+INFO: [SCHED 204-61] Pipelining result: Target II: 1, Final II: 1, Depth: 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Elapsed time: 0.14 seconds; current memory usage: 323 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Exploring micro-architecture for module 'digitrec_bitcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Elapsed time: 0.36 seconds; current memory usage: 324 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Scheduling module 'digitrec_update_knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'digitrec_update_knn'.
+INFO: [SCHED 204-61] Pipelining result: Target II: 1, Final II: 1, Depth: 2.
+WARNING: [SCHED 204-21] Estimated clock period (13.5ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	wire read on port 'min_distances_0_V' (1.48 ns)
+	'icmp' operation ('tmp_3_1', digitrec.cpp:95) (1.94 ns)
+	'select' operation ('p_030_1_1', digitrec.cpp:95) (1.37 ns)
+	'icmp' operation ('tmp_3_2', digitrec.cpp:95) (1.94 ns)
+	'select' operation ('p_030_1_2', digitrec.cpp:95) (0 ns)
+	'icmp' operation ('tmp_3_3', digitrec.cpp:95) (1.94 ns)
+	'or' operation ('tmp_9', digitrec.cpp:95) (0 ns)
+	'select' operation ('p_026_1_3', digitrec.cpp:95) (1.37 ns)
+	'mux' operation ('tmp', digitrec.cpp:95) (1.57 ns)
+	'icmp' operation ('tmp_1', digitrec.cpp:98) (1.94 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Elapsed time: 0.37 seconds; current memory usage: 324 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Exploring micro-architecture for module 'digitrec_update_knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Elapsed time: 0.09 seconds; current memory usage: 324 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Scheduling module 'digitrec_knn_vote' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Elapsed time: 0.15 seconds; current memory usage: 324 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Exploring micro-architecture for module 'digitrec_knn_vote' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Elapsed time: 0.31 seconds; current memory usage: 325 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Scheduling module 'digitrec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-21] Estimated delay (13.5ns) of 'call' operation (digitrec.cpp:42) to 'digitrec_update_knn' exceeds the target cycle time (target cycle time: 10ns, clock uncertainty: 1.25ns, effective cycle time: 8.75ns).
+INFO: [SCHED 204-61] Pipelining loop 'MODIFY1'.
+INFO: [SCHED 204-61] Pipelining result: Target II: 1, Final II: 1, Depth: 4.
+WARNING: [SCHED 204-21] Estimated clock period (13.5ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	'call' operation (digitrec.cpp:42) to 'digitrec_update_knn' (13.5 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Elapsed time: 0.37 seconds; current memory usage: 325 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Exploring micro-architecture for module 'digitrec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Elapsed time: 0.51 seconds; current memory usage: 326 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'digitrec_bitcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'digitrec_bitcount'.
+INFO: [HLS 200-111] Elapsed time: 0.72 seconds; current memory usage: 327 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'digitrec_update_knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'digitrec_mux_4to1_sel2_6_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'digitrec_update_knn'.
+INFO: [HLS 200-111] Elapsed time: 0.43 seconds; current memory usage: 329 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'digitrec_knn_vote' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'digitrec_knn_vote'.
+INFO: [HLS 200-111] Elapsed time: 0.22 seconds; current memory usage: 330 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'digitrec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'digitrec/input_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'digitrec' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'digitrec'.
+INFO: [HLS 200-111] Elapsed time: 0.55 seconds; current memory usage: 334 MB.
+INFO: [RTMG 210-279] Implementing memory 'digitrec_training_data_V_rom' using block ROMs.
+INFO: [HLS 200-10] Finished generating all RTL models.
+INFO: [SYSC 207-301] Generating SystemC RTL for digitrec.
+INFO: [VHDL 208-304] Generating VHDL RTL for digitrec.
+INFO: [VLOG 209-307] Generating Verilog RTL for digitrec.
+INFO: [HLS 200-10] Opening and resetting project '/home/rjc422/ece5775_digitrec/5-nn.prj'.
+INFO: [HLS 200-10] Adding design file 'digitrec.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'digitrec_test.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'data' to the project
+INFO: [HLS 200-10] Opening and resetting solution '/home/rjc422/ece5775_digitrec/5-nn.prj/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+   Compiling ../../../../digitrec_test.cpp in debug mode
+   Compiling ../../../../digitrec.cpp in debug mode
+   Generating csim.exe
+#1: 	TestInstance=0x3041060800 	Interpreted=0x1 	Expected=1
+#2: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#3: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#4: 	TestInstance=0x2041020400 	Interpreted=0x1 	Expected=1
+#5: 	TestInstance=0x4081020600 	Interpreted=0x1 	Expected=1
+#6: 	TestInstance=0x6081020c00 	Interpreted=0x1 	Expected=1
+#7: 	TestInstance=0x20c1020800 	Interpreted=0x1 	Expected=1
+#8: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#9: 	TestInstance=0x6081020400 	Interpreted=0x1 	Expected=1
+#10: 	TestInstance=0x2081020400 	Interpreted=0x1 	Expected=1
+#11: 	TestInstance=0x0c081830600 	Interpreted=0x1 	Expected=1
+#12: 	TestInstance=0x1061861800 	Interpreted=0x1 	Expected=1
+#13: 	TestInstance=0x20c1060c00 	Interpreted=0x1 	Expected=1
+#14: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#15: 	TestInstance=0x20c1020400 	Interpreted=0x1 	Expected=1
+#16: 	TestInstance=0x20c1020400 	Interpreted=0x1 	Expected=1
+#17: 	TestInstance=0x4081020400 	Interpreted=0x1 	Expected=1
+#18: 	TestInstance=0x3041860800 	Interpreted=0x1 	Expected=1
+#19: 	TestInstance=0x20c1860800 	Interpreted=0x1 	Expected=1
+#20: 	TestInstance=0x40c1020400 	Interpreted=0x1 	Expected=1
+#21: 	TestInstance=0x20c1060800 	Interpreted=0x1 	Expected=1
+#22: 	TestInstance=0x2041020c00 	Interpreted=0x1 	Expected=1
+#23: 	TestInstance=0x2041860c00 	Interpreted=0x1 	Expected=1
+#24: 	TestInstance=0x4183070300 	Interpreted=0x9 	Expected=1 	[Mismatch!]
+#25: 	TestInstance=0x0e1c1860f00 	Interpreted=0x2 	Expected=2
+#26: 	TestInstance=0x0e041060f00 	Interpreted=0x2 	Expected=2
+#27: 	TestInstance=0x0c3c1060e00 	Interpreted=0x2 	Expected=2
+#28: 	TestInstance=0x08181e70c00 	Interpreted=0x2 	Expected=2
+#29: 	TestInstance=0x08181078000 	Interpreted=0x2 	Expected=2
+#30: 	TestInstance=0x181078000 	Interpreted=0x2 	Expected=2
+#31: 	TestInstance=0x0c041078000 	Interpreted=0x2 	Expected=2
+#32: 	TestInstance=0x0e060c7be00 	Interpreted=0x2 	Expected=2
+#33: 	TestInstance=0x0e040820c00 	Interpreted=0x2 	Expected=2
+#34: 	TestInstance=0x3c7cb8000 	Interpreted=0x2 	Expected=2
+#35: 	TestInstance=0x0e260870f00 	Interpreted=0x2 	Expected=2
+#36: 	TestInstance=0x20e041060f00 	Interpreted=0x2 	Expected=2
+#37: 	TestInstance=0x30e78f0a00 	Interpreted=0x4 	Expected=2 	[Mismatch!]
+#38: 	TestInstance=0x0c040870c00 	Interpreted=0x2 	Expected=2
+#39: 	TestInstance=0x0f1618f9800 	Interpreted=0x2 	Expected=2
+#40: 	TestInstance=0x0e040831e00 	Interpreted=0x2 	Expected=2
+#41: 	TestInstance=0x20c1060200 	Interpreted=0x1 	Expected=2 	[Mismatch!]
+#42: 	TestInstance=0x6043870a00 	Interpreted=0x2 	Expected=2
+#43: 	TestInstance=0x61e0878c00 	Interpreted=0x2 	Expected=2
+#44: 	TestInstance=0x6141870200 	Interpreted=0x4 	Expected=2 	[Mismatch!]
+#45: 	TestInstance=0x0c08207c000 	Interpreted=0x2 	Expected=2
+#46: 	TestInstance=0x0e041040e00 	Interpreted=0x2 	Expected=2
+#47: 	TestInstance=0x0e0c10f9f00 	Interpreted=0x2 	Expected=2
+#48: 	TestInstance=0x70608f1a00 	Interpreted=0x2 	Expected=2
+#49: 	TestInstance=0x20a041079e00 	Interpreted=0x2 	Expected=2
+#50: 	TestInstance=0x0e061879e00 	Interpreted=0x2 	Expected=2
+#51: 	TestInstance=0x1e0c3060f80 	Interpreted=0x2 	Expected=2
+#52: 	TestInstance=0x0e041020e00 	Interpreted=0x2 	Expected=2
+#53: 	TestInstance=0x10f0208f1800 	Interpreted=0x2 	Expected=2
+#54: 	TestInstance=0x0e0c307c000 	Interpreted=0x2 	Expected=2
+#55: 	TestInstance=0x20e041040e00 	Interpreted=0x2 	Expected=2
+#56: 	TestInstance=0x0c0c1860300 	Interpreted=0x2 	Expected=2
+#57: 	TestInstance=0x60434b0e00 	Interpreted=0x2 	Expected=2
+#58: 	TestInstance=0x70e18f9c00 	Interpreted=0x2 	Expected=2
+#59: 	TestInstance=0x41c18f8900 	Interpreted=0x2 	Expected=2
+#60: 	TestInstance=0x105126cb1e00 	Interpreted=0x0 	Expected=2 	[Mismatch!]
+#61: 	TestInstance=0x2070618e1f00 	Interpreted=0x2 	Expected=2
+#62: 	TestInstance=0x0e06381111c 	Interpreted=0x3 	Expected=3
+#63: 	TestInstance=0x0e0c1c31c00 	Interpreted=0x3 	Expected=3
+#64: 	TestInstance=0x1c3c1858f00 	Interpreted=0x3 	Expected=3
+#65: 	TestInstance=0x0e143c19e00 	Interpreted=0x3 	Expected=3
+#66: 	TestInstance=0x0e0c1c19e00 	Interpreted=0x3 	Expected=3
+#67: 	TestInstance=0x40c3810a00 	Interpreted=0x3 	Expected=3
+#68: 	TestInstance=0x60c3030a08 	Interpreted=0x3 	Expected=3
+#69: 	TestInstance=0x0e041811e10 	Interpreted=0x3 	Expected=3
+#70: 	TestInstance=0x0e0c3010e00 	Interpreted=0x3 	Expected=3
+#71: 	TestInstance=0x6043811c00 	Interpreted=0x3 	Expected=3
+#72: 	TestInstance=0x1c083808e00 	Interpreted=0x3 	Expected=3
+#73: 	TestInstance=0x0e081811e00 	Interpreted=0x3 	Expected=3
+#74: 	TestInstance=0x0e041811e00 	Interpreted=0x3 	Expected=3
+#75: 	TestInstance=0x0c081010400 	Interpreted=0x3 	Expected=3
+#76: 	TestInstance=0x0f0c0cf9f00 	Interpreted=0x2 	Expected=3 	[Mismatch!]
+#77: 	TestInstance=0x0e1c3c19e00 	Interpreted=0x3 	Expected=3
+#78: 	TestInstance=0x6080810c00 	Interpreted=0x3 	Expected=3
+#79: 	TestInstance=0x1f063809e00 	Interpreted=0x3 	Expected=3
+#80: 	TestInstance=0x10142878100 	Interpreted=0x4 	Expected=4
+#81: 	TestInstance=0x091a3c90400 	Interpreted=0x4 	Expected=4
+#82: 	TestInstance=0x11438a0400 	Interpreted=0x4 	Expected=4
+#83: 	TestInstance=0x08147878200 	Interpreted=0x4 	Expected=4
+#84: 	TestInstance=0x21e48f0600 	Interpreted=0x9 	Expected=4 	[Mismatch!]
+#85: 	TestInstance=0x09143c70408 	Interpreted=0x4 	Expected=4
+#86: 	TestInstance=0x08363830600 	Interpreted=0x4 	Expected=4
+#87: 	TestInstance=0x11238a0000 	Interpreted=0x4 	Expected=4
+#88: 	TestInstance=0x08163830608 	Interpreted=0x4 	Expected=4
+#89: 	TestInstance=0x3147c70400 	Interpreted=0x4 	Expected=4
+#90: 	TestInstance=0x08142830400 	Interpreted=0x4 	Expected=4
+#91: 	TestInstance=0x2347830304 	Interpreted=0x4 	Expected=4
+#92: 	TestInstance=0x1162870400 	Interpreted=0x4 	Expected=4
+#93: 	TestInstance=0x1326cf0200 	Interpreted=0x4 	Expected=4
+#94: 	TestInstance=0x09648e0800 	Interpreted=0x4 	Expected=4
+#95: 	TestInstance=0x10a38b0400 	Interpreted=0x4 	Expected=4
+#96: 	TestInstance=0x1167860800 	Interpreted=0x4 	Expected=4
+#97: 	TestInstance=0x41c3830408 	Interpreted=0x9 	Expected=4 	[Mismatch!]
+#98: 	TestInstance=0x10364cf8300 	Interpreted=0x4 	Expected=4
+#99: 	TestInstance=0x41a7860800 	Interpreted=0x4 	Expected=4
+#100: 	TestInstance=0x1167820c10 	Interpreted=0x4 	Expected=4
+#101: 	TestInstance=0x0a1448f8200 	Interpreted=0x4 	Expected=4
+#102: 	TestInstance=0x0c2878200 	Interpreted=0x4 	Expected=4
+#103: 	TestInstance=0x1a7c70408 	Interpreted=0x4 	Expected=4
+#104: 	TestInstance=0x51c68f8600 	Interpreted=0x4 	Expected=4
+#105: 	TestInstance=0x11e7cd0200 	Interpreted=0x4 	Expected=4
+#106: 	TestInstance=0x7103810600 	Interpreted=0x5 	Expected=5
+#107: 	TestInstance=0x0f303c68700 	Interpreted=0x5 	Expected=5
+#108: 	TestInstance=0x0e303c48f00 	Interpreted=0x5 	Expected=5
+#109: 	TestInstance=0x23e6070608 	Interpreted=0x5 	Expected=5
+#110: 	TestInstance=0x0f3020800 	Interpreted=0x5 	Expected=5
+#111: 	TestInstance=0x0f183899e00 	Interpreted=0x5 	Expected=5
+#112: 	TestInstance=0x1e3020c00 	Interpreted=0x5 	Expected=5
+#113: 	TestInstance=0x31e30b1c00 	Interpreted=0x5 	Expected=5
+#114: 	TestInstance=0x1e30f0c00 	Interpreted=0x5 	Expected=5
+#115: 	TestInstance=0x6183030e00 	Interpreted=0x5 	Expected=5
+#116: 	TestInstance=0x30c1021800 	Interpreted=0x5 	Expected=5
+#117: 	TestInstance=0x6081810c00 	Interpreted=0x5 	Expected=5
+#118: 	TestInstance=0x0c2020c00 	Interpreted=0x5 	Expected=5
+#119: 	TestInstance=0x3183811e00 	Interpreted=0x5 	Expected=5
+#120: 	TestInstance=0x0c103808e00 	Interpreted=0x5 	Expected=5
+#121: 	TestInstance=0x71e3851e00 	Interpreted=0x5 	Expected=5
+#122: 	TestInstance=0x7181830c00 	Interpreted=0x5 	Expected=5
+#123: 	TestInstance=0x1071038d0e00 	Interpreted=0x5 	Expected=5
+#124: 	TestInstance=0x6083c78c00 	Interpreted=0x6 	Expected=6
+#125: 	TestInstance=0x408103870000 	Interpreted=0x6 	Expected=6
+#126: 	TestInstance=0x106103078700 	Interpreted=0x6 	Expected=6
+#127: 	TestInstance=0x41c3870e00 	Interpreted=0x6 	Expected=6
+#128: 	TestInstance=0x0c107cf8e00 	Interpreted=0x6 	Expected=6
+#129: 	TestInstance=0x6083870400 	Interpreted=0x6 	Expected=6
+#130: 	TestInstance=0x2081060400 	Interpreted=0x6 	Expected=6
+#131: 	TestInstance=0x18387c6c700 	Interpreted=0x6 	Expected=6
+#132: 	TestInstance=0x20c107c78400 	Interpreted=0x6 	Expected=6
+#133: 	TestInstance=0x3c0820408 	Interpreted=0x7 	Expected=7
+#134: 	TestInstance=0x41c0820410 	Interpreted=0x7 	Expected=7
+#135: 	TestInstance=0x23e081060c 	Interpreted=0x7 	Expected=7
+#136: 	TestInstance=0x083c0830608 	Interpreted=0x7 	Expected=7
+#137: 	TestInstance=0x0e0820c10 	Interpreted=0x7 	Expected=7
+#138: 	TestInstance=0x1c0810200 	Interpreted=0x7 	Expected=7
+#139: 	TestInstance=0x0c1c3830408 	Interpreted=0x9 	Expected=7 	[Mismatch!]
+#140: 	TestInstance=0x1e6830c10 	Interpreted=0x7 	Expected=7
+#141: 	TestInstance=0x41c0830408 	Interpreted=0x7 	Expected=7
+#142: 	TestInstance=0x3e4c30c10 	Interpreted=0x7 	Expected=7
+#143: 	TestInstance=0x71c1820820 	Interpreted=0x7 	Expected=7
+#144: 	TestInstance=0x3e4c10204 	Interpreted=0x7 	Expected=7
+#145: 	TestInstance=0x0e1c1e71810 	Interpreted=0x7 	Expected=7
+#146: 	TestInstance=0x3c1830608 	Interpreted=0x7 	Expected=7
+#147: 	TestInstance=0x3c4810608 	Interpreted=0x7 	Expected=7
+#148: 	TestInstance=0x41e0830c10 	Interpreted=0x7 	Expected=7
+#149: 	TestInstance=0x0e160820820 	Interpreted=0x7 	Expected=7
+#150: 	TestInstance=0x0e043860408 	Interpreted=0x7 	Expected=7
+#151: 	TestInstance=0x23c0830408 	Interpreted=0x7 	Expected=7
+#152: 	TestInstance=0x21e0820810 	Interpreted=0x7 	Expected=7
+#153: 	TestInstance=0x1c3c0820408 	Interpreted=0x7 	Expected=7
+#154: 	TestInstance=0x3c0810608 	Interpreted=0x7 	Expected=7
+#155: 	TestInstance=0x3e7c10608 	Interpreted=0x7 	Expected=7
+#156: 	TestInstance=0x3160820c10 	Interpreted=0x7 	Expected=7
+#157: 	TestInstance=0x081c1830600 	Interpreted=0x7 	Expected=7
+#158: 	TestInstance=0x43c0830408 	Interpreted=0x7 	Expected=7
+#159: 	TestInstance=0x0c3c0830408 	Interpreted=0x7 	Expected=7
+#160: 	TestInstance=0x6123850e00 	Interpreted=0x8 	Expected=8
+#161: 	TestInstance=0x41c1060c00 	Interpreted=0x1 	Expected=8 	[Mismatch!]
+#162: 	TestInstance=0x3c7810204 	Interpreted=0x9 	Expected=9
+#163: 	TestInstance=0x41c3810204 	Interpreted=0x9 	Expected=9
+#164: 	TestInstance=0x6166c70600 	Interpreted=0x9 	Expected=9
+#165: 	TestInstance=0x0c103810204 	Interpreted=0x9 	Expected=9
+#166: 	TestInstance=0x0e3664d8e00 	Interpreted=0x0 	Expected=0
+#167: 	TestInstance=0x0e3e64d8e00 	Interpreted=0x0 	Expected=0
+#168: 	TestInstance=0x6142850c00 	Interpreted=0x0 	Expected=0
+#169: 	TestInstance=0x30a2c91c00 	Interpreted=0x0 	Expected=0
+#170: 	TestInstance=0x0e3e7488f00 	Interpreted=0x0 	Expected=0
+#171: 	TestInstance=0x61a24c8e00 	Interpreted=0x0 	Expected=0
+#172: 	TestInstance=0x31e64f0c00 	Interpreted=0x0 	Expected=0
+#173: 	TestInstance=0x60c2850e00 	Interpreted=0x0 	Expected=0
+#174: 	TestInstance=0x30f24d1c00 	Interpreted=0x0 	Expected=0
+#175: 	TestInstance=0x61e2c58e00 	Interpreted=0x0 	Expected=0
+#176: 	TestInstance=0x0e3e6cf9e00 	Interpreted=0x0 	Expected=0
+#177: 	TestInstance=0x60c2850c00 	Interpreted=0x0 	Expected=0
+#178: 	TestInstance=0x71a2499c00 	Interpreted=0x0 	Expected=0
+#179: 	TestInstance=0x71a24c9a00 	Interpreted=0x0 	Expected=0
+#180: 	TestInstance=0x31e6cf8c00 	Interpreted=0x0 	Expected=0
+Overall Error Rate = 5.56%
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [HLS 200-10] Analyzing design file 'digitrec.cpp' ... 
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'bitcount' into 'update_knn' (digitrec.cpp:86) automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'MODIFY1' (digitrec.cpp:33) in function 'digitrec' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'bitcount' (digitrec.cpp:54:31).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'update_knn' (digitrec.cpp:79).
+INFO: [XFORM 203-501] Unrolling loop 'INIT' (digitrec.cpp:26) in function 'digitrec' completely.
+INFO: [XFORM 203-501] Unrolling loop 'INIT2' (digitrec.cpp:30) in function 'digitrec' completely.
+INFO: [XFORM 203-501] Unrolling loop 'MODIFY2' (digitrec.cpp:36) in function 'digitrec' completely.
+INFO: [XFORM 203-501] Unrolling loop 'BITCOUNT' (digitrec.cpp:54) in function 'bitcount' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (digitrec.cpp:129) in function 'knn_vote' completely.
+INFO: [XFORM 203-501] Unrolling loop 'KNNVOTE2' (digitrec.cpp:133) in function 'knn_vote' completely.
+INFO: [XFORM 203-501] Unrolling loop 'UPDATEKNN' (digitrec.cpp:93) in function 'update_knn' completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.0' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.1' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.2' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.3' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.4' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.5' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.6' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.7' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.8' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knn_set.V.9' (digitrec.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'knn_vote' (digitrec.cpp:114)...67 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'bitcount' (digitrec.cpp:61:2)...48 expression(s) balanced.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'min_distances[3].V' (digitrec.cpp:79).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'min_distances[4].V' (digitrec.cpp:79).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'min_distances[0].V' (digitrec.cpp:79).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'min_distances[1].V' (digitrec.cpp:79).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'min_distances[2].V' (digitrec.cpp:79).
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation 'min_distances[3].V.load' to function '_ssdm_op_Read.ap_auto.i6P' and 'call' operation to function '_ssdm_op_Write.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation to function '_ssdm_op_Write.ap_auto.i6P' and 'call' operation 'min_distances[3].V.load' to function '_ssdm_op_Read.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation 'min_distances[4].V.load' to function '_ssdm_op_Read.ap_auto.i6P' and 'call' operation to function '_ssdm_op_Write.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation to function '_ssdm_op_Write.ap_auto.i6P' and 'call' operation 'min_distances[4].V.load' to function '_ssdm_op_Read.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation 'min_distances[0].V.load' to function '_ssdm_op_Read.ap_auto.i6P' and 'call' operation to function '_ssdm_op_Write.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation to function '_ssdm_op_Write.ap_auto.i6P' and 'call' operation 'min_distances[0].V.load' to function '_ssdm_op_Read.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation 'min_distances[1].V.load' to function '_ssdm_op_Read.ap_auto.i6P' and 'call' operation to function '_ssdm_op_Write.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation to function '_ssdm_op_Write.ap_auto.i6P' and 'call' operation 'min_distances[1].V.load' to function '_ssdm_op_Read.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation 'min_distances[2].V.load' to function '_ssdm_op_Read.ap_auto.i6P' and 'call' operation to function '_ssdm_op_Write.ap_auto.i6P', this may lead to incorrect RTL generation.
+WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation to function '_ssdm_op_Write.ap_auto.i6P' and 'call' operation 'min_distances[2].V.load' to function '_ssdm_op_Read.ap_auto.i6P', this may lead to incorrect RTL generation.
+INFO: [HLS 200-111] Elapsed time: 26.77 seconds; current memory usage: 382 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'digitrec' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Scheduling module 'digitrec_bitcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'digitrec_bitcount'.
+INFO: [SCHED 204-61] Pipelining result: Target II: 1, Final II: 1, Depth: 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Elapsed time: 0.16 seconds; current memory usage: 382 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Exploring micro-architecture for module 'digitrec_bitcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Elapsed time: 0.37 seconds; current memory usage: 383 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Scheduling module 'digitrec_update_knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'digitrec_update_knn'.
+INFO: [SCHED 204-61] Pipelining result: Target II: 1, Final II: 1, Depth: 2.
+WARNING: [SCHED 204-21] Estimated clock period (17.2ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	wire read on port 'min_distances_0_V' (1.48 ns)
+	'icmp' operation ('tmp_3_1', digitrec.cpp:95) (1.94 ns)
+	'select' operation ('p_030_1_1', digitrec.cpp:95) (1.37 ns)
+	'icmp' operation ('tmp_3_2', digitrec.cpp:95) (1.94 ns)
+	'select' operation ('p_030_1_2', digitrec.cpp:95) (1.37 ns)
+	'icmp' operation ('tmp_3_3', digitrec.cpp:95) (1.94 ns)
+	'select' operation ('p_030_1_3', digitrec.cpp:95) (0 ns)
+	'icmp' operation ('tmp_3_4', digitrec.cpp:95) (1.94 ns)
+	'or' operation ('tmp_3', digitrec.cpp:95) (0 ns)
+	'select' operation ('p_026_1_4', digitrec.cpp:95) (1.37 ns)
+	'mux' operation ('tmp', digitrec.cpp:95) (1.94 ns)
+	'icmp' operation ('tmp_1', digitrec.cpp:98) (1.94 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Elapsed time: 0.39 seconds; current memory usage: 383 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Exploring micro-architecture for module 'digitrec_update_knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Elapsed time: 0.11 seconds; current memory usage: 383 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Scheduling module 'digitrec_knn_vote' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Elapsed time: 0.2 seconds; current memory usage: 383 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Exploring micro-architecture for module 'digitrec_knn_vote' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Elapsed time: 0.39 seconds; current memory usage: 384 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Scheduling module 'digitrec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-21] Estimated delay (17.2ns) of 'call' operation (digitrec.cpp:42) to 'digitrec_update_knn' exceeds the target cycle time (target cycle time: 10ns, clock uncertainty: 1.25ns, effective cycle time: 8.75ns).
+INFO: [SCHED 204-61] Pipelining loop 'MODIFY1'.
+INFO: [SCHED 204-61] Pipelining result: Target II: 1, Final II: 1, Depth: 4.
+WARNING: [SCHED 204-21] Estimated clock period (17.2ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	'call' operation (digitrec.cpp:42) to 'digitrec_update_knn' (17.2 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Elapsed time: 0.47 seconds; current memory usage: 385 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Exploring micro-architecture for module 'digitrec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Elapsed time: 0.59 seconds; current memory usage: 386 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'digitrec_bitcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'digitrec_bitcount'.
+INFO: [HLS 200-111] Elapsed time: 0.74 seconds; current memory usage: 386 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'digitrec_update_knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'digitrec_mux_5to1_sel3_6_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'digitrec_update_knn'.
+INFO: [HLS 200-111] Elapsed time: 0.42 seconds; current memory usage: 389 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'digitrec_knn_vote' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'digitrec_knn_vote'.
+INFO: [HLS 200-111] Elapsed time: 0.22 seconds; current memory usage: 390 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'digitrec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'digitrec/input_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'digitrec' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'digitrec'.
+INFO: [HLS 200-111] Elapsed time: 0.67 seconds; current memory usage: 394 MB.
+INFO: [RTMG 210-279] Implementing memory 'digitrec_training_data_V_rom' using block ROMs.
+INFO: [HLS 200-10] Finished generating all RTL models.
+INFO: [SYSC 207-301] Generating SystemC RTL for digitrec.
+INFO: [VHDL 208-304] Generating VHDL RTL for digitrec.
+INFO: [VLOG 209-307] Generating Verilog RTL for digitrec.
+INFO: [HLS 200-112] Total elapsed time: 328.139 seconds; peak memory usage: 394 MB.

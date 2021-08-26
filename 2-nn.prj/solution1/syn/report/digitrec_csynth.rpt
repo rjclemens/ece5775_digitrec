@@ -1,0 +1,235 @@
+
+
+================================================================
+== Vivado HLS Report for 'digitrec'
+================================================================
+* Date:           Fri Jun 18 23:27:19 2021
+
+* Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
+* Project:        2-nn.prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     10.65|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +------+------+------+------+---------+
+    |   Latency   |   Interval  | Pipeline|
+    |  min |  max |  min |  max |   Type  |
+    +------+------+------+------+---------+
+    |  1807|  1807|  1808|  1808|   none  |
+    +------+------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------------------+---------------------+-----+-----+-----+-----+----------+
+        |                                    |                     |  Latency  |  Interval | Pipeline |
+        |              Instance              |        Module       | min | max | min | max |   Type   |
+        +------------------------------------+---------------------+-----+-----+-----+-----+----------+
+        |grp_digitrec_knn_vote_fu_278        |digitrec_knn_vote    |    3|    3|    3|    3|   none   |
+        |stg_115_digitrec_update_knn_fu_302  |digitrec_update_knn  |    0|    0|    1|    1| function |
+        |stg_116_digitrec_update_knn_fu_310  |digitrec_update_knn  |    0|    0|    1|    1| function |
+        |stg_117_digitrec_update_knn_fu_318  |digitrec_update_knn  |    0|    0|    1|    1| function |
+        |stg_118_digitrec_update_knn_fu_326  |digitrec_update_knn  |    0|    0|    1|    1| function |
+        |stg_119_digitrec_update_knn_fu_334  |digitrec_update_knn  |    0|    0|    1|    1| function |
+        |stg_120_digitrec_update_knn_fu_342  |digitrec_update_knn  |    0|    0|    1|    1| function |
+        |stg_121_digitrec_update_knn_fu_350  |digitrec_update_knn  |    0|    0|    1|    1| function |
+        |stg_122_digitrec_update_knn_fu_358  |digitrec_update_knn  |    0|    0|    1|    1| function |
+        |stg_123_digitrec_update_knn_fu_366  |digitrec_update_knn  |    0|    0|    1|    1| function |
+        |stg_124_digitrec_update_knn_fu_374  |digitrec_update_knn  |    0|    0|    1|    1| function |
+        +------------------------------------+---------------------+-----+-----+-----+-----+----------+
+
+        * Loop: 
+        +-----------+------+------+----------+-----------+-----------+------+----------+
+        |           |   Latency   | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name |  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------+------+------+----------+-----------+-----------+------+----------+
+        |- MODIFY1  |  1801|  1801|         3|          1|          1|  1800|    yes   |
+        +-----------+------+------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|    135|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|      44|   2149|
+|Memory           |      480|      -|       0|      0|
+|Multiplexer      |        -|      -|       -|    133|
+|Register         |        -|      -|     621|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |      480|      0|     665|   2417|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |      171|      0|   ~0   |      4|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------+---------------------+---------+-------+----+-----+
+    |              Instance              |        Module       | BRAM_18K| DSP48E| FF | LUT |
+    +------------------------------------+---------------------+---------+-------+----+-----+
+    |grp_digitrec_knn_vote_fu_278        |digitrec_knn_vote    |        0|      0|  44|  189|
+    |stg_115_digitrec_update_knn_fu_302  |digitrec_update_knn  |        0|      0|   0|  196|
+    |stg_116_digitrec_update_knn_fu_310  |digitrec_update_knn  |        0|      0|   0|  196|
+    |stg_117_digitrec_update_knn_fu_318  |digitrec_update_knn  |        0|      0|   0|  196|
+    |stg_118_digitrec_update_knn_fu_326  |digitrec_update_knn  |        0|      0|   0|  196|
+    |stg_119_digitrec_update_knn_fu_334  |digitrec_update_knn  |        0|      0|   0|  196|
+    |stg_120_digitrec_update_knn_fu_342  |digitrec_update_knn  |        0|      0|   0|  196|
+    |stg_121_digitrec_update_knn_fu_350  |digitrec_update_knn  |        0|      0|   0|  196|
+    |stg_122_digitrec_update_knn_fu_358  |digitrec_update_knn  |        0|      0|   0|  196|
+    |stg_123_digitrec_update_knn_fu_366  |digitrec_update_knn  |        0|      0|   0|  196|
+    |stg_124_digitrec_update_knn_fu_374  |digitrec_update_knn  |        0|      0|   0|  196|
+    +------------------------------------+---------------------+---------+-------+----+-----+
+    |Total                               |                     |        0|      0|  44| 2149|
+    +------------------------------------+---------------------+---------+-------+----+-----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    +-------------------+--------------------------+---------+---+----+-------+-----+------+-------------+
+    |       Memory      |          Module          | BRAM_18K| FF| LUT| Words | Bits| Banks| W*Bits*Banks|
+    +-------------------+--------------------------+---------+---+----+-------+-----+------+-------------+
+    |training_data_V_U  |digitrec_training_data_V  |      480|  0|   0|  18000|   48|     1|       864000|
+    +-------------------+--------------------------+---------+---+----+-------+-----+------+-------------+
+    |Total              |                          |      480|  0|   0|  18000|   48|     1|       864000|
+    +-------------------+--------------------------+---------+---+----+-------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+-------+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+-------+---+----+------------+------------+
+    |i_fu_488_p2          |     +    |      0|  0|  11|          11|           1|
+    |tmp_2_1_fu_515_p2    |     +    |      0|  0|  12|          12|          11|
+    |tmp_2_2_fu_526_p2    |     +    |      0|  0|  13|          13|          12|
+    |tmp_2_3_fu_537_p2    |     +    |      0|  0|  13|          13|          13|
+    |tmp_2_4_fu_548_p2    |     +    |      0|  0|  14|          14|          13|
+    |tmp_2_5_fu_559_p2    |     +    |      0|  0|  14|          14|          14|
+    |tmp_2_6_fu_570_p2    |     +    |      0|  0|  14|          14|          14|
+    |tmp_2_7_fu_581_p2    |     +    |      0|  0|  13|          13|          13|
+    |tmp_2_8_fu_596_p2    |     +    |      0|  0|  12|          12|          12|
+    |tmp_2_9_fu_611_p2    |     +    |      0|  0|  15|          15|          14|
+    |exitcond3_fu_482_p2  |   icmp   |      0|  0|   4|          11|           9|
+    +---------------------+----------+-------+---+----+------------+------------+
+    |Total                |          |      0|  0| 135|         142|         126|
+    +---------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------+----+-----------+-----+-----------+
+    |          Name         | LUT| Input Size| Bits| Total Bits|
+    +-----------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm              |   1|          5|    1|          5|
+    |ap_reg_ppiten_pp0_it2  |   1|          2|    1|          2|
+    |i4_reg_267             |  11|          2|   11|         22|
+    |knn_set_0_0_V_fu_70    |   6|          2|    6|         12|
+    |knn_set_0_1_V_fu_74    |   6|          2|    6|         12|
+    |knn_set_1_0_V_fu_78    |   6|          2|    6|         12|
+    |knn_set_1_1_V_fu_82    |   6|          2|    6|         12|
+    |knn_set_2_0_V_fu_86    |   6|          2|    6|         12|
+    |knn_set_2_1_V_fu_90    |   6|          2|    6|         12|
+    |knn_set_3_0_V_fu_94    |   6|          2|    6|         12|
+    |knn_set_3_1_V_fu_98    |   6|          2|    6|         12|
+    |knn_set_4_0_V_fu_102   |   6|          2|    6|         12|
+    |knn_set_4_1_V_fu_106   |   6|          2|    6|         12|
+    |knn_set_5_0_V_fu_110   |   6|          2|    6|         12|
+    |knn_set_5_1_V_fu_114   |   6|          2|    6|         12|
+    |knn_set_6_0_V_fu_118   |   6|          2|    6|         12|
+    |knn_set_6_1_V_fu_122   |   6|          2|    6|         12|
+    |knn_set_7_0_V_fu_126   |   6|          2|    6|         12|
+    |knn_set_7_1_V_fu_130   |   6|          2|    6|         12|
+    |knn_set_8_0_V_fu_134   |   6|          2|    6|         12|
+    |knn_set_8_1_V_fu_138   |   6|          2|    6|         12|
+    |knn_set_9_0_V_fu_142   |   6|          2|    6|         12|
+    |knn_set_9_1_V_fu_146   |   6|          2|    6|         12|
+    +-----------------------+----+-----------+-----+-----------+
+    |Total                  | 133|         49|  133|        269|
+    +-----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------+----+----+-----+-----------+
+    |                     Name                     | FF | LUT| Bits| Const Bits|
+    +----------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                     |   4|   0|    4|          0|
+    |ap_reg_grp_digitrec_knn_vote_fu_278_ap_start  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it0                         |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it1                         |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it2                         |   1|   0|    1|          0|
+    |ap_reg_ppstg_exitcond3_reg_856_pp0_iter1      |   1|   0|    1|          0|
+    |exitcond3_reg_856                             |   1|   0|    1|          0|
+    |i4_reg_267                                    |  11|   0|   11|          0|
+    |knn_set_0_0_V_fu_70                           |   6|   0|    6|          0|
+    |knn_set_0_1_V_fu_74                           |   6|   0|    6|          0|
+    |knn_set_1_0_V_fu_78                           |   6|   0|    6|          0|
+    |knn_set_1_1_V_fu_82                           |   6|   0|    6|          0|
+    |knn_set_2_0_V_fu_86                           |   6|   0|    6|          0|
+    |knn_set_2_1_V_fu_90                           |   6|   0|    6|          0|
+    |knn_set_3_0_V_fu_94                           |   6|   0|    6|          0|
+    |knn_set_3_1_V_fu_98                           |   6|   0|    6|          0|
+    |knn_set_4_0_V_fu_102                          |   6|   0|    6|          0|
+    |knn_set_4_1_V_fu_106                          |   6|   0|    6|          0|
+    |knn_set_5_0_V_fu_110                          |   6|   0|    6|          0|
+    |knn_set_5_1_V_fu_114                          |   6|   0|    6|          0|
+    |knn_set_6_0_V_fu_118                          |   6|   0|    6|          0|
+    |knn_set_6_1_V_fu_122                          |   6|   0|    6|          0|
+    |knn_set_7_0_V_fu_126                          |   6|   0|    6|          0|
+    |knn_set_7_1_V_fu_130                          |   6|   0|    6|          0|
+    |knn_set_8_0_V_fu_134                          |   6|   0|    6|          0|
+    |knn_set_8_1_V_fu_138                          |   6|   0|    6|          0|
+    |knn_set_9_0_V_fu_142                          |   6|   0|    6|          0|
+    |knn_set_9_1_V_fu_146                          |   6|   0|    6|          0|
+    |training_data_V_load_1_reg_920                |  48|   0|   48|          0|
+    |training_data_V_load_2_reg_925                |  48|   0|   48|          0|
+    |training_data_V_load_3_reg_930                |  48|   0|   48|          0|
+    |training_data_V_load_4_reg_935                |  48|   0|   48|          0|
+    |training_data_V_load_5_reg_940                |  48|   0|   48|          0|
+    |training_data_V_load_6_reg_945                |  48|   0|   48|          0|
+    |training_data_V_load_7_reg_950                |  48|   0|   48|          0|
+    |training_data_V_load_8_reg_955                |  48|   0|   48|          0|
+    |training_data_V_load_9_reg_960                |  48|   0|   48|          0|
+    |training_data_V_load_reg_915                  |  48|   0|   48|          0|
+    +----------------------------------------------+----+----+-----+-----------+
+    |Total                                         | 621|   0|  621|          0|
+    +----------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------+-----+-----+------------+--------------+--------------+
+| RTL Ports | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-----------+-----+-----+------------+--------------+--------------+
+|ap_clk     |  in |    1| ap_ctrl_hs |   digitrec   | return value |
+|ap_rst     |  in |    1| ap_ctrl_hs |   digitrec   | return value |
+|ap_start   |  in |    1| ap_ctrl_hs |   digitrec   | return value |
+|ap_done    | out |    1| ap_ctrl_hs |   digitrec   | return value |
+|ap_idle    | out |    1| ap_ctrl_hs |   digitrec   | return value |
+|ap_ready   | out |    1| ap_ctrl_hs |   digitrec   | return value |
+|ap_return  | out |    4| ap_ctrl_hs |   digitrec   | return value |
+|input_V    |  in |   49|   ap_none  |    input_V   |    scalar    |
++-----------+-----+-----+------------+--------------+--------------+
+

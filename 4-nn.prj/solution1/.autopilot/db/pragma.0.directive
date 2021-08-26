@@ -1,0 +1,39 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="digitrec" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="digitrec" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="digitrec" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="digitrec" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitcount" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="update_knn" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="update_knn" label="">
+<pragma name="DEPENDENCE">
+<option name="variable" value="min_distances"/>
+<option name="array" positionalBoolean="class" value=""/>
+<option name="inter" positionalBoolean="type" value=""/>
+<option name="false" positionalBoolean="dependent" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="update_knn" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="knn_vote" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="knn_vote" label="">
+<pragma name="UNROLL"/>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

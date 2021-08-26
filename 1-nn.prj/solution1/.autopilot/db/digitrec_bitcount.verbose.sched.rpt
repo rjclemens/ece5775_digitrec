@@ -1,0 +1,642 @@
+
+
+================================================================
+== Vivado HLS Report for 'digitrec_bitcount'
+================================================================
+* Date:           Fri Jun 18 23:26:14 2021
+
+* Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
+* Project:        1-nn.prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      5.87|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    0|    0|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 1
+* Pipeline: 1
+  Pipeline-0: II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+* FSM state operations: 
+
+ <State 1>: 5.87ns
+ST_1: n_V_read [1/1] 0.00ns
+:0  %n_V_read = call i49 @_ssdm_op_Read.ap_auto.i49(i49 %n_V)
+
+ST_1: tmp_1 [1/1] 0.00ns
+:1  %tmp_1 = trunc i49 %n_V_read to i1
+
+ST_1: tmp_1_cast [1/1] 0.00ns
+:2  %tmp_1_cast = zext i1 %tmp_1 to i2
+
+ST_1: tmp_2 [1/1] 0.00ns
+:3  %tmp_2 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 1)
+
+ST_1: tmp_1_1_cast [1/1] 0.00ns
+:4  %tmp_1_1_cast = zext i1 %tmp_2 to i2
+
+ST_1: tmp_3 [1/1] 0.00ns
+:5  %tmp_3 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 2)
+
+ST_1: tmp_1_2_cast [1/1] 0.00ns
+:6  %tmp_1_2_cast = zext i1 %tmp_3 to i2
+
+ST_1: tmp_4 [1/1] 0.00ns
+:7  %tmp_4 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 3)
+
+ST_1: tmp_1_3_cast [1/1] 0.00ns
+:8  %tmp_1_3_cast = zext i1 %tmp_4 to i2
+
+ST_1: tmp_5 [1/1] 0.00ns
+:9  %tmp_5 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 4)
+
+ST_1: tmp_1_4_cast [1/1] 0.00ns
+:10  %tmp_1_4_cast = zext i1 %tmp_5 to i2
+
+ST_1: tmp_6 [1/1] 0.00ns
+:11  %tmp_6 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 5)
+
+ST_1: tmp_1_5_cast [1/1] 0.00ns
+:12  %tmp_1_5_cast = zext i1 %tmp_6 to i2
+
+ST_1: tmp_7 [1/1] 0.00ns
+:13  %tmp_7 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 6)
+
+ST_1: tmp_1_6_cast [1/1] 0.00ns
+:14  %tmp_1_6_cast = zext i1 %tmp_7 to i2
+
+ST_1: tmp_8 [1/1] 0.00ns
+:15  %tmp_8 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 7)
+
+ST_1: tmp_1_7_cast [1/1] 0.00ns
+:16  %tmp_1_7_cast = zext i1 %tmp_8 to i2
+
+ST_1: tmp_9 [1/1] 0.00ns
+:17  %tmp_9 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 8)
+
+ST_1: tmp_1_8_cast [1/1] 0.00ns
+:18  %tmp_1_8_cast = zext i1 %tmp_9 to i2
+
+ST_1: tmp_10 [1/1] 0.00ns
+:19  %tmp_10 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 9)
+
+ST_1: tmp_1_9_cast [1/1] 0.00ns
+:20  %tmp_1_9_cast = zext i1 %tmp_10 to i2
+
+ST_1: tmp_11 [1/1] 0.00ns
+:21  %tmp_11 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 10)
+
+ST_1: tmp_1_cast_3 [1/1] 0.00ns
+:22  %tmp_1_cast_3 = zext i1 %tmp_11 to i2
+
+ST_1: tmp_12 [1/1] 0.00ns
+:23  %tmp_12 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 11)
+
+ST_1: tmp_1_10_cast [1/1] 0.00ns
+:24  %tmp_1_10_cast = zext i1 %tmp_12 to i2
+
+ST_1: tmp_13 [1/1] 0.00ns
+:25  %tmp_13 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 12)
+
+ST_1: tmp_1_11_cast [1/1] 0.00ns
+:26  %tmp_1_11_cast = zext i1 %tmp_13 to i2
+
+ST_1: tmp_14 [1/1] 0.00ns
+:27  %tmp_14 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 13)
+
+ST_1: tmp_1_12_cast [1/1] 0.00ns
+:28  %tmp_1_12_cast = zext i1 %tmp_14 to i2
+
+ST_1: tmp_15 [1/1] 0.00ns
+:29  %tmp_15 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 14)
+
+ST_1: tmp_1_13_cast [1/1] 0.00ns
+:30  %tmp_1_13_cast = zext i1 %tmp_15 to i2
+
+ST_1: tmp_16 [1/1] 0.00ns
+:31  %tmp_16 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 15)
+
+ST_1: tmp_1_14_cast [1/1] 0.00ns
+:32  %tmp_1_14_cast = zext i1 %tmp_16 to i2
+
+ST_1: tmp_17 [1/1] 0.00ns
+:33  %tmp_17 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 16)
+
+ST_1: tmp_1_15_cast [1/1] 0.00ns
+:34  %tmp_1_15_cast = zext i1 %tmp_17 to i2
+
+ST_1: tmp_18 [1/1] 0.00ns
+:35  %tmp_18 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 17)
+
+ST_1: tmp_1_16_cast [1/1] 0.00ns
+:36  %tmp_1_16_cast = zext i1 %tmp_18 to i2
+
+ST_1: tmp_19 [1/1] 0.00ns
+:37  %tmp_19 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 18)
+
+ST_1: tmp_1_17_cast [1/1] 0.00ns
+:38  %tmp_1_17_cast = zext i1 %tmp_19 to i2
+
+ST_1: tmp_20 [1/1] 0.00ns
+:39  %tmp_20 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 19)
+
+ST_1: tmp_1_18_cast [1/1] 0.00ns
+:40  %tmp_1_18_cast = zext i1 %tmp_20 to i2
+
+ST_1: tmp_21 [1/1] 0.00ns
+:41  %tmp_21 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 20)
+
+ST_1: tmp_1_19_cast [1/1] 0.00ns
+:42  %tmp_1_19_cast = zext i1 %tmp_21 to i2
+
+ST_1: tmp_22 [1/1] 0.00ns
+:43  %tmp_22 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 21)
+
+ST_1: tmp_1_20_cast [1/1] 0.00ns
+:44  %tmp_1_20_cast = zext i1 %tmp_22 to i2
+
+ST_1: tmp_23 [1/1] 0.00ns
+:45  %tmp_23 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 22)
+
+ST_1: tmp_1_21_cast [1/1] 0.00ns
+:46  %tmp_1_21_cast = zext i1 %tmp_23 to i2
+
+ST_1: tmp_24 [1/1] 0.00ns
+:47  %tmp_24 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 23)
+
+ST_1: tmp_1_22_cast [1/1] 0.00ns
+:48  %tmp_1_22_cast = zext i1 %tmp_24 to i2
+
+ST_1: tmp_25 [1/1] 0.00ns
+:49  %tmp_25 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 24)
+
+ST_1: tmp_1_23_cast [1/1] 0.00ns
+:50  %tmp_1_23_cast = zext i1 %tmp_25 to i2
+
+ST_1: tmp_26 [1/1] 0.00ns
+:51  %tmp_26 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 25)
+
+ST_1: tmp_1_24_cast [1/1] 0.00ns
+:52  %tmp_1_24_cast = zext i1 %tmp_26 to i2
+
+ST_1: tmp_27 [1/1] 0.00ns
+:53  %tmp_27 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 26)
+
+ST_1: tmp_1_25_cast [1/1] 0.00ns
+:54  %tmp_1_25_cast = zext i1 %tmp_27 to i2
+
+ST_1: tmp_28 [1/1] 0.00ns
+:55  %tmp_28 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 27)
+
+ST_1: tmp_1_26_cast [1/1] 0.00ns
+:56  %tmp_1_26_cast = zext i1 %tmp_28 to i2
+
+ST_1: tmp_29 [1/1] 0.00ns
+:57  %tmp_29 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 28)
+
+ST_1: tmp_1_27_cast [1/1] 0.00ns
+:58  %tmp_1_27_cast = zext i1 %tmp_29 to i2
+
+ST_1: tmp_30 [1/1] 0.00ns
+:59  %tmp_30 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 29)
+
+ST_1: tmp_1_28_cast [1/1] 0.00ns
+:60  %tmp_1_28_cast = zext i1 %tmp_30 to i2
+
+ST_1: tmp_31 [1/1] 0.00ns
+:61  %tmp_31 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 30)
+
+ST_1: tmp_1_29_cast [1/1] 0.00ns
+:62  %tmp_1_29_cast = zext i1 %tmp_31 to i2
+
+ST_1: tmp_32 [1/1] 0.00ns
+:63  %tmp_32 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 31)
+
+ST_1: tmp_1_30_cast [1/1] 0.00ns
+:64  %tmp_1_30_cast = zext i1 %tmp_32 to i2
+
+ST_1: tmp_33 [1/1] 0.00ns
+:65  %tmp_33 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 32)
+
+ST_1: tmp_1_31_cast [1/1] 0.00ns
+:66  %tmp_1_31_cast = zext i1 %tmp_33 to i2
+
+ST_1: tmp_34 [1/1] 0.00ns
+:67  %tmp_34 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 33)
+
+ST_1: tmp_1_32_cast [1/1] 0.00ns
+:68  %tmp_1_32_cast = zext i1 %tmp_34 to i2
+
+ST_1: tmp_35 [1/1] 0.00ns
+:69  %tmp_35 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 34)
+
+ST_1: tmp_1_33_cast [1/1] 0.00ns
+:70  %tmp_1_33_cast = zext i1 %tmp_35 to i2
+
+ST_1: tmp_36 [1/1] 0.00ns
+:71  %tmp_36 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 35)
+
+ST_1: tmp_1_34_cast [1/1] 0.00ns
+:72  %tmp_1_34_cast = zext i1 %tmp_36 to i2
+
+ST_1: tmp_37 [1/1] 0.00ns
+:73  %tmp_37 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 36)
+
+ST_1: tmp_1_35_cast [1/1] 0.00ns
+:74  %tmp_1_35_cast = zext i1 %tmp_37 to i2
+
+ST_1: tmp_38 [1/1] 0.00ns
+:75  %tmp_38 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 37)
+
+ST_1: tmp_1_36_cast [1/1] 0.00ns
+:76  %tmp_1_36_cast = zext i1 %tmp_38 to i2
+
+ST_1: tmp_39 [1/1] 0.00ns
+:77  %tmp_39 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 38)
+
+ST_1: tmp_1_37_cast [1/1] 0.00ns
+:78  %tmp_1_37_cast = zext i1 %tmp_39 to i2
+
+ST_1: tmp_40 [1/1] 0.00ns
+:79  %tmp_40 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 39)
+
+ST_1: tmp_1_38_cast [1/1] 0.00ns
+:80  %tmp_1_38_cast = zext i1 %tmp_40 to i2
+
+ST_1: tmp_41 [1/1] 0.00ns
+:81  %tmp_41 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 40)
+
+ST_1: tmp_1_39_cast [1/1] 0.00ns
+:82  %tmp_1_39_cast = zext i1 %tmp_41 to i2
+
+ST_1: tmp_42 [1/1] 0.00ns
+:83  %tmp_42 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 41)
+
+ST_1: tmp_1_40_cast [1/1] 0.00ns
+:84  %tmp_1_40_cast = zext i1 %tmp_42 to i2
+
+ST_1: tmp_43 [1/1] 0.00ns
+:85  %tmp_43 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 42)
+
+ST_1: tmp_1_41_cast [1/1] 0.00ns
+:86  %tmp_1_41_cast = zext i1 %tmp_43 to i2
+
+ST_1: tmp_44 [1/1] 0.00ns
+:87  %tmp_44 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 43)
+
+ST_1: tmp_1_42_cast [1/1] 0.00ns
+:88  %tmp_1_42_cast = zext i1 %tmp_44 to i2
+
+ST_1: tmp_45 [1/1] 0.00ns
+:89  %tmp_45 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 44)
+
+ST_1: tmp_1_43_cast [1/1] 0.00ns
+:90  %tmp_1_43_cast = zext i1 %tmp_45 to i2
+
+ST_1: tmp_46 [1/1] 0.00ns
+:91  %tmp_46 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 45)
+
+ST_1: tmp_1_44_cast [1/1] 0.00ns
+:92  %tmp_1_44_cast = zext i1 %tmp_46 to i2
+
+ST_1: tmp_47 [1/1] 0.00ns
+:93  %tmp_47 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 46)
+
+ST_1: tmp_1_45_cast [1/1] 0.00ns
+:94  %tmp_1_45_cast = zext i1 %tmp_47 to i2
+
+ST_1: tmp_48 [1/1] 0.00ns
+:95  %tmp_48 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 47)
+
+ST_1: tmp_1_46_cast [1/1] 0.00ns
+:96  %tmp_1_46_cast = zext i1 %tmp_48 to i2
+
+ST_1: tmp_49 [1/1] 0.00ns
+:97  %tmp_49 = call i1 @_ssdm_op_BitSelect.i1.i49.i32(i49 %n_V_read, i32 48)
+
+ST_1: tmp_47_cast [1/1] 0.00ns
+:98  %tmp_47_cast = zext i1 %tmp_49 to i2
+
+ST_1: tmp4 [1/1] 0.85ns
+:99  %tmp4 = add i2 %tmp_1_2_cast, %tmp_1_1_cast
+
+ST_1: tmp3 [1/1] 0.85ns
+:100  %tmp3 = add i2 %tmp_1_cast, %tmp4
+
+ST_1: tmp3_cast [1/1] 0.00ns
+:101  %tmp3_cast = zext i2 %tmp3 to i3
+
+ST_1: tmp6 [1/1] 0.85ns
+:102  %tmp6 = add i2 %tmp_1_5_cast, %tmp_1_4_cast
+
+ST_1: tmp5 [1/1] 0.85ns
+:103  %tmp5 = add i2 %tmp_1_3_cast, %tmp6
+
+ST_1: tmp5_cast [1/1] 0.00ns
+:104  %tmp5_cast = zext i2 %tmp5 to i3
+
+ST_1: tmp2 [1/1] 0.80ns
+:105  %tmp2 = add i3 %tmp3_cast, %tmp5_cast
+
+ST_1: tmp2_cast [1/1] 0.00ns
+:106  %tmp2_cast = zext i3 %tmp2 to i4
+
+ST_1: tmp9 [1/1] 0.85ns
+:107  %tmp9 = add i2 %tmp_1_8_cast, %tmp_1_7_cast
+
+ST_1: tmp8 [1/1] 0.85ns
+:108  %tmp8 = add i2 %tmp_1_6_cast, %tmp9
+
+ST_1: tmp8_cast [1/1] 0.00ns
+:109  %tmp8_cast = zext i2 %tmp8 to i3
+
+ST_1: tmp11 [1/1] 0.85ns
+:110  %tmp11 = add i2 %tmp_1_10_cast, %tmp_1_cast_3
+
+ST_1: tmp10 [1/1] 0.85ns
+:111  %tmp10 = add i2 %tmp_1_9_cast, %tmp11
+
+ST_1: tmp10_cast [1/1] 0.00ns
+:112  %tmp10_cast = zext i2 %tmp10 to i3
+
+ST_1: tmp7 [1/1] 0.80ns
+:113  %tmp7 = add i3 %tmp8_cast, %tmp10_cast
+
+ST_1: tmp7_cast [1/1] 0.00ns
+:114  %tmp7_cast = zext i3 %tmp7 to i4
+
+ST_1: tmp1 [1/1] 0.80ns
+:115  %tmp1 = add i4 %tmp2_cast, %tmp7_cast
+
+ST_1: tmp1_cast [1/1] 0.00ns
+:116  %tmp1_cast = zext i4 %tmp1 to i5
+
+ST_1: tmp15 [1/1] 0.85ns
+:117  %tmp15 = add i2 %tmp_1_13_cast, %tmp_1_12_cast
+
+ST_1: tmp14 [1/1] 0.85ns
+:118  %tmp14 = add i2 %tmp_1_11_cast, %tmp15
+
+ST_1: tmp14_cast [1/1] 0.00ns
+:119  %tmp14_cast = zext i2 %tmp14 to i3
+
+ST_1: tmp17 [1/1] 0.85ns
+:120  %tmp17 = add i2 %tmp_1_16_cast, %tmp_1_15_cast
+
+ST_1: tmp16 [1/1] 0.85ns
+:121  %tmp16 = add i2 %tmp_1_14_cast, %tmp17
+
+ST_1: tmp16_cast [1/1] 0.00ns
+:122  %tmp16_cast = zext i2 %tmp16 to i3
+
+ST_1: tmp13 [1/1] 0.80ns
+:123  %tmp13 = add i3 %tmp14_cast, %tmp16_cast
+
+ST_1: tmp13_cast [1/1] 0.00ns
+:124  %tmp13_cast = zext i3 %tmp13 to i4
+
+ST_1: tmp20 [1/1] 0.85ns
+:125  %tmp20 = add i2 %tmp_1_19_cast, %tmp_1_18_cast
+
+ST_1: tmp19 [1/1] 0.85ns
+:126  %tmp19 = add i2 %tmp_1_17_cast, %tmp20
+
+ST_1: tmp19_cast [1/1] 0.00ns
+:127  %tmp19_cast = zext i2 %tmp19 to i3
+
+ST_1: tmp22 [1/1] 0.85ns
+:128  %tmp22 = add i2 %tmp_1_22_cast, %tmp_1_21_cast
+
+ST_1: tmp21 [1/1] 0.85ns
+:129  %tmp21 = add i2 %tmp_1_20_cast, %tmp22
+
+ST_1: tmp21_cast [1/1] 0.00ns
+:130  %tmp21_cast = zext i2 %tmp21 to i3
+
+ST_1: tmp18 [1/1] 0.80ns
+:131  %tmp18 = add i3 %tmp19_cast, %tmp21_cast
+
+ST_1: tmp18_cast [1/1] 0.00ns
+:132  %tmp18_cast = zext i3 %tmp18 to i4
+
+ST_1: tmp12 [1/1] 0.80ns
+:133  %tmp12 = add i4 %tmp13_cast, %tmp18_cast
+
+ST_1: tmp12_cast [1/1] 0.00ns
+:134  %tmp12_cast = zext i4 %tmp12 to i5
+
+ST_1: tmp [1/1] 0.80ns
+:135  %tmp = add i5 %tmp1_cast, %tmp12_cast
+
+ST_1: tmp_cast [1/1] 0.00ns
+:136  %tmp_cast = zext i5 %tmp to i6
+
+ST_1: tmp27 [1/1] 0.85ns
+:137  %tmp27 = add i2 %tmp_1_25_cast, %tmp_1_24_cast
+
+ST_1: tmp26 [1/1] 0.85ns
+:138  %tmp26 = add i2 %tmp_1_23_cast, %tmp27
+
+ST_1: tmp26_cast [1/1] 0.00ns
+:139  %tmp26_cast = zext i2 %tmp26 to i3
+
+ST_1: tmp29 [1/1] 0.85ns
+:140  %tmp29 = add i2 %tmp_1_28_cast, %tmp_1_27_cast
+
+ST_1: tmp28 [1/1] 0.85ns
+:141  %tmp28 = add i2 %tmp_1_26_cast, %tmp29
+
+ST_1: tmp28_cast [1/1] 0.00ns
+:142  %tmp28_cast = zext i2 %tmp28 to i3
+
+ST_1: tmp25 [1/1] 0.80ns
+:143  %tmp25 = add i3 %tmp26_cast, %tmp28_cast
+
+ST_1: tmp25_cast [1/1] 0.00ns
+:144  %tmp25_cast = zext i3 %tmp25 to i4
+
+ST_1: tmp32 [1/1] 0.85ns
+:145  %tmp32 = add i2 %tmp_1_31_cast, %tmp_1_30_cast
+
+ST_1: tmp31 [1/1] 0.85ns
+:146  %tmp31 = add i2 %tmp_1_29_cast, %tmp32
+
+ST_1: tmp31_cast [1/1] 0.00ns
+:147  %tmp31_cast = zext i2 %tmp31 to i3
+
+ST_1: tmp34 [1/1] 0.85ns
+:148  %tmp34 = add i2 %tmp_1_34_cast, %tmp_1_33_cast
+
+ST_1: tmp33 [1/1] 0.85ns
+:149  %tmp33 = add i2 %tmp_1_32_cast, %tmp34
+
+ST_1: tmp33_cast [1/1] 0.00ns
+:150  %tmp33_cast = zext i2 %tmp33 to i3
+
+ST_1: tmp30 [1/1] 0.80ns
+:151  %tmp30 = add i3 %tmp31_cast, %tmp33_cast
+
+ST_1: tmp30_cast [1/1] 0.00ns
+:152  %tmp30_cast = zext i3 %tmp30 to i4
+
+ST_1: tmp24 [1/1] 0.80ns
+:153  %tmp24 = add i4 %tmp25_cast, %tmp30_cast
+
+ST_1: tmp24_cast [1/1] 0.00ns
+:154  %tmp24_cast = zext i4 %tmp24 to i5
+
+ST_1: tmp38 [1/1] 0.85ns
+:155  %tmp38 = add i2 %tmp_1_37_cast, %tmp_1_36_cast
+
+ST_1: tmp37 [1/1] 0.85ns
+:156  %tmp37 = add i2 %tmp_1_35_cast, %tmp38
+
+ST_1: tmp37_cast [1/1] 0.00ns
+:157  %tmp37_cast = zext i2 %tmp37 to i3
+
+ST_1: tmp40 [1/1] 0.85ns
+:158  %tmp40 = add i2 %tmp_1_40_cast, %tmp_1_39_cast
+
+ST_1: tmp39 [1/1] 0.85ns
+:159  %tmp39 = add i2 %tmp_1_38_cast, %tmp40
+
+ST_1: tmp39_cast [1/1] 0.00ns
+:160  %tmp39_cast = zext i2 %tmp39 to i3
+
+ST_1: tmp36 [1/1] 0.80ns
+:161  %tmp36 = add i3 %tmp37_cast, %tmp39_cast
+
+ST_1: tmp36_cast [1/1] 0.00ns
+:162  %tmp36_cast = zext i3 %tmp36 to i4
+
+ST_1: tmp43 [1/1] 0.85ns
+:163  %tmp43 = add i2 %tmp_1_43_cast, %tmp_1_42_cast
+
+ST_1: tmp42 [1/1] 0.85ns
+:164  %tmp42 = add i2 %tmp_1_41_cast, %tmp43
+
+ST_1: tmp42_cast [1/1] 0.00ns
+:165  %tmp42_cast = zext i2 %tmp42 to i3
+
+ST_1: tmp45 [1/1] 0.80ns
+:166  %tmp45 = add i2 %tmp_1_45_cast, %tmp_1_44_cast
+
+ST_1: tmp45_cast [1/1] 0.00ns
+:167  %tmp45_cast = zext i2 %tmp45 to i3
+
+ST_1: tmp46 [1/1] 0.80ns
+:168  %tmp46 = add i2 %tmp_47_cast, %tmp_1_46_cast
+
+ST_1: tmp46_cast [1/1] 0.00ns
+:169  %tmp46_cast = zext i2 %tmp46 to i3
+
+ST_1: tmp44 [1/1] 0.85ns
+:170  %tmp44 = add i3 %tmp45_cast, %tmp46_cast
+
+ST_1: tmp41 [1/1] 0.85ns
+:171  %tmp41 = add i3 %tmp42_cast, %tmp44
+
+ST_1: tmp41_cast [1/1] 0.00ns
+:172  %tmp41_cast = zext i3 %tmp41 to i4
+
+ST_1: tmp35 [1/1] 0.80ns
+:173  %tmp35 = add i4 %tmp36_cast, %tmp41_cast
+
+ST_1: tmp35_cast [1/1] 0.00ns
+:174  %tmp35_cast = zext i4 %tmp35 to i5
+
+ST_1: tmp23 [1/1] 0.80ns
+:175  %tmp23 = add i5 %tmp24_cast, %tmp35_cast
+
+ST_1: tmp23_cast [1/1] 0.00ns
+:176  %tmp23_cast = zext i5 %tmp23 to i6
+
+ST_1: tmp_2_s [1/1] 1.72ns
+:177  %tmp_2_s = add i6 %tmp_cast, %tmp23_cast
+
+ST_1: stg_180 [1/1] 0.00ns
+:178  ret i6 %tmp_2_s
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ No timing violations. 
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

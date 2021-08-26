@@ -1,0 +1,245 @@
+
+
+================================================================
+== Vivado HLS Report for 'digitrec_knn_vote'
+================================================================
+* Date:           Fri Jun 18 23:26:15 2021
+
+* Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
+* Project:        1-nn.prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.55|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    3|    3|    3|    3|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 4
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+* FSM state operations: 
+
+ <State 1>: 6.62ns
+ST_1: p_read_8 [1/1] 0.00ns
+._crit_edge.0:7  %p_read_8 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %p_read2)
+
+ST_1: p_read_9 [1/1] 0.00ns
+._crit_edge.0:8  %p_read_9 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %p_read1)
+
+ST_1: p_read_10 [1/1] 0.00ns
+._crit_edge.0:9  %p_read_10 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %p_read)
+
+ST_1: tmp_3_1 [1/1] 1.94ns
+._crit_edge.0:10  %tmp_3_1 = icmp ult i6 %p_read_9, %p_read_10
+
+ST_1: tmp_2_min_1_v [1/1] 1.37ns
+._crit_edge.0:12  %tmp_2_min_1_v = select i1 %tmp_3_1, i6 %p_read_9, i6 %p_read_10
+
+ST_1: tmp_3_2 [1/1] 1.94ns
+._crit_edge.0:13  %tmp_3_2 = icmp ugt i6 %tmp_2_min_1_v, %p_read_8
+
+ST_1: tmp_2_min_2_v [1/1] 1.37ns
+._crit_edge.0:14  %tmp_2_min_2_v = select i1 %tmp_3_2, i6 %p_read_8, i6 %tmp_2_min_1_v
+
+
+ <State 2>: 6.62ns
+ST_2: p_read_6 [1/1] 0.00ns
+._crit_edge.0:5  %p_read_6 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %p_read4)
+
+ST_2: p_read_7 [1/1] 0.00ns
+._crit_edge.0:6  %p_read_7 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %p_read3)
+
+ST_2: tmp_3_3 [1/1] 1.94ns
+._crit_edge.0:15  %tmp_3_3 = icmp ugt i6 %tmp_2_min_2_v, %p_read_7
+
+ST_2: tmp_2_min_3_v [1/1] 1.37ns
+._crit_edge.0:20  %tmp_2_min_3_v = select i1 %tmp_3_3, i6 %p_read_7, i6 %tmp_2_min_2_v
+
+ST_2: tmp_3_4 [1/1] 1.94ns
+._crit_edge.0:21  %tmp_3_4 = icmp ugt i6 %tmp_2_min_3_v, %p_read_6
+
+ST_2: tmp_2_min_4_v [1/1] 1.37ns
+._crit_edge.0:22  %tmp_2_min_4_v = select i1 %tmp_3_4, i6 %p_read_6, i6 %tmp_2_min_3_v
+
+
+ <State 3>: 6.62ns
+ST_3: p_read_4 [1/1] 0.00ns
+._crit_edge.0:3  %p_read_4 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %p_read6)
+
+ST_3: p_read_5 [1/1] 0.00ns
+._crit_edge.0:4  %p_read_5 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %p_read5)
+
+ST_3: agg_result_V_0_agg_result_V_s [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_1)
+._crit_edge.0:11  %agg_result_V_0_agg_result_V_s = zext i1 %tmp_3_1 to i2
+
+ST_3: agg_result_V_0_agg_result_V_02_2 [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_1)
+._crit_edge.0:16  %agg_result_V_0_agg_result_V_02_2 = select i1 %tmp_3_3, i2 -1, i2 -2
+
+ST_3: tmp_8 [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_1)
+._crit_edge.0:17  %tmp_8 = or i1 %tmp_3_3, %tmp_3_2
+
+ST_3: agg_result_V_0_agg_result_V_02_3 [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_1)
+._crit_edge.0:18  %agg_result_V_0_agg_result_V_02_3 = select i1 %tmp_8, i2 %agg_result_V_0_agg_result_V_02_2, i2 %agg_result_V_0_agg_result_V_s
+
+ST_3: agg_result_V_0_agg_result_V_02_1 [1/1] 1.37ns (out node of the LUT)
+._crit_edge.0:19  %agg_result_V_0_agg_result_V_02_1 = zext i2 %agg_result_V_0_agg_result_V_02_3 to i3
+
+ST_3: tmp_3_5 [1/1] 1.94ns
+._crit_edge.0:23  %tmp_3_5 = icmp ugt i6 %tmp_2_min_4_v, %p_read_5
+
+ST_3: agg_result_V_0_agg_result_V_02_4 [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_5)
+._crit_edge.0:24  %agg_result_V_0_agg_result_V_02_4 = select i1 %tmp_3_5, i3 -3, i3 -4
+
+ST_3: tmp_s [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_5)
+._crit_edge.0:25  %tmp_s = or i1 %tmp_3_5, %tmp_3_4
+
+ST_3: agg_result_V_0_agg_result_V_02_5 [1/1] 1.37ns (out node of the LUT)
+._crit_edge.0:26  %agg_result_V_0_agg_result_V_02_5 = select i1 %tmp_s, i3 %agg_result_V_0_agg_result_V_02_4, i3 %agg_result_V_0_agg_result_V_02_1
+
+ST_3: tmp_2_min_5_v [1/1] 1.37ns
+._crit_edge.0:27  %tmp_2_min_5_v = select i1 %tmp_3_5, i6 %p_read_5, i6 %tmp_2_min_4_v
+
+ST_3: tmp_3_6 [1/1] 1.94ns
+._crit_edge.0:28  %tmp_3_6 = icmp ugt i6 %tmp_2_min_5_v, %p_read_4
+
+ST_3: tmp_2_min_6_v [1/1] 1.37ns
+._crit_edge.0:29  %tmp_2_min_6_v = select i1 %tmp_3_6, i6 %p_read_4, i6 %tmp_2_min_5_v
+
+
+ <State 4>: 8.55ns
+ST_4: p_read_1 [1/1] 0.00ns
+._crit_edge.0:0  %p_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %p_read9)
+
+ST_4: p_read_2 [1/1] 0.00ns
+._crit_edge.0:1  %p_read_2 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %p_read8)
+
+ST_4: p_read_3 [1/1] 0.00ns
+._crit_edge.0:2  %p_read_3 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %p_read7)
+
+ST_4: tmp_3_7 [1/1] 1.94ns
+._crit_edge.0:30  %tmp_3_7 = icmp ugt i6 %tmp_2_min_6_v, %p_read_3
+
+ST_4: agg_result_V_0_agg_result_V_02 [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_6)
+._crit_edge.0:31  %agg_result_V_0_agg_result_V_02 = select i1 %tmp_3_7, i3 -1, i3 -2
+
+ST_4: tmp_1 [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_6)
+._crit_edge.0:32  %tmp_1 = or i1 %tmp_3_7, %tmp_3_6
+
+ST_4: agg_result_V_0_agg_result_V_02_7 [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_6)
+._crit_edge.0:33  %agg_result_V_0_agg_result_V_02_7 = select i1 %tmp_1, i3 %agg_result_V_0_agg_result_V_02, i3 %agg_result_V_0_agg_result_V_02_5
+
+ST_4: agg_result_V_0_agg_result_V_02_6 [1/1] 1.37ns (out node of the LUT)
+._crit_edge.0:34  %agg_result_V_0_agg_result_V_02_6 = zext i3 %agg_result_V_0_agg_result_V_02_7 to i4
+
+ST_4: tmp_2_min_7_v [1/1] 1.37ns
+._crit_edge.0:35  %tmp_2_min_7_v = select i1 %tmp_3_7, i6 %p_read_3, i6 %tmp_2_min_6_v
+
+ST_4: tmp_3_8 [1/1] 1.94ns
+._crit_edge.0:36  %tmp_3_8 = icmp ugt i6 %tmp_2_min_7_v, %p_read_2
+
+ST_4: tmp_2_min_8_v [1/1] 0.00ns (grouped into LUT with out node tmp_3_9)
+._crit_edge.0:37  %tmp_2_min_8_v = select i1 %tmp_3_8, i6 %p_read_2, i6 %tmp_2_min_7_v
+
+ST_4: tmp_3_9 [1/1] 1.94ns (out node of the LUT)
+._crit_edge.0:38  %tmp_3_9 = icmp ugt i6 %tmp_2_min_8_v, %p_read_1
+
+ST_4: agg_result_V_0_agg_result_V_02_8 [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_9)
+._crit_edge.0:39  %agg_result_V_0_agg_result_V_02_8 = select i1 %tmp_3_9, i4 -7, i4 -8
+
+ST_4: tmp_2 [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_9)
+._crit_edge.0:40  %tmp_2 = or i1 %tmp_3_9, %tmp_3_8
+
+ST_4: agg_result_V_0_agg_result_V_02_9 [1/1] 1.37ns (out node of the LUT)
+._crit_edge.0:41  %agg_result_V_0_agg_result_V_02_9 = select i1 %tmp_2, i4 %agg_result_V_0_agg_result_V_02_8, i4 %agg_result_V_0_agg_result_V_02_6
+
+ST_4: stg_47 [1/1] 0.00ns
+._crit_edge.0:42  ret i4 %agg_result_V_0_agg_result_V_02_9
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ No timing violations. 
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Jun 15 19:47:54 2021
+# Process ID: 56529
+# Current directory: /home/rjc422/ece5775_digitrec/script
+# Command line: vivado run.tcl
+# Log file: /home/rjc422/ece5775_digitrec/script/vivado.log
+# Journal file: /home/rjc422/ece5775_digitrec/script/vivado.jou
+#-----------------------------------------------------------
+start_gui
+xterm: Xt error: Can't open display: 
+xterm: DISPLAY is not set
+ERROR: [Common 17-1374] Display test failed. Please check DISPLAY environment variable and X server permissions for remote display.
+open_project run.tcl
+ERROR: [Coretcl 2-155] Invalid project file name 'run.tcl'. File must have a valid Vivado project extension (.xpr/.ppr).
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 15 19:48:25 2021...

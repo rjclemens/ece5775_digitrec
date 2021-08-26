@@ -1,0 +1,6 @@
+digitrec_mux_4to1_sel2_6_1
+digitrec_training_data_V
+digitrec_bitcount
+digitrec_update_knn
+digitrec_knn_vote
+digitrec

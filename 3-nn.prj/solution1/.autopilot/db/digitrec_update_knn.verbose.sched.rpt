@@ -1,0 +1,191 @@
+
+
+================================================================
+== Vivado HLS Report for 'digitrec_update_knn'
+================================================================
+* Date:           Fri Jun 18 23:28:20 2021
+
+* Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
+* Project:        3-nn.prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     10.65|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    0|    0|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 1
+* Pipeline: 1
+  Pipeline-0: II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+* FSM state operations: 
+
+ <State 1>: 10.65ns
+ST_1: train_inst_V_read [1/1] 1.48ns
+branch4:0  %train_inst_V_read = call i48 @_ssdm_op_Read.ap_auto.i48(i48 %train_inst_V)
+
+ST_1: test_inst_V_read [1/1] 1.48ns
+branch4:1  %test_inst_V_read = call i49 @_ssdm_op_Read.ap_auto.i49(i49 %test_inst_V)
+
+ST_1: train_inst_V_cast [1/1] 0.00ns
+branch4:2  %train_inst_V_cast = zext i48 %train_inst_V_read to i49
+
+ST_1: stg_5 [1/1] 0.00ns
+branch4:3  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind
+
+ST_1: r_V [1/1] 1.37ns
+branch4:4  %r_V = xor i49 %train_inst_V_cast, %test_inst_V_read
+
+ST_1: distance_V [1/1] 5.87ns
+branch4:5  %distance_V = call fastcc i6 @digitrec_bitcount(i49 %r_V)
+
+ST_1: min_distances_0_V_read [1/1] 1.48ns
+branch4:6  %min_distances_0_V_read = call i6 @_ssdm_op_Read.ap_auto.i6P(i6* %min_distances_0_V)
+
+ST_1: min_distances_1_V_read [1/1] 1.48ns
+branch4:7  %min_distances_1_V_read = call i6 @_ssdm_op_Read.ap_auto.i6P(i6* %min_distances_1_V)
+
+ST_1: tmp_3_1 [1/1] 1.94ns
+branch4:8  %tmp_3_1 = icmp ugt i6 %min_distances_1_V_read, %min_distances_0_V_read
+
+ST_1: p_030_1_1 [1/1] 0.00ns (grouped into LUT with out node tmp_3_2)
+branch4:9  %p_030_1_1 = select i1 %tmp_3_1, i6 %min_distances_1_V_read, i6 %min_distances_0_V_read
+
+ST_1: p_026_1_1 [1/1] 0.00ns
+branch4:10  %p_026_1_1 = zext i1 %tmp_3_1 to i2
+
+ST_1: min_distances_2_V_read [1/1] 1.48ns
+branch4:11  %min_distances_2_V_read = call i6 @_ssdm_op_Read.ap_auto.i6P(i6* %min_distances_2_V)
+
+ST_1: tmp_3_2 [1/1] 1.94ns (out node of the LUT)
+branch4:12  %tmp_3_2 = icmp ugt i6 %min_distances_2_V_read, %p_030_1_1
+
+ST_1: p_026_1_2 [1/1] 1.37ns
+branch4:13  %p_026_1_2 = select i1 %tmp_3_2, i2 -2, i2 %p_026_1_1
+
+ST_1: tmp [1/1] 1.57ns
+branch4:14  %tmp = call i6 @_ssdm_op_Mux.ap_auto.3i6.i2(i6 %min_distances_0_V_read, i6 %min_distances_1_V_read, i6 %min_distances_2_V_read, i2 %p_026_1_2)
+
+ST_1: tmp_1 [1/1] 1.94ns
+branch4:15  %tmp_1 = icmp ult i6 %distance_V, %tmp
+
+ST_1: stg_18 [1/1] 0.00ns
+branch4:16  br i1 %tmp_1, label %branch0, label %._crit_edge54
+
+ST_1: stg_19 [1/1] 1.62ns
+branch0:0  switch i2 %p_026_1_2, label %branch28 [
+    i2 0, label %branch06
+    i2 1, label %branch17
+  ]
+
+ST_1: stg_20 [1/1] 0.00ns
+branch17:0  call void @_ssdm_op_Write.ap_auto.i6P(i6* %min_distances_1_V, i6 %distance_V)
+
+ST_1: stg_21 [1/1] 0.00ns
+branch17:1  br label %branch05
+
+ST_1: stg_22 [1/1] 0.00ns
+branch06:0  call void @_ssdm_op_Write.ap_auto.i6P(i6* %min_distances_0_V, i6 %distance_V)
+
+ST_1: stg_23 [1/1] 0.00ns
+branch06:1  br label %branch05
+
+ST_1: stg_24 [1/1] 0.00ns
+branch28:0  call void @_ssdm_op_Write.ap_auto.i6P(i6* %min_distances_2_V, i6 %distance_V)
+
+ST_1: stg_25 [1/1] 0.00ns
+branch28:1  br label %branch05
+
+ST_1: stg_26 [1/1] 0.00ns
+branch05:0  br label %._crit_edge54
+
+ST_1: stg_27 [1/1] 0.00ns
+._crit_edge54:0  ret void
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 10.7ns
+The critical path consists of the following:
+	wire read on port 'train_inst_V' (1.48 ns)
+	'xor' operation ('r.V', digitrec.cpp:86) (1.37 ns)
+	'call' operation ('distance.V', digitrec.cpp:86) to 'digitrec_bitcount' (5.87 ns)
+	'icmp' operation ('tmp_1', digitrec.cpp:98) (1.94 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,730 @@
+
+
+================================================================
+== Vivado HLS Report for 'digitrec_knn_vote'
+================================================================
+* Date:           Fri Jun 18 23:30:35 2021
+
+* Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
+* Project:        5-nn.prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.56|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    4|    4|    4|    4|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 5
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+* FSM state operations: 
+
+ <State 1>: 8.56ns
+ST_1: knn_set_2_4_V_read_1 [1/1] 0.00ns
+._crit_edge.0:35  %knn_set_2_4_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_2_4_V_read)
+
+ST_1: knn_set_2_3_V_read_1 [1/1] 0.00ns
+._crit_edge.0:36  %knn_set_2_3_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_2_3_V_read)
+
+ST_1: knn_set_2_2_V_read_1 [1/1] 0.00ns
+._crit_edge.0:37  %knn_set_2_2_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_2_2_V_read)
+
+ST_1: knn_set_2_1_V_read_1 [1/1] 0.00ns
+._crit_edge.0:38  %knn_set_2_1_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_2_1_V_read)
+
+ST_1: knn_set_2_0_V_read_1 [1/1] 0.00ns
+._crit_edge.0:39  %knn_set_2_0_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_2_0_V_read)
+
+ST_1: knn_set_1_4_V_read_1 [1/1] 0.00ns
+._crit_edge.0:40  %knn_set_1_4_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_1_4_V_read)
+
+ST_1: knn_set_1_3_V_read_1 [1/1] 0.00ns
+._crit_edge.0:41  %knn_set_1_3_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_1_3_V_read)
+
+ST_1: knn_set_1_2_V_read_1 [1/1] 0.00ns
+._crit_edge.0:42  %knn_set_1_2_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_1_2_V_read)
+
+ST_1: knn_set_1_1_V_read_1 [1/1] 0.00ns
+._crit_edge.0:43  %knn_set_1_1_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_1_1_V_read)
+
+ST_1: knn_set_1_0_V_read_1 [1/1] 0.00ns
+._crit_edge.0:44  %knn_set_1_0_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_1_0_V_read)
+
+ST_1: knn_set_0_4_V_read_1 [1/1] 0.00ns
+._crit_edge.0:45  %knn_set_0_4_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_0_4_V_read)
+
+ST_1: knn_set_0_3_V_read_1 [1/1] 0.00ns
+._crit_edge.0:46  %knn_set_0_3_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_0_3_V_read)
+
+ST_1: knn_set_0_2_V_read_1 [1/1] 0.00ns
+._crit_edge.0:47  %knn_set_0_2_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_0_2_V_read)
+
+ST_1: knn_set_0_1_V_read_1 [1/1] 0.00ns
+._crit_edge.0:48  %knn_set_0_1_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_0_1_V_read)
+
+ST_1: knn_set_0_0_V_read_1 [1/1] 0.00ns
+._crit_edge.0:49  %knn_set_0_0_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_0_0_V_read)
+
+ST_1: tmp_8_cast [1/1] 0.00ns
+._crit_edge.0:50  %tmp_8_cast = zext i6 %knn_set_0_0_V_read_1 to i7
+
+ST_1: tmp_8_0_1_cast [1/1] 0.00ns
+._crit_edge.0:51  %tmp_8_0_1_cast = zext i6 %knn_set_0_1_V_read_1 to i8
+
+ST_1: tmp_8_0_2_cast [1/1] 0.00ns
+._crit_edge.0:52  %tmp_8_0_2_cast = zext i6 %knn_set_0_2_V_read_1 to i7
+
+ST_1: tmp_8_0_3_cast [1/1] 0.00ns
+._crit_edge.0:53  %tmp_8_0_3_cast = zext i6 %knn_set_0_3_V_read_1 to i7
+
+ST_1: tmp_8_0_4_cast [1/1] 0.00ns
+._crit_edge.0:54  %tmp_8_0_4_cast = zext i6 %knn_set_0_4_V_read_1 to i7
+
+ST_1: tmp2 [1/1] 1.72ns
+._crit_edge.0:55  %tmp2 = add i7 %tmp_8_0_3_cast, %tmp_8_0_2_cast
+
+ST_1: tmp2_cast [1/1] 0.00ns
+._crit_edge.0:56  %tmp2_cast = zext i7 %tmp2 to i9
+
+ST_1: tmp4 [1/1] 1.72ns
+._crit_edge.0:57  %tmp4 = add i7 %tmp_8_0_4_cast, %tmp_8_cast
+
+ST_1: tmp4_cast [1/1] 0.00ns
+._crit_edge.0:58  %tmp4_cast = zext i7 %tmp4 to i8
+
+ST_1: tmp3 [1/1] 1.72ns
+._crit_edge.0:59  %tmp3 = add i8 %tmp_8_0_1_cast, %tmp4_cast
+
+ST_1: tmp3_cast [1/1] 0.00ns
+._crit_edge.0:60  %tmp3_cast = zext i8 %tmp3 to i9
+
+ST_1: sum_0_4 [1/1] 1.72ns
+._crit_edge.0:61  %sum_0_4 = add i9 %tmp2_cast, %tmp3_cast
+
+ST_1: tmp_8_1_cast [1/1] 0.00ns
+._crit_edge.0:62  %tmp_8_1_cast = zext i6 %knn_set_1_0_V_read_1 to i7
+
+ST_1: tmp_8_1_1_cast [1/1] 0.00ns
+._crit_edge.0:63  %tmp_8_1_1_cast = zext i6 %knn_set_1_1_V_read_1 to i8
+
+ST_1: tmp_8_1_2_cast [1/1] 0.00ns
+._crit_edge.0:64  %tmp_8_1_2_cast = zext i6 %knn_set_1_2_V_read_1 to i7
+
+ST_1: tmp_8_1_3_cast [1/1] 0.00ns
+._crit_edge.0:65  %tmp_8_1_3_cast = zext i6 %knn_set_1_3_V_read_1 to i7
+
+ST_1: tmp_8_1_4_cast [1/1] 0.00ns
+._crit_edge.0:66  %tmp_8_1_4_cast = zext i6 %knn_set_1_4_V_read_1 to i7
+
+ST_1: tmp7 [1/1] 1.72ns
+._crit_edge.0:67  %tmp7 = add i7 %tmp_8_1_3_cast, %tmp_8_1_2_cast
+
+ST_1: tmp7_cast [1/1] 0.00ns
+._crit_edge.0:68  %tmp7_cast = zext i7 %tmp7 to i9
+
+ST_1: tmp9 [1/1] 1.72ns
+._crit_edge.0:69  %tmp9 = add i7 %tmp_8_1_4_cast, %tmp_8_1_cast
+
+ST_1: tmp9_cast [1/1] 0.00ns
+._crit_edge.0:70  %tmp9_cast = zext i7 %tmp9 to i8
+
+ST_1: tmp8 [1/1] 1.72ns
+._crit_edge.0:71  %tmp8 = add i8 %tmp_8_1_1_cast, %tmp9_cast
+
+ST_1: tmp8_cast [1/1] 0.00ns
+._crit_edge.0:72  %tmp8_cast = zext i8 %tmp8 to i9
+
+ST_1: sum_1_4 [1/1] 1.72ns
+._crit_edge.0:73  %sum_1_4 = add i9 %tmp7_cast, %tmp8_cast
+
+ST_1: tmp_6_1 [1/1] 2.03ns
+._crit_edge.0:74  %tmp_6_1 = icmp ult i9 %sum_1_4, %sum_0_4
+
+ST_1: min_2_min_1 [1/1] 1.37ns
+._crit_edge.0:76  %min_2_min_1 = select i1 %tmp_6_1, i9 %sum_1_4, i9 %sum_0_4
+
+ST_1: tmp_8_2_cast [1/1] 0.00ns
+._crit_edge.0:77  %tmp_8_2_cast = zext i6 %knn_set_2_0_V_read_1 to i7
+
+ST_1: tmp_8_2_1_cast [1/1] 0.00ns
+._crit_edge.0:78  %tmp_8_2_1_cast = zext i6 %knn_set_2_1_V_read_1 to i8
+
+ST_1: tmp_8_2_2_cast [1/1] 0.00ns
+._crit_edge.0:79  %tmp_8_2_2_cast = zext i6 %knn_set_2_2_V_read_1 to i7
+
+ST_1: tmp_8_2_3_cast [1/1] 0.00ns
+._crit_edge.0:80  %tmp_8_2_3_cast = zext i6 %knn_set_2_3_V_read_1 to i7
+
+ST_1: tmp_8_2_4_cast [1/1] 0.00ns
+._crit_edge.0:81  %tmp_8_2_4_cast = zext i6 %knn_set_2_4_V_read_1 to i7
+
+ST_1: tmp [1/1] 1.72ns
+._crit_edge.0:82  %tmp = add i7 %tmp_8_2_3_cast, %tmp_8_2_2_cast
+
+ST_1: tmp12_cast [1/1] 0.00ns
+._crit_edge.0:83  %tmp12_cast = zext i7 %tmp to i9
+
+ST_1: tmp1 [1/1] 1.72ns
+._crit_edge.0:84  %tmp1 = add i7 %tmp_8_2_4_cast, %tmp_8_2_cast
+
+ST_1: tmp14_cast [1/1] 0.00ns
+._crit_edge.0:85  %tmp14_cast = zext i7 %tmp1 to i8
+
+ST_1: tmp5 [1/1] 1.72ns
+._crit_edge.0:86  %tmp5 = add i8 %tmp_8_2_1_cast, %tmp14_cast
+
+ST_1: tmp13_cast [1/1] 0.00ns
+._crit_edge.0:87  %tmp13_cast = zext i8 %tmp5 to i9
+
+ST_1: sum_2_4 [1/1] 1.72ns
+._crit_edge.0:88  %sum_2_4 = add i9 %tmp12_cast, %tmp13_cast
+
+
+ <State 2>: 8.56ns
+ST_2: knn_set_4_4_V_read_1 [1/1] 0.00ns
+._crit_edge.0:25  %knn_set_4_4_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_4_4_V_read)
+
+ST_2: knn_set_4_3_V_read_1 [1/1] 0.00ns
+._crit_edge.0:26  %knn_set_4_3_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_4_3_V_read)
+
+ST_2: knn_set_4_2_V_read_1 [1/1] 0.00ns
+._crit_edge.0:27  %knn_set_4_2_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_4_2_V_read)
+
+ST_2: knn_set_4_1_V_read_1 [1/1] 0.00ns
+._crit_edge.0:28  %knn_set_4_1_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_4_1_V_read)
+
+ST_2: knn_set_4_0_V_read_1 [1/1] 0.00ns
+._crit_edge.0:29  %knn_set_4_0_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_4_0_V_read)
+
+ST_2: knn_set_3_4_V_read_1 [1/1] 0.00ns
+._crit_edge.0:30  %knn_set_3_4_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_3_4_V_read)
+
+ST_2: knn_set_3_3_V_read_1 [1/1] 0.00ns
+._crit_edge.0:31  %knn_set_3_3_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_3_3_V_read)
+
+ST_2: knn_set_3_2_V_read_1 [1/1] 0.00ns
+._crit_edge.0:32  %knn_set_3_2_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_3_2_V_read)
+
+ST_2: knn_set_3_1_V_read_1 [1/1] 0.00ns
+._crit_edge.0:33  %knn_set_3_1_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_3_1_V_read)
+
+ST_2: knn_set_3_0_V_read_1 [1/1] 0.00ns
+._crit_edge.0:34  %knn_set_3_0_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_3_0_V_read)
+
+ST_2: tmp_6_2 [1/1] 2.03ns
+._crit_edge.0:89  %tmp_6_2 = icmp ult i9 %sum_2_4, %min_2_min_1
+
+ST_2: min_2_min_2 [1/1] 1.37ns
+._crit_edge.0:90  %min_2_min_2 = select i1 %tmp_6_2, i9 %sum_2_4, i9 %min_2_min_1
+
+ST_2: tmp_8_3_cast [1/1] 0.00ns
+._crit_edge.0:91  %tmp_8_3_cast = zext i6 %knn_set_3_0_V_read_1 to i7
+
+ST_2: tmp_8_3_1_cast [1/1] 0.00ns
+._crit_edge.0:92  %tmp_8_3_1_cast = zext i6 %knn_set_3_1_V_read_1 to i8
+
+ST_2: tmp_8_3_2_cast [1/1] 0.00ns
+._crit_edge.0:93  %tmp_8_3_2_cast = zext i6 %knn_set_3_2_V_read_1 to i7
+
+ST_2: tmp_8_3_3_cast [1/1] 0.00ns
+._crit_edge.0:94  %tmp_8_3_3_cast = zext i6 %knn_set_3_3_V_read_1 to i7
+
+ST_2: tmp_8_3_4_cast [1/1] 0.00ns
+._crit_edge.0:95  %tmp_8_3_4_cast = zext i6 %knn_set_3_4_V_read_1 to i7
+
+ST_2: tmp6 [1/1] 1.72ns
+._crit_edge.0:96  %tmp6 = add i7 %tmp_8_3_3_cast, %tmp_8_3_2_cast
+
+ST_2: tmp17_cast [1/1] 0.00ns
+._crit_edge.0:97  %tmp17_cast = zext i7 %tmp6 to i9
+
+ST_2: tmp10 [1/1] 1.72ns
+._crit_edge.0:98  %tmp10 = add i7 %tmp_8_3_4_cast, %tmp_8_3_cast
+
+ST_2: tmp19_cast [1/1] 0.00ns
+._crit_edge.0:99  %tmp19_cast = zext i7 %tmp10 to i8
+
+ST_2: tmp11 [1/1] 1.72ns
+._crit_edge.0:100  %tmp11 = add i8 %tmp_8_3_1_cast, %tmp19_cast
+
+ST_2: tmp18_cast [1/1] 0.00ns
+._crit_edge.0:101  %tmp18_cast = zext i8 %tmp11 to i9
+
+ST_2: sum_3_4 [1/1] 1.72ns
+._crit_edge.0:102  %sum_3_4 = add i9 %tmp17_cast, %tmp18_cast
+
+ST_2: tmp_6_3 [1/1] 2.03ns
+._crit_edge.0:103  %tmp_6_3 = icmp ult i9 %sum_3_4, %min_2_min_2
+
+ST_2: min_2_min_3 [1/1] 1.37ns
+._crit_edge.0:108  %min_2_min_3 = select i1 %tmp_6_3, i9 %sum_3_4, i9 %min_2_min_2
+
+ST_2: tmp_8_4_cast [1/1] 0.00ns
+._crit_edge.0:109  %tmp_8_4_cast = zext i6 %knn_set_4_0_V_read_1 to i7
+
+ST_2: tmp_8_4_1_cast [1/1] 0.00ns
+._crit_edge.0:110  %tmp_8_4_1_cast = zext i6 %knn_set_4_1_V_read_1 to i8
+
+ST_2: tmp_8_4_2_cast [1/1] 0.00ns
+._crit_edge.0:111  %tmp_8_4_2_cast = zext i6 %knn_set_4_2_V_read_1 to i7
+
+ST_2: tmp_8_4_3_cast [1/1] 0.00ns
+._crit_edge.0:112  %tmp_8_4_3_cast = zext i6 %knn_set_4_3_V_read_1 to i7
+
+ST_2: tmp_8_4_4_cast [1/1] 0.00ns
+._crit_edge.0:113  %tmp_8_4_4_cast = zext i6 %knn_set_4_4_V_read_1 to i7
+
+ST_2: tmp12 [1/1] 1.72ns
+._crit_edge.0:114  %tmp12 = add i7 %tmp_8_4_3_cast, %tmp_8_4_2_cast
+
+ST_2: tmp22_cast [1/1] 0.00ns
+._crit_edge.0:115  %tmp22_cast = zext i7 %tmp12 to i9
+
+ST_2: tmp13 [1/1] 1.72ns
+._crit_edge.0:116  %tmp13 = add i7 %tmp_8_4_4_cast, %tmp_8_4_cast
+
+ST_2: tmp24_cast [1/1] 0.00ns
+._crit_edge.0:117  %tmp24_cast = zext i7 %tmp13 to i8
+
+ST_2: tmp14 [1/1] 1.72ns
+._crit_edge.0:118  %tmp14 = add i8 %tmp_8_4_1_cast, %tmp24_cast
+
+ST_2: tmp23_cast [1/1] 0.00ns
+._crit_edge.0:119  %tmp23_cast = zext i8 %tmp14 to i9
+
+ST_2: sum_4_4 [1/1] 1.72ns
+._crit_edge.0:120  %sum_4_4 = add i9 %tmp22_cast, %tmp23_cast
+
+
+ <State 3>: 8.56ns
+ST_3: knn_set_6_4_V_read_1 [1/1] 0.00ns
+._crit_edge.0:15  %knn_set_6_4_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_6_4_V_read)
+
+ST_3: knn_set_6_3_V_read_1 [1/1] 0.00ns
+._crit_edge.0:16  %knn_set_6_3_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_6_3_V_read)
+
+ST_3: knn_set_6_2_V_read_1 [1/1] 0.00ns
+._crit_edge.0:17  %knn_set_6_2_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_6_2_V_read)
+
+ST_3: knn_set_6_1_V_read_1 [1/1] 0.00ns
+._crit_edge.0:18  %knn_set_6_1_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_6_1_V_read)
+
+ST_3: knn_set_6_0_V_read_1 [1/1] 0.00ns
+._crit_edge.0:19  %knn_set_6_0_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_6_0_V_read)
+
+ST_3: knn_set_5_4_V_read_1 [1/1] 0.00ns
+._crit_edge.0:20  %knn_set_5_4_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_5_4_V_read)
+
+ST_3: knn_set_5_3_V_read_1 [1/1] 0.00ns
+._crit_edge.0:21  %knn_set_5_3_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_5_3_V_read)
+
+ST_3: knn_set_5_2_V_read_1 [1/1] 0.00ns
+._crit_edge.0:22  %knn_set_5_2_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_5_2_V_read)
+
+ST_3: knn_set_5_1_V_read_1 [1/1] 0.00ns
+._crit_edge.0:23  %knn_set_5_1_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_5_1_V_read)
+
+ST_3: knn_set_5_0_V_read_1 [1/1] 0.00ns
+._crit_edge.0:24  %knn_set_5_0_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_5_0_V_read)
+
+ST_3: agg_result_V_0_agg_result_V_s [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_1)
+._crit_edge.0:75  %agg_result_V_0_agg_result_V_s = zext i1 %tmp_6_1 to i2
+
+ST_3: agg_result_V_0_agg_result_V_02_2 [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_1)
+._crit_edge.0:104  %agg_result_V_0_agg_result_V_02_2 = select i1 %tmp_6_3, i2 -1, i2 -2
+
+ST_3: tmp_s [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_1)
+._crit_edge.0:105  %tmp_s = or i1 %tmp_6_3, %tmp_6_2
+
+ST_3: agg_result_V_0_agg_result_V_02_3 [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_1)
+._crit_edge.0:106  %agg_result_V_0_agg_result_V_02_3 = select i1 %tmp_s, i2 %agg_result_V_0_agg_result_V_02_2, i2 %agg_result_V_0_agg_result_V_s
+
+ST_3: agg_result_V_0_agg_result_V_02_1 [1/1] 1.37ns (out node of the LUT)
+._crit_edge.0:107  %agg_result_V_0_agg_result_V_02_1 = zext i2 %agg_result_V_0_agg_result_V_02_3 to i3
+
+ST_3: tmp_6_4 [1/1] 2.03ns
+._crit_edge.0:121  %tmp_6_4 = icmp ult i9 %sum_4_4, %min_2_min_3
+
+ST_3: min_2_min_4 [1/1] 1.37ns
+._crit_edge.0:122  %min_2_min_4 = select i1 %tmp_6_4, i9 %sum_4_4, i9 %min_2_min_3
+
+ST_3: tmp_8_5_cast [1/1] 0.00ns
+._crit_edge.0:123  %tmp_8_5_cast = zext i6 %knn_set_5_0_V_read_1 to i7
+
+ST_3: tmp_8_5_1_cast [1/1] 0.00ns
+._crit_edge.0:124  %tmp_8_5_1_cast = zext i6 %knn_set_5_1_V_read_1 to i8
+
+ST_3: tmp_8_5_2_cast [1/1] 0.00ns
+._crit_edge.0:125  %tmp_8_5_2_cast = zext i6 %knn_set_5_2_V_read_1 to i7
+
+ST_3: tmp_8_5_3_cast [1/1] 0.00ns
+._crit_edge.0:126  %tmp_8_5_3_cast = zext i6 %knn_set_5_3_V_read_1 to i7
+
+ST_3: tmp_8_5_4_cast [1/1] 0.00ns
+._crit_edge.0:127  %tmp_8_5_4_cast = zext i6 %knn_set_5_4_V_read_1 to i7
+
+ST_3: tmp15 [1/1] 1.72ns
+._crit_edge.0:128  %tmp15 = add i7 %tmp_8_5_3_cast, %tmp_8_5_2_cast
+
+ST_3: tmp27_cast [1/1] 0.00ns
+._crit_edge.0:129  %tmp27_cast = zext i7 %tmp15 to i9
+
+ST_3: tmp16 [1/1] 1.72ns
+._crit_edge.0:130  %tmp16 = add i7 %tmp_8_5_4_cast, %tmp_8_5_cast
+
+ST_3: tmp29_cast [1/1] 0.00ns
+._crit_edge.0:131  %tmp29_cast = zext i7 %tmp16 to i8
+
+ST_3: tmp17 [1/1] 1.72ns
+._crit_edge.0:132  %tmp17 = add i8 %tmp_8_5_1_cast, %tmp29_cast
+
+ST_3: tmp28_cast [1/1] 0.00ns
+._crit_edge.0:133  %tmp28_cast = zext i8 %tmp17 to i9
+
+ST_3: sum_5_4 [1/1] 1.72ns
+._crit_edge.0:134  %sum_5_4 = add i9 %tmp27_cast, %tmp28_cast
+
+ST_3: tmp_6_5 [1/1] 2.03ns
+._crit_edge.0:135  %tmp_6_5 = icmp ult i9 %sum_5_4, %min_2_min_4
+
+ST_3: agg_result_V_0_agg_result_V_02_4 [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_5)
+._crit_edge.0:136  %agg_result_V_0_agg_result_V_02_4 = select i1 %tmp_6_5, i3 -3, i3 -4
+
+ST_3: tmp_6 [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_5)
+._crit_edge.0:137  %tmp_6 = or i1 %tmp_6_5, %tmp_6_4
+
+ST_3: agg_result_V_0_agg_result_V_02_5 [1/1] 1.37ns (out node of the LUT)
+._crit_edge.0:138  %agg_result_V_0_agg_result_V_02_5 = select i1 %tmp_6, i3 %agg_result_V_0_agg_result_V_02_4, i3 %agg_result_V_0_agg_result_V_02_1
+
+ST_3: min_2_min_5 [1/1] 1.37ns
+._crit_edge.0:139  %min_2_min_5 = select i1 %tmp_6_5, i9 %sum_5_4, i9 %min_2_min_4
+
+ST_3: tmp_8_6_cast [1/1] 0.00ns
+._crit_edge.0:140  %tmp_8_6_cast = zext i6 %knn_set_6_0_V_read_1 to i7
+
+ST_3: tmp_8_6_1_cast [1/1] 0.00ns
+._crit_edge.0:141  %tmp_8_6_1_cast = zext i6 %knn_set_6_1_V_read_1 to i8
+
+ST_3: tmp_8_6_2_cast [1/1] 0.00ns
+._crit_edge.0:142  %tmp_8_6_2_cast = zext i6 %knn_set_6_2_V_read_1 to i7
+
+ST_3: tmp_8_6_3_cast [1/1] 0.00ns
+._crit_edge.0:143  %tmp_8_6_3_cast = zext i6 %knn_set_6_3_V_read_1 to i7
+
+ST_3: tmp_8_6_4_cast [1/1] 0.00ns
+._crit_edge.0:144  %tmp_8_6_4_cast = zext i6 %knn_set_6_4_V_read_1 to i7
+
+ST_3: tmp18 [1/1] 1.72ns
+._crit_edge.0:145  %tmp18 = add i7 %tmp_8_6_3_cast, %tmp_8_6_2_cast
+
+ST_3: tmp32_cast [1/1] 0.00ns
+._crit_edge.0:146  %tmp32_cast = zext i7 %tmp18 to i9
+
+ST_3: tmp19 [1/1] 1.72ns
+._crit_edge.0:147  %tmp19 = add i7 %tmp_8_6_4_cast, %tmp_8_6_cast
+
+ST_3: tmp34_cast [1/1] 0.00ns
+._crit_edge.0:148  %tmp34_cast = zext i7 %tmp19 to i8
+
+ST_3: tmp20 [1/1] 1.72ns
+._crit_edge.0:149  %tmp20 = add i8 %tmp_8_6_1_cast, %tmp34_cast
+
+ST_3: tmp33_cast [1/1] 0.00ns
+._crit_edge.0:150  %tmp33_cast = zext i8 %tmp20 to i9
+
+ST_3: sum_6_4 [1/1] 1.72ns
+._crit_edge.0:151  %sum_6_4 = add i9 %tmp32_cast, %tmp33_cast
+
+
+ <State 4>: 8.56ns
+ST_4: knn_set_8_4_V_read_1 [1/1] 0.00ns
+._crit_edge.0:5  %knn_set_8_4_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_8_4_V_read)
+
+ST_4: knn_set_8_3_V_read_1 [1/1] 0.00ns
+._crit_edge.0:6  %knn_set_8_3_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_8_3_V_read)
+
+ST_4: knn_set_8_2_V_read_1 [1/1] 0.00ns
+._crit_edge.0:7  %knn_set_8_2_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_8_2_V_read)
+
+ST_4: knn_set_8_1_V_read_1 [1/1] 0.00ns
+._crit_edge.0:8  %knn_set_8_1_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_8_1_V_read)
+
+ST_4: knn_set_8_0_V_read_1 [1/1] 0.00ns
+._crit_edge.0:9  %knn_set_8_0_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_8_0_V_read)
+
+ST_4: knn_set_7_4_V_read_1 [1/1] 0.00ns
+._crit_edge.0:10  %knn_set_7_4_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_7_4_V_read)
+
+ST_4: knn_set_7_3_V_read_1 [1/1] 0.00ns
+._crit_edge.0:11  %knn_set_7_3_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_7_3_V_read)
+
+ST_4: knn_set_7_2_V_read_1 [1/1] 0.00ns
+._crit_edge.0:12  %knn_set_7_2_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_7_2_V_read)
+
+ST_4: knn_set_7_1_V_read_1 [1/1] 0.00ns
+._crit_edge.0:13  %knn_set_7_1_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_7_1_V_read)
+
+ST_4: knn_set_7_0_V_read_1 [1/1] 0.00ns
+._crit_edge.0:14  %knn_set_7_0_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_7_0_V_read)
+
+ST_4: tmp_6_6 [1/1] 2.03ns
+._crit_edge.0:152  %tmp_6_6 = icmp ult i9 %sum_6_4, %min_2_min_5
+
+ST_4: min_2_min_6 [1/1] 1.37ns
+._crit_edge.0:153  %min_2_min_6 = select i1 %tmp_6_6, i9 %sum_6_4, i9 %min_2_min_5
+
+ST_4: tmp_8_7_cast [1/1] 0.00ns
+._crit_edge.0:154  %tmp_8_7_cast = zext i6 %knn_set_7_0_V_read_1 to i7
+
+ST_4: tmp_8_7_1_cast [1/1] 0.00ns
+._crit_edge.0:155  %tmp_8_7_1_cast = zext i6 %knn_set_7_1_V_read_1 to i8
+
+ST_4: tmp_8_7_2_cast [1/1] 0.00ns
+._crit_edge.0:156  %tmp_8_7_2_cast = zext i6 %knn_set_7_2_V_read_1 to i7
+
+ST_4: tmp_8_7_3_cast [1/1] 0.00ns
+._crit_edge.0:157  %tmp_8_7_3_cast = zext i6 %knn_set_7_3_V_read_1 to i7
+
+ST_4: tmp_8_7_4_cast [1/1] 0.00ns
+._crit_edge.0:158  %tmp_8_7_4_cast = zext i6 %knn_set_7_4_V_read_1 to i7
+
+ST_4: tmp21 [1/1] 1.72ns
+._crit_edge.0:159  %tmp21 = add i7 %tmp_8_7_3_cast, %tmp_8_7_2_cast
+
+ST_4: tmp37_cast [1/1] 0.00ns
+._crit_edge.0:160  %tmp37_cast = zext i7 %tmp21 to i9
+
+ST_4: tmp22 [1/1] 1.72ns
+._crit_edge.0:161  %tmp22 = add i7 %tmp_8_7_4_cast, %tmp_8_7_cast
+
+ST_4: tmp39_cast [1/1] 0.00ns
+._crit_edge.0:162  %tmp39_cast = zext i7 %tmp22 to i8
+
+ST_4: tmp23 [1/1] 1.72ns
+._crit_edge.0:163  %tmp23 = add i8 %tmp_8_7_1_cast, %tmp39_cast
+
+ST_4: tmp38_cast [1/1] 0.00ns
+._crit_edge.0:164  %tmp38_cast = zext i8 %tmp23 to i9
+
+ST_4: sum_7_4 [1/1] 1.72ns
+._crit_edge.0:165  %sum_7_4 = add i9 %tmp37_cast, %tmp38_cast
+
+ST_4: tmp_6_7 [1/1] 2.03ns
+._crit_edge.0:166  %tmp_6_7 = icmp ult i9 %sum_7_4, %min_2_min_6
+
+ST_4: min_2_min_7 [1/1] 1.37ns
+._crit_edge.0:171  %min_2_min_7 = select i1 %tmp_6_7, i9 %sum_7_4, i9 %min_2_min_6
+
+ST_4: tmp_8_8_cast [1/1] 0.00ns
+._crit_edge.0:172  %tmp_8_8_cast = zext i6 %knn_set_8_0_V_read_1 to i7
+
+ST_4: tmp_8_8_1_cast [1/1] 0.00ns
+._crit_edge.0:173  %tmp_8_8_1_cast = zext i6 %knn_set_8_1_V_read_1 to i8
+
+ST_4: tmp_8_8_2_cast [1/1] 0.00ns
+._crit_edge.0:174  %tmp_8_8_2_cast = zext i6 %knn_set_8_2_V_read_1 to i7
+
+ST_4: tmp_8_8_3_cast [1/1] 0.00ns
+._crit_edge.0:175  %tmp_8_8_3_cast = zext i6 %knn_set_8_3_V_read_1 to i7
+
+ST_4: tmp_8_8_4_cast [1/1] 0.00ns
+._crit_edge.0:176  %tmp_8_8_4_cast = zext i6 %knn_set_8_4_V_read_1 to i7
+
+ST_4: tmp24 [1/1] 1.72ns
+._crit_edge.0:177  %tmp24 = add i7 %tmp_8_8_3_cast, %tmp_8_8_2_cast
+
+ST_4: tmp42_cast [1/1] 0.00ns
+._crit_edge.0:178  %tmp42_cast = zext i7 %tmp24 to i9
+
+ST_4: tmp25 [1/1] 1.72ns
+._crit_edge.0:179  %tmp25 = add i7 %tmp_8_8_4_cast, %tmp_8_8_cast
+
+ST_4: tmp44_cast [1/1] 0.00ns
+._crit_edge.0:180  %tmp44_cast = zext i7 %tmp25 to i8
+
+ST_4: tmp26 [1/1] 1.72ns
+._crit_edge.0:181  %tmp26 = add i8 %tmp_8_8_1_cast, %tmp44_cast
+
+ST_4: tmp43_cast [1/1] 0.00ns
+._crit_edge.0:182  %tmp43_cast = zext i8 %tmp26 to i9
+
+ST_4: sum_8_4 [1/1] 1.72ns
+._crit_edge.0:183  %sum_8_4 = add i9 %tmp42_cast, %tmp43_cast
+
+
+ <State 5>: 8.56ns
+ST_5: knn_set_9_4_V_read_1 [1/1] 0.00ns
+._crit_edge.0:0  %knn_set_9_4_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_9_4_V_read)
+
+ST_5: knn_set_9_3_V_read_1 [1/1] 0.00ns
+._crit_edge.0:1  %knn_set_9_3_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_9_3_V_read)
+
+ST_5: knn_set_9_2_V_read_1 [1/1] 0.00ns
+._crit_edge.0:2  %knn_set_9_2_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_9_2_V_read)
+
+ST_5: knn_set_9_1_V_read_1 [1/1] 0.00ns
+._crit_edge.0:3  %knn_set_9_1_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_9_1_V_read)
+
+ST_5: knn_set_9_0_V_read_1 [1/1] 0.00ns
+._crit_edge.0:4  %knn_set_9_0_V_read_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %knn_set_9_0_V_read)
+
+ST_5: agg_result_V_0_agg_result_V_02 [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_6)
+._crit_edge.0:167  %agg_result_V_0_agg_result_V_02 = select i1 %tmp_6_7, i3 -1, i3 -2
+
+ST_5: tmp_7 [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_6)
+._crit_edge.0:168  %tmp_7 = or i1 %tmp_6_7, %tmp_6_6
+
+ST_5: agg_result_V_0_agg_result_V_02_7 [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_6)
+._crit_edge.0:169  %agg_result_V_0_agg_result_V_02_7 = select i1 %tmp_7, i3 %agg_result_V_0_agg_result_V_02, i3 %agg_result_V_0_agg_result_V_02_5
+
+ST_5: agg_result_V_0_agg_result_V_02_6 [1/1] 1.37ns (out node of the LUT)
+._crit_edge.0:170  %agg_result_V_0_agg_result_V_02_6 = zext i3 %agg_result_V_0_agg_result_V_02_7 to i4
+
+ST_5: tmp_6_8 [1/1] 2.03ns
+._crit_edge.0:184  %tmp_6_8 = icmp ult i9 %sum_8_4, %min_2_min_7
+
+ST_5: min_2_min_8 [1/1] 0.00ns (grouped into LUT with out node tmp_6_9)
+._crit_edge.0:185  %min_2_min_8 = select i1 %tmp_6_8, i9 %sum_8_4, i9 %min_2_min_7
+
+ST_5: tmp_8_9_cast [1/1] 0.00ns
+._crit_edge.0:186  %tmp_8_9_cast = zext i6 %knn_set_9_0_V_read_1 to i7
+
+ST_5: tmp_8_9_1_cast [1/1] 0.00ns
+._crit_edge.0:187  %tmp_8_9_1_cast = zext i6 %knn_set_9_1_V_read_1 to i7
+
+ST_5: tmp_8_9_2_cast [1/1] 0.00ns
+._crit_edge.0:188  %tmp_8_9_2_cast = zext i6 %knn_set_9_2_V_read_1 to i8
+
+ST_5: tmp_8_9_3_cast [1/1] 0.00ns
+._crit_edge.0:189  %tmp_8_9_3_cast = zext i6 %knn_set_9_3_V_read_1 to i7
+
+ST_5: tmp_8_9_4_cast [1/1] 0.00ns
+._crit_edge.0:190  %tmp_8_9_4_cast = zext i6 %knn_set_9_4_V_read_1 to i7
+
+ST_5: tmp27 [1/1] 1.72ns
+._crit_edge.0:191  %tmp27 = add i7 %tmp_8_9_1_cast, %tmp_8_9_cast
+
+ST_5: tmp45_cast [1/1] 0.00ns
+._crit_edge.0:192  %tmp45_cast = zext i7 %tmp27 to i9
+
+ST_5: tmp28 [1/1] 1.72ns
+._crit_edge.0:193  %tmp28 = add i7 %tmp_8_9_4_cast, %tmp_8_9_3_cast
+
+ST_5: tmp47_cast [1/1] 0.00ns
+._crit_edge.0:194  %tmp47_cast = zext i7 %tmp28 to i8
+
+ST_5: tmp29 [1/1] 1.72ns
+._crit_edge.0:195  %tmp29 = add i8 %tmp_8_9_2_cast, %tmp47_cast
+
+ST_5: tmp46_cast [1/1] 0.00ns
+._crit_edge.0:196  %tmp46_cast = zext i8 %tmp29 to i9
+
+ST_5: sum_9_4 [1/1] 1.72ns
+._crit_edge.0:197  %sum_9_4 = add i9 %tmp45_cast, %tmp46_cast
+
+ST_5: tmp_6_9 [1/1] 2.03ns (out node of the LUT)
+._crit_edge.0:198  %tmp_6_9 = icmp ult i9 %sum_9_4, %min_2_min_8
+
+ST_5: agg_result_V_0_agg_result_V_02_8 [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_9)
+._crit_edge.0:199  %agg_result_V_0_agg_result_V_02_8 = select i1 %tmp_6_9, i4 -7, i4 -8
+
+ST_5: tmp_9 [1/1] 0.00ns (grouped into LUT with out node agg_result_V_0_agg_result_V_02_9)
+._crit_edge.0:200  %tmp_9 = or i1 %tmp_6_9, %tmp_6_8
+
+ST_5: agg_result_V_0_agg_result_V_02_9 [1/1] 1.37ns (out node of the LUT)
+._crit_edge.0:201  %agg_result_V_0_agg_result_V_02_9 = select i1 %tmp_9, i4 %agg_result_V_0_agg_result_V_02_8, i4 %agg_result_V_0_agg_result_V_02_6
+
+ST_5: stg_208 [1/1] 0.00ns
+._crit_edge.0:202  ret i4 %agg_result_V_0_agg_result_V_02_9
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ No timing violations. 
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
